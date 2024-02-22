@@ -1,0 +1,11 @@
+Convert a mkv video into a mp4 video by just copying video and audio channels
+$ ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
+
+Convert a mkv video downloaded with youtube-dl default options into a mp4 "universal" video, by re-encoding the audio into mp3
+$ ffmpeg -i input.mkv -c:v copy -c:a mp3 output.mp4
+
+Combine 1 image with an audio
+$ ffmpeg -loop 1 -i image.jpg -i audio.wav -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest out.mp4
+
+Add black bar around a video
+ffmpeg -i in.avi -c:a copy -c:v libx264 -pix_fmt yuv420p -vf pad="640:360:(ow-iw)/2:(oh-ih)/2" out.avi

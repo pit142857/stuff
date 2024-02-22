@@ -1,0 +1,18 @@
+Question;Réponse 1;Réponse 2;Réponse 3;Réponse 4;Bonne réponse;Complément
+En 2016, Venick et Cafde ont réalisé un LOTAD (Low-Optimisation Tool-Assisted Demonstration) dans lequel ils finissent le jeu à 100% en mettant le moins de fois possible le jeu en pose. Combien de fois ont-ils mit le jeu en pause ?;3;5;7;9;1;Avant de réussir à finir le jeu en 3 pauses, ils leur en fallait 7 : les 3 actuels plus une pour équiper chacun des 4 masques (renard, mort, effroi, lapin). Mais en regardant quatre fois la cinématique de la lettre de Zelda, on peut réaliser un glitch permettant de garder les masques après les avoir vendu.
+Laquelle de ces implications sur les Skultullas d'or est vraie ?;Si une Skultulla d'or est présente de jour, elle est présente de nuit;Si une Skultulla d'or est présente de nuit, elle est présente de jour;Si une Skultulla d'or est présente en enfant, elle est présente en adulte;Si une Skultulla d'or est présente en adulte, elle est présente en enfant;1;Par exemple, au village Kokoriko, la Skultulla près de la maison des Skultullas n'est là que la nuit en enfant, alors que celle présente sur l'échelle de la tour de guet n'est là que la nuit en adulte.
+Combien de coup pour briser le Cure-dent ?;8
+Où se trouve le coffre à 1 rubis?
+Missiles teigneux ? (coffre : Ganon 20, Spirit Temple 10, BotW 10, GTG 5 + non coffre : 40 GS, Bomb Alley, Market Shop, Desert Shop)
+Nombre de Boss Key ?;5;6;7;8;2;5 Temples + Ganon
+Récompense des 100 GS?;50 Missiles teigneux;200 rubis;Pierre d'agonie;Une bouteille
+Nombre de clé max dans Water Temple ?;4;5;6;37;4
+Glitch ultra rare avec Dead Hand ?;Il spawn OOB; Il est invulnérable; Il ne sort plus de terre; Ses mains n'attrapent pas Link;1;cf. ZFG
+Extra Heart Container?
+Tuer Lizalfos le + rapidement possible (sachant que 6 PV) ?;6 coups d'épée;3 coups de bâton Mojo;coup sauté de bâton Mojo puis bâton Mojo;bâton Mojo puis coup sauté de bâton Mojo;4;car s'enfuie à 3 PV, fait 2 puis 4 damage, permet de OS
+Glitch pour aller sur pont dans Caverne Dodongo ?
+Igor le fossoyeur proba ?;10%
+Igor le fossoyeur record ?57;64;103;131;3;103 is ZFG, 103 is WR ???
+37th HP?
+38th HP?
+39th HP?

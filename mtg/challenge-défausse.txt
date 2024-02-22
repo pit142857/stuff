@@ -1,0 +1,19 @@
+---------- Question ----------
+
+Faire défausser deux cartes via Stupeur - un rituel qui dit « L'adversaire ciblé se défausse d'une carte au hasard, et se défausse ensuite d'une carte. » à un joueur n'ayant qu'une carte en main
+
+---------- Réponse ----------
+
+Le joueur B joue Stupeur en ciblant le joueur A.
+
+La mise en place est la suivante :
+- La seule carte dans la main du joueur A est un Baloth tenace, une créature qui dit « Si un sort ou une capacité qu'un adversaire contrôle vous contraint à vous défausser du Baloth tenace, mettez-le sur le champ de bataille à la place de le mettre dans votre cimetière. »
+- Le joueur A contrôle une Boue gloutonne - une créature avec Dévorement 1 (Au moment où cette créature arrive sur le champ de bataille, vous pouvez sacrifier le nombre de créatures de votre choix. Cette créature arrive sur le champ de bataille avec ce nombre de marqueurs +1/+1 sur elle.) - enchantée par des Reflets infinis, une aura qui dit « Les créatures non-jeton que vous contrôlez arrivent sur le champ de bataille en tant que copie de la créature enchantée. »
+- Plus tôt dans la partie, le joueur B a joué un Ver de cervelle, une créature qui dit « Quand le Ver de cervelle arrive sur le champ de bataille, l'adversaire ciblé révèle sa main et vous y choisissez une carte non-terrain. Exilez cette carte jusqu'à ce que le Ver de cervelle quitte le champ de bataille. » et qui a exilé un Cadet impatient de la main du joueur A. Le joueur A a ensuite joué un Contrôle mental sur ce Ver de cervelle. Actuellement, le joueur A contrôle donc un Ver de cervelle ayant exilé un Cadet impatient depuis sa propre main.
+
+Le déroulement de la résolution de Stupeur est le suivant :
+En résolvant la phrase « L'adversaire ciblé se défausse d'une carte au hasard » de la Stupeur, le joueur A se défausse du Baloth tenace. On applique les capacités de remplacement qui s'appliquent :
+- Le Baloth tenace arrive sur le champ de bataille à cause de sa capacité.
+- Le Baloth Tenace arrive sur le champ de bataille comme une copie d'une Boue gloutonne à cause des Reflets infinis.
+- Le Baloth Tenace, qui est une copie d'une Boue gloutonne, dévore un Ver de cervelle. Son effet se termine, et le Cadet impatient du joueur A retourne dans sa main.
+On résout ensuite la phrase « et se défausse ensuite d'une carte. », et le joueur A se défausse d'un Cadet impatient.

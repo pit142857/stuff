@@ -1,0 +1,12 @@
+# 6e édition
+  
+  https://mtg.fandom.com/wiki/Sixth_Edition/Rules_changes
+  file:///C:/Users/Pit/Documents/Perso/Magic/CompRules/(1999_06_01)%20Classic%20Edition%20Letter.html
+  
+  - Disparition des séries et des batches, création de la pile
+  - Disparition des sources de mana et des interruptions
+  - Possibilité de répondre après que la pile est commencé à se résoudre
+  - La régénération doit d'effectuer avant de mourir, pas pendant
+  - Création des étapes à l'intérieur des phases
+  - Création de la phase de combat
+  - On ne perd plus la partie à la fin de la phase, mais immédiatement

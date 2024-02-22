@@ -1,0 +1,42 @@
+Au préalable, installer imagemagick et pdftk :
+
+$ apt install imagemagick
+$ apt install pdftk
+
+Sur Linux, créer un fichier pic2pdf.sh dans le dossier home ~/
+Ce fichier contient :
+
+<<<<<<<<<<<<<<<<<<<<
+
+#!/bin/bash
+
+FOLDER=$(echo $1 | sed 's=\(.\):=/mnt/\L\1=' | sed 's=\\=/=g')
+cd "$FOLDER"
+for PICTURE in *.jpg
+do
+	convert "$PICTURE" "${PICTURE%.*}.pdf"
+done
+pdftk *.pdf cat output "$FOLDER.pdf"
+exit 0
+
+>>>>>>>>>>>>>>>>>>>>
+
+Lancer le fichier .reg suivant :
+
+<<<<<<<<<<<<<<<<<<<<
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Folder\shell\convert]
+@="Convertir les images en pdf"
+"extended"="1"
+"icon"="C:\\Windows\\System32\\Shell32.dll,134"
+
+[HKEY_CLASSES_ROOT\Folder\shell\convert\command]
+@="cmd.exe /C kali run \"~/pic2pdf.sh \\\"%1\\\"\""
+
+>>>>>>>>>>>>>>>>>>>>
+
+Note :
+  La commande "cmd.exe /C" permet d'exécuter la suite à travers le cmd
+  Sans ça, la chemin %1 est converti au format de fichier 8.3

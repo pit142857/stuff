@@ -1,0 +1,23 @@
+« Quand » ou « À chaque fois » ?
+
+De façon générale, on met « Quand » si la capacité en question ne déclenchera qu'une fois dans la vie de l'objet sur lequel est la capacité, et « À chaque fois » si elle peut se déclencher plusieurs fois. Notez que la vie d'un objet commence généralement quand il entre dans une zone et se termine quand il la quitte.
+
+Voici des exemples de « Quand » :
+https://gatherer.wizards.com/Pages/Search/Default.aspx?action=advanced&text=+[m/^When\s/]+![%22enters%20the%20battlefield%22]+![%22%20dies,%20%22]+![%22leaves%20the%20battlefield%22]
+
+- « Quand cette créature arrive sur le champ de bataille »
+- « Quand cette créature quitte le champ de bataille »
+- « Quand cette créature meurt »
+- « Quand vous lancez ce sort »
+- « Quand vous vous défaussez de cette carte »
+- « Quand cette carte est mise dans un cimetière »
+- Une capacité dont la résolution termine la vie de l'objet sur laquelle elle est (c'est-à-dire en le faisant changer de zone), comme sur [carte]Alaborn Zealot[/carte] ou [carte]Éveil du tyran céleste[/carte].
+
+Des combinaisons de capacités qui commencent par « Quand » donne également une capacité qui commence par « Quand ». C'est un peu particulier, car la capacité en question pourra se déclencher plusieurs fois dans une vie, mais on comprend ce choix, car il s'agit juste d'une fusion de capacités qui commencent chacune par « Quand » en une seule.
+https://gatherer.wizards.com/Pages/Search/Default.aspx?action=advanced&text=+[m/^When\s%E2%96%BA^,%E2%97%84*\sor\s/]
+
+- « Quand cette créature arrive sur le champ de bataille ou quitte le champ de bataille », comme sur l'[carte]Avemain gardefaille[/carte].
+- « Quand cette créature arrive sur le champ de bataille ou meurt », comme sur l'[carte]Approvisionneuse du raccommodeur[/carte].
+
+Incohérences : la transformation (non, dépend seulement de si l'objet se re-transforme ou non), l'inversion
+Choix : Les "Hidden ..." verts

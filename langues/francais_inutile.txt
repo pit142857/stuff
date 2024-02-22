@@ -1,0 +1,11 @@
+La liaison en -f se sonorise devant les mots « ans » et « heures »
+- https://fr.wiktionary.org/wiki/neuf
+- http://www.frenchforthought.com/Phonologie/phonologie_027.html
+
+La liaison en -n peut dénasaliser la voyelle finale
+- http://www.frenchforthought.com/Phonologie/phonologie_028.html
+
+Apocope VS Aphérèse
+* apocope = supprimer la fin du mot : restaurant -> restau
+* aphérèse = supprimer le début du mot : autobus -> bus
+- http://www.frenchforthought.com/Phonologie/phonologie_031.html

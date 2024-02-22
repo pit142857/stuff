@@ -1,0 +1,9 @@
+334 (2) : Orientation
+336 (2) : Y-Pos [1AE]
+338 (2) : X-Pos [1B0]
+33A (2) : Drop Time (Decreasing)
+33C (2) : Drop Time (Increasing)
+348 (1) : vie
+34A (1) : Drop potentiel
+
++/- 38

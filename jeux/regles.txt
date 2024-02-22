@@ -1,0 +1,327 @@
+===== Sommaire =====
+
+
+
+A - Règles originales :
+
+A1 - Bases    : Pour bien commencer
+A2 - Rapidité : Soyez vifs
+A3 - Sirotage : Un peu de stratégie
+A4 - Néant    : Finis les temps morts
+A5 - Civet    : Pour ceux qui aiment le risque
+A6 - Bévue    : Une règle pour les gouverner toutes
+
+
+B - Règles équilibrées :
+
+B1 - Soufflette : Référence au 421
+B2 - Plafond    : Finis les ex-æquo
+B3 - Boucliette : Sortez couverts
+B4 - Valeurs    : Selon comment on tourne ça change tout
+BX - Frigelle   : Vivent les coalitions
+
+
+C - Règles à l'Aquitaine :
+
+C1 - Banque            : Ou comment accumuler ses artichauts
+C2 - Chante-sloubi     : Tous en cœur
+C3 - Attrape l’oiseau  : Seulement 14 solutions possibles
+C4 - Sirop-golo        : Toujours plus de stratégie
+C5 - Donne asymétrique : Tout est sous contrôle
+C6 - Nénette           : La règle de Robin des bois
+CX - Droit de vidage   : Quand ça devient trop dur
+
+
+D - Règles avec doublette :
+
+D1 - Vœux  : Jouer avec les Tichettes
+D2 - Choix : Avec ou sans ?
+
+
+† - Règles démoniques :
+†1 - Transplanage     : Voyage voyage
+†2 - Doublé           : L'unique chouette
+†3 - Magie            : Les défis de Merlin
+†4 - Attrape l'oiseau : Plus que 19 solutions possibles
+†5 - Zbradaraldjan    : Ni oui ni non
+†6 - Expulsion        : Fallait mieux jouer
+
+
+
+===== Règles =====
+
+
+
+# A - Règles originales
+
+
+
+## A1 - Bases
+
+Les joueurs jouent à tour de rôle.
+Le premier joueur à avoir 343 points ou plus gagne la partie.
+À son tour, le joueur lance 2 dés (les chouettes) puis 1 dé (le cul), et on regarde la combinaison formée par les 3 dés, indépendamment de l’ordre dans lequel ils ont été lancés.
+Selon la combinaison, le joueur remporte un certain nombre de points :
+
+- Chouette de x : 2 dés valant x. Vaut x² points.
+- Velute de x : 1 dé valant x, les 2 autres dés ayant une somme de x. Vaut 2x² points.
+- Cul de chouette de x : 3 dés identiques valant x. Vaut 40+10x points.
+- Chouette-velute de x : Velute de x étant également une chouette. Vaut comme la velute de x.
+
+## A2 - Rapidité
+
+Lors d'une chouette-velute, le premier joueur à frapper dans ses mains et à crier « Pas mou le caillou ! » gagne les points à la place du joueur ayant fait la chouette-velute.
+En cas d'égalité impliquant le joueur ayant fait la chouette velute, les autres joueurs lancent chacun un dé. Si exactement un d'entre eux fait 6, il gagne les points. Sinon, c'est le joueur qui a fait la chouette velute qui les gagne.
+En cas d'égalité ne l'impliquant pas, les joueurs à égalité lancent chacun un dé. Si exactement un d'entre eux fait 6, il gagne les points. Sinon, les joueurs à égalité relancent un dé, et on recommence jusqu'à ce qu'exactement un joueur fasse 6.
+
+On ajoute la combinaison « suite », qui correspond à 3 dés qui se suivent.
+Le dernier joueur à taper du poing sur la table et à crier « Grelotte, ça picote ! » perd 10 points. En cas d'égalité, les joueurs à égalité doivent crier « Sans fin est la moisissure des bières bretonnes ». Le dernier perd 10 points. En cas d'égalité, les joueurs à égalité lancent un dé. Celui qui fait le plus petit score perd 10 points. S'il y a encore égalité, on recommence, en misant 10 points de plus à chaque fois.
+
+## A3 - Sirotage
+
+Un joueur faisant une chouette peut siroter à la place de gagner les points de sa chouette.
+Pour siroter, il relance le dé qui est différent des 2 autres. Si cela fait un cul de chouette, il gagne les points du cul de chouette. Sinon, il perd les points de la chouette.
+Avant qu'il ne relance son dé, les autres joueurs peuvent miser sur la valeur sur laquelle va tomber ce dé, sauf qu'au lieu d'annoncer la valeur du dé, il annonce un nom d'oiseau :
+- Linotte pour 1
+- Alouette pour 2
+- Fauvette pour 3
+- Mouette pour 4
+- Bergeronnette pour 5
+- Chouette pour 6
+Les joueurs qui ont misé sur un nombre égal au résultat du dé gagnent 25 points. Les autres qui ont misé perdent 5 points.
+
+## A4 - Néant
+
+Un joueur qui ne fait aucune combinaison fait un néant.
+Ce joueur reçoit une grelottine, sauf s'il en a déjà une, et les autres joueurs qui ont une grelottine peuvent la dépenser pour lui lancer un défi grelottine. Pour ce faire, le défiant choisit une combinaison (qui ont chacune un coefficient) parmi :
+- Chouette (de coefficient 3)
+- Velute (de coefficient 4)
+- Cul de chouette (de coefficient 5)
+- Chouette-velute (de coefficient 10)
+Le défiant choisit une mise comprise entre 0 et le minimum des scores des 2 joueurs dans le défi divisé par le coefficient de cette combinaison.
+Les joueurs qui ne sont pas impliqués dans le défi pevent miser sur la réussite du défi.
+Le défié rejoue normalement. Une fois qu'il a fini, si le défié a fait la combinaison imposée, le défiant lui donne un nombre de points égale à la mise, et tous ceux qui ont misé sur sa réussite gagnent 25 points. Sinon, le défié donne au défaint un nombre de points égale à la mise, et tous les joueurs ayant misé sur sa réussite perdent 5 points.
+
+Si plusieurs joueurs veulent lancer un défi grelottine en même temps, celui qui a le moins de points est prioritaire.
+
+## A5 - Civet
+
+Un joueur qui rate un sirotage de 6 gagne un civet, sauf s'il en a déjà un.
+Avant de commencer son tour, si un joueur possède un civet, il peut le dépenser, choisir une combinaison (s'il choisit cul de chouette, il doit préciser avec ou sans sirotage) et miser un nombre de points inférieur ou égal à 102. Chaque autre joueur peut parier sur la réussite de ce joueur. S'il réussit, il gagne les points qu'il a misés et les joueurs ayant parié gagnent 25 points. S'il échoue, il perd les points qu'il a misé et les joueurs ayant parié perdent 5 points.
+
+## A6 - Bévue
+
+Un joueur faisant une faute de règle perd 10 points.
+
+
+
+# B - Règles équilibrées
+
+
+
+## B1 - Soufflette
+
+On ajoute la combinaison « 421 » qui correspond à un 4, un 2 et un 1.
+Le joueur qui a fait un 421 peut lancer un défi soufflette à un autre joueur. Le défié a 3 lancers pour faire 421. S'il y arrive du premier coup, le défiant donne 50 points au défié. Si c'est du deuxième coup, c'est 40 points, et si c'est du troisième coup, c'est 30 points. S'il n'y arrive pas, le défié donne 30 points au défiant.
+
+## B2 - Plafond
+
+Un joueur ne peut pas gagner de points en dehors de son tour s'il a 332 points ou plus. S'il devait gagner des points en dehors de son tour qui le feraient dépasser 332 points, il plafonne à 332 points à la place.
+
+## B3 - Boucliette
+
+Chaque joueur commence la partie avec une boucliette, objet qu'il peut dépenser une fois dans la partie pour empêcher lui ou un autre joueur de subir les effets d'un défi grelottine. La boucliette s'utilise une fois que le défiant a annocé sa combinaison et le nombre de points mis en jeu.
+
+## B4 - Valeurs
+
+Avant de commencer la partie, chaque joueur lance 3 dés et multiplie le résultat de ses dés ensemble. Ce résultat devient la valeur de ce joueur. Si plusieurs joueurs ont la même valeur, chacun d'entre eux relance un dé et ajoute ce résultat à sa valeur. On recommence jusqu'à ce qu'il n'y ait plus aucune égalité.
+
+Le joueur qui a fait la plus petite valeur commence la partie. Le jeu tourne dans le sens des valeurs croissantes, c'est-à-dire qu'à la fin du tour d'un joueur, le joueur qui joue ensuite est celui qui la plus petite valeur parmi les joueurs qui ont une valeur strictement plus grande que celle du joueur qui vient de terminer son tour. S'il n'y a personne, c'est au tour de celui qui a la plus petite valeur de jouer.
+
+## BX - Frigelle
+
+Une fois qu'un joueur a lancé les Chouettes, mais avant qu'il ne lance le Cul, n'importe quel autre joueur ayant fait le voyage Terre-Tatooine à pied peut payer 30 points pour empêcher ce joueur de lancer le Cul. Le joueur dont c'est le tour ne peut alors que gagner les points de son éventuelle Chouette.
+
+
+
+# C - Règles à l'Aquitaine
+
+
+
+## C1 - Banque
+
+Celui qui possède la banque en début de partie est celui qui a la plus grande valeur. À chaque fois qu'un dé affiche 3, n'importe quel joueur peut dire « artichette » pour mettre 3 artichauts dans la banque. Le banquier peut dépenser les artichauts de la banque :
+- Pour 16 artichauts, le couche-sirop : le banquier empêche un joueur de joueur son tour, on passe au suivant.
+- Pour 32 artichauts, le file-sirop : avant qu'un autre joueur ne lance son cul, le banquier l'annonce et gagnera tous les points que le joueur aurait dû gagner ce tour-ci à sa place.
+- Pour 64 artichauts, le contre-sirop : au début du tour d'un autre joueur, permet au banquier d'échanger ses points avec lui.
+
+Avant de lancer son cul, le joueur dont c'est le tour peut annoncer Raitournelle dans le but d'acheter la banque à 17% de sa valeur (c'est-à-dire du nombre d'artichauts dans la banque) si la somme des 3 dés est supérieure ou égale à 13. S'il y arrive, il doit donner au banquier au moins 17% de sa valeur, et il en devient le propriétaire. S'il donne moins de 17%, le propriétaire de la banque ne change pas. S'il échoue, il donne 10 points au banquier par point manquant pour combler l'écart à 13.
+
+## C2 - Chante-sloubi
+
+On ajoute la combinaison « Chante-sloubi » qui a lieu lorsque la combinaison obtenue avec les dés est une suite arithmétique de raison 2. Le joueur l'effectuant peut lancer un chante-sloubi.
+Lors d'un chante-sloubi, les joueurs, dans l'ordre du tour en commençant par le joueur qui a lancé le chante-sloubi, chantent "Sloubi n", où n est un entier qui commence à 1 et qui augmente de 1 à chaque fois. Le joueur qui chante doit :
+- Taper des deux mains sur la tête si n est premier.
+- S'il ne l'est pas, il doit se taper légèrement le torse avec la main gauche s'il est pair, et/ou taper du poing droit sur la table s'il est multiple de trois.
+Quand un joueur hésite ou se trompe, n'importe quel autre joueur peut dire « Sloubi » pour arrêter le chante-sloubi. Si c'est le joueur qui a lancé le chante-sloubi qui a perdu, il perd toutes ses salades. Sinon, le joueur qui a lancé le chante-sloubi gagne une salade de x, où x est le nom du joueur qui s'est trompé.
+Si on atteint Sloubi 116 et que celui-ci est correct, le chante-sloubi s'arrête et personne ne gagne ou ne perd de salade.
+
+Chaque joueur peut avoir autant de salades qu'il a d'adversaires. Une salade de x peut-être dépensée pour forcer x à ne peut pas faire une action optionnelle, c'est-à-dire une action où on a le choix entre ne rien faire ou faire quelque chose.
+
+## C3 - Attrape l’oiseau
+
+Si un joueur fait une Velute, il gagne ses points, puis a 14 solutions possibles.
+Quand une solution a déjà été choisie, elle ne peut plus être re-choisie.
+Quand un joueur attrape l'oiseau mais que tout a déjà été choisi, c'est la migration : les effets qui durent jusqu'à la migration se terminent, et tout peut être de nouveau choisi.
+
+Les 14 solutions possibles sont : 
+- On passe : On ne fait rien.
+- On annule le tour : On commence un nouveau tour, c'est donc au joueur qui a la plus petite valeur de jouer (ou à celui qui a la plus grande si on a changé de sens), même si c'est le joueur qui vient de jouer.
+- On change de sens : On joue dans le sens décroissant des valeurs si on jouait dans le sens croissant, ou inversement.
+- On recalcule les points : On recompte les valeurs comme en début de partie. Le prochain joueur à jouer est le joueur qui devrait jouer (avec les nouvelles valeurs) après le joueur dont c'est le tour s'il avait gardé son ancienne valeur. Cela peut amener le joueur dont c'est le tour à jouer une deuxième fois.
+- On divise par six : les points gagnés et perdus sont divisés par six (on compte les sixièmes de points) jusqu'au début du prochain tour de ce joueur.
+- On jette les bouts de bois de 15 pouces : La chouette vaut désormais 0 point, ce qui est avantageux pour tenter des Culs de chouette. Vous ne pouvez choisir cet attrape l'oiseau uniquement s'il y a des bouts de bois de 15 et 30 pouces ; sachant qu'au début de la partie, il y a des bouts de bois de 15 et 30 pouces. Après avoir utilisé cet attrape l'oiseau, il n'y a plus que des bouts de bois de 30 pouces.
+- On scie en deux les bouts de bois de 30 pouces : La chouette vaut autant de points qu'avant, mais la Velute vaut moitié moins. Vous ne pouvez choisir cet attrape l'oiseau uniquement s'il y a des bouts de bois de 30 pouces mais pas de 15. Après avoir utilisé cet attrape l'oiseau, il n'y a plus que des bouts de bois de 15 pouces.
+- On taille 50 bouts de bois de 30 pouces : La Velute vaut autant qu'avant. Vous ne pouvez choisir cet attrape l'oiseau uniquement s'il y a des bouts de bois de 15 pouces mais pas de 30. Après avoir utilisé cet attrape l'oiseau, il y a à la fois des bouts de bois de 15 et 30 pouces.
+- On joue sans atout : Personne ne peut faire raitournelle (acheter la banque) jusqu'au début du prochain tour de ce joueur.
+- Doublette : Les paris (ceux où on perd 5 points ou on gagne 25 points) sont doublés (donc on perd 10 ou on gagne 50) jusqu'à la migration.
+- Jeu carré : Le Cul de chouette ne rapporte plus de points jusqu'au début du prochain tour de ce joueur.
+- Jeu gagnant : Jusqu'au début du prochain tour de ce joueur, si un joueur est un de ceux qui a le plus de points et qu'il devrait gagner des points, il les perd à la place.
+- Katake : Les joueurs lancent désormais les paires de dés de la main gauche et les dés seuls de la main droite. Cette effet dure jusqu'à la migration.
+- Takate : Les joueurs lancent désormais les paires de dés de la main droite et les dés seuls de la main gauche. Cette effet dure jusqu'à la migration.
+
+## C4 - Sirop-golo
+
+Si un joueur qui vient de faire un cul de chouette annonce deux fois « Cul de Chouette », il sirote-golo : il rejoue normalement, mais s'il fait un néant, il perd les points du cul de chouette précédent.
+
+## C5 - Donne asymétrique
+
+Si le score d'un joueur est égal à la valeur d'un autre joueur, le premier joueur est en donne asymétrique contre le deuxième joueur. À chaque fois que le deuxième joueur doit prendre une décision, le premier joueur peut forcer ce joueur à choisir la décision de son choix.
+
+## C6 - Nénette
+
+Dès qu'un joueur fait 221 avec les dés, il fait une Nénette. Les joueurs qui ont un score plus grand que le joueur qui a fait la Nénette lui donne 10 points. Le joueur qui a fait la Nénette donne 10 points aux joueurs qui ont un score plus petit que lui.
+
+## CX - Droit de vidage
+
+Si un joueur ne comprend pas les règles de ce jeu, il peut exercer son droit de vidage et sortir du jeu. S'il avait des points (positifs ou négatifs), il peut les distribuer entre un ou plusieurs joueurs.
+
+
+
+# D - Règles avec doublette
+
+
+
+## Vocabulaire
+
+Se coucher : Un joueur qui se couche n'existe plus pour le jeu. Il se remet à exister dès qu'il se met à parler.
+
+## D1 - Vœux
+
+N'importe quand pendant la partie, un joueur qui n'a fait aucun vœu peut faire un vœu. 
+Quand le vœu d'un joueur correspond au chiffre des unités de son score et qu'il reste des Tichettes, il peut payer 1 point pour en piocher une. Dans le cas d'un vœu de ragoût, il paye la partie non-entière de son score pour piocher.
+
+Il existe 9 vœux, qui correspondent chacun à un chiffre, plus le vœu de ragout :
+- Vœu de pauvreté, pour 1
+- Vœu de silence, pour 2
+- Vœu de chasteté, pour 3
+- Vœu de pénitence, pour 4
+- Vœu de probité, pour 5
+- Vœu de courage, pour 6
+- Vœu d'intégrité, pour 7
+- Vœu de justice, pour 8
+- Vœu de noblesse, pour 9
+- Vœu de ragout, pour un score non-entier
+
+Il existe 22 Tichettes :
+- 1  : Cul de Chouette - À lancer avant votre tour. Lancez les 3 dés en même temps.
+- 2  : Paire de dés fétiches - À lancer après que vous ayez lancé les Chouettes. Relancez les Chouettes.
+- 3  : Bottes de sept lieux - À lancer après une épreuve de rapidité. Vous êtes premier à cette épreuve.
+- 4  : Cuvée des nains - À lancer après que vous ayez siroté. Recommencez votre sirotage.
+- 5  : Appeau en bois d'épicéa - À lancer avant un sirotage. Vous pouvez dire deux oiseaux pour ce sirotage.
+- 6  : Sacoche - À jouer lorsque vous recevez un objet. Vous obtenez cet objet, même si vous n'avez plus de place dans votre inventaire. Vous placez cet objet dans votre sacoche.
+- 7  : Casse-grelottine - À lancer avant de subir un défi grelottine. Le joueur qui vous lance ce défi ne peut pas miser plus de la moitié de ce qu'il peut miser d'habitude.
+- 8  : Vieux chaudron - À lancer en même temps qu'un civet. Vous pouvez dire deux combinaisons pour ce civet.
+- 9  : Lunettes protectrices - À jouer après que vous ayez subi une bévue. Vous ne perdez pas de point à cause de cette bévue.
+- 10 : Pièce en chocolat : Échangez votre valeur avec un autre joueur.
+- 11 : Panier d'artichauts - Choisissez un nombre. Jusqu'à ce que vous rejouiez, Artichette ne fonctionne que pour ce nombre. (Ce nombre provoque une Artichette et rapporte autant d'artichauts.)
+- 12 : Tenue de négociateur - À lancer en même temps que Raitournelle. Cette Raitournelle fonctionne sur 11 ou plus, et ne coûte que 14% de la valeur de la banque.
+- 13 : Grand verre d'eau - Ce tour-ci, vous ne perdez pas de point pour avoir raté un sirotage ou un sirop-golo.
+- 14 : Pélican - À lancer avant un Chante-Sloubi. Vous choisissez votre position dans ce Chante-Sloubi.
+- 15 : Guitare légendaire - À lancer si vous deviez perdre au chante-sloubi. Vous ne perdez pas et le Chante-Sloubi reprend là où vous en étiez.
+- 16 : Pigeon messager - À lancer après qu'un joueur ait choisi un Attrape-l'oiseau. Vous choisissez un autre Attrape-l'oiseau, qui s'applique à la place.
+- 17 : Cage à oiseau - À lancer quand vous devez choisir un Attrape-l'oiseau. Vous pouvez choisir un Attrape-l'oiseau déjà dit.
+- 18 : Stock de bois personnel - À lancer quand vous gagnez ou perdez des points de la valeur d'une combinaison. Vous gagnez ou perdez ces points sans tenir compte des bouts de bois.
+- 19 : Robin des bois - A le même effet qu'une Nénette.
+- 20 : Nuage de repos - Vous vous couchez.
+- 21 : Portail dimensionnel - Vous venez de faire le voyage Terre-Tatooine à pied. Félicitations.
+- *  : Grande éloquence - Posez une question oui-non à un adversaire. Il est obligé de se tenir à sa réponse jusqu'à ce que vous rejouiez.
+
+## D2 - Choix
+
+Au moment de commencer la partie, chaque joueur choisit de jouer avec ou sans l'axiome du choix :
+- Chaque joueur qui a choisit « avec » reçoit la carte « Duplication », qui lui permet de dupliquer n'importe quel petit objet de n'importe quel joueur. [Référence au théorème de Banach-Tarski qui a besoin de l'axiome du choix]
+- Chaque joueur qui a choisit « sans » reçoit la carte « Vous n'avez pas les bases », qui lui permet d'empêcher n'importe quel joueur de gagner les points et de faire l'effet d'une combinaison avec le mot « chouette » dedans. [Référence au fait que sans axiome du choix, il existe des modèles où des espaces vectoriels n'ont pas de base]
+
+
+
+# † - Règles démoniques
+
+
+
+## †1 - Transplanage
+
+Les règles suivantes ne s'applique qu'à partir du moment où un joueur a fait un sloubi 116. Dans ce cas, on dit qu'on transplane vers le plan démonique.
+
+## †2 - Doublé
+
+Après qu'un joueur ait lancé ses chouettes, s'il a obtenu deux dés identiques, n'importe quel joueur peut crier « Doublé ! ». Le premier joueur à le faire gagne un nombre de points égal à la chouette correspondante. En cas d'égalité, tous les joueurs à égalité perdent ce nombre de points.
+Une fois qu'une doublette a été annoncé, cette règle est supprimée et plus aucun joueur ne peut annoncer de Doublette jusqu'à la fin de la partie.
+
+## †3 - Magie
+
+Quand un joueur fait un Cul de Chouette de 6, il peut accepter le « Défi non pas de Merlin, Enchanteur de Bretagne, Grand vainqueur de la belette de Winchester, Concepteur de la potion de guérison des ongles incarnés, Auteur du parchemin "Le druidisme expliqué aux personnes âgées", Élaborateur de la potion de réduction du temps de dessalage des filets de morue, que l'on nomme Coco l'asticot, fils d'un démon et d'une pucelle, mais de son père ». Il effectue alors 10 jets de 2 dés, moins quatre (ce qui comprend normalement un résultat entre 16 et 116), et gagne autant de pièces d'or, qu'il peut dépenser immédiatement pour acheter des objets magiques (il peut acheter plusieurs fois le même objet). Les pièces non-utilisées sont perdues.
+
+Les objets magiques sont :
+- Chaudron rutilant (0 pièce) : Vous permet de porter tous les objets magiques que vous vend le père de Merlin. Cet objet est nécessaire pour pouvoir transporter tous les autres objets magiques. Vous ne pouvez avoir qu'un seul Chaudron rutilant.
+- Pierre de Lune (3 pièces) : Le joueur de votre choix gagne une pierre de Lune. Si un joueur a un Civet et une Pierre de Lune en même temps, ce joueur perd les deux et gagne de l'Eau douce, qui s'évapore immédiatement, parce qu'il fait chaud sur le plan démonique.
+- Divination (10 pièces) : Vous lancez un dé, et gagnez un dé magique qui tombe toujours sur x, où x est le résultat du dé lancé. Ce dé magique peut être utilisé à n'importe quel lancé à la place d'un dé classique (une fois utilisé, ce dé s'autodétruit de façon magique).
+- Potion de confusion (10 pièces) : Vous gagnez une potion de confusion. Vous pouvez l'utiliser quand vous voulez.
+Quand vous l'utilisez, choisissez 3 confusions différentes (voir plus loin pour savoir comment marche les confusions), que vous nommez « celle de gauche », « celle du milieu », et « celle de droite ». Si un dé est lancé, on applique à ce dé la confusion du milieu ; si deux sont lancés, on applique la confusion de gauche au dé qui se trouve le plus à gauche du joueur, et celle de droite à celui qui se trouve le plus à droite du joueur ; et si trois dés sont lancés, on fait cela pour le dé de gauche, du milieu, et de droite. Voici les confusions :
+  * Moins deux : On soustrait deux au résultat du dé, modulo 6, de façon à rester entre 1 et 6.
+  * Moins un : On soustrait un au résultat du dé, modulo 6, de façon à rester entre 1 et 6.
+  * Plus un : On ajoute un au résultat du dé, modulo 6, de façon à rester entre 1 et 6.
+  * Plus deux : On ajoute deux au résultat du dé, modulo 6, de façon à rester entre 1 et 6.
+  * Mi-cache : On prend le résultat qui fait face au joueur qui joue.
+  * Bi-cache : On prend le résultat qui est sur le face cachée du dé.
+  * Passe-cache : On prend le résultat sans modificateur (voir plus loin ce que sont les modificateurs) du dernier dé lancé à la même position.
+La potion prend fin au début de votre tour.
+- Tabouret de transport (20 pièces) : Vous gagnez un Tabouret de transport. Vous pouvez l'utiliser quand vous voulez.
+Quand vous l'utilisez, 2 joueurs de votre choix (vous pouvez vous choisir vous-même si vous voulez) échangent de place. Les Bévues s'appliquent au joueur physique, mais tout le reste s'applique au joueur à qui appartient le tabouret sur lequel est assis le joueur. Quand chaque joueur qui n'est pas assis à sa place a joué, les joueurs retrouvent leur place.
+- Potion de Polymorphisme (20 pièces) : Vous gagnez une Potion de polymorphisme. Vous pouvez l'utiliser quand vous voulez.
+Quand vous l'utilisez, un joueur se transforme en un autre joueur, à part pour les bévues et les valeurs, tout se passe comme si ce joueur était l'autre, même en ce qui concerne l'appartenance du tabouret. Une fois que le joueur qui s'est transformé a joué, cet effet prend fin.
+- Plaques de dissimulation (30 pièces d'or) : Vous gagnez une plaque de dissimulation. Un joueur peut à tout moment utiliser sa plaque de dissimulation pour se coucher.
+- Potion de chagrin (50 pièces d'or) : Diminue de 1 le chou rouge d'un joueur (voir plus loin pour savoir ce qu'est le chou rouge).
+- Potion de vivacité (50 pièces d'or) : Augmente de 1 le chou rouge d'un joueur (voir plus loin pour savoir ce qu'est le chou rouge).
+- Œil de Taupe (116 pièces d'or) : Vous pouvez voir dans le futur le résultat du prochain lancer de dés.
+- Un genre de cake, juste pour la route (136 pièces d'or) : Vous pouvez le manger, il est bon.
+
+Les modificateurs - chou Rouge et confusions :
+Chaque joueur a un chou rouge qui peut valoir -1, 0 ou +1. Chaque joueur commence la partie avec un chou rouge de 0. On considère que le résultat d'un dé est la valeur affiché par le dé, auquel on applique la confusion associé à la position du dé, puis auquel on ajoute la valeur du chou rouge du joueur qui a lancé le dé. (On peut donc grâce au chou rouge obtenir des résultats égaux à 0 ou 7, et faire des Chouettes de 7 et des Culs de Chouette Velutes de 0.)
+
+## †4 - Attrape l'oiseau
+
+Il n'y a plus que 19 solutions possibles, les 14 normales plus 5 nouvelles :
+- On compte : l'Artichette se déclenche désormais sur un 6 et rapporte 6 artichauts.
+- On se couche : le joueur qui a attrapé l'oiseau se couche.
+- Joujou : Chaque joueur reçoit une Grelottine et une Boucliette (dans la limite de une par joueur).
+- Jou-jeu : La Frigelle devient autorisée pour tous jusqu'au début du prochain tour de ce joueur.
+- Ratakat-Mik : Les joueurs ne peuvent plus lancer une triplette de dés de la main du dernier lancé de dés.
+
+## †5 - Zbradaraldjan
+
+Si un joueur répond oui ou non à une question où on ne peut répondre que par oui ou par non, il donne 10 points à celui qui a posé la question. S'il répond Zbradaraldjan, c'est l'inverse.
+
+## †6 - Expulsion
+
+Un joueur qui termine 3 tours consécutifs avec un nombre négatif de point est expulsé du jeu.

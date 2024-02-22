@@ -1,0 +1,52 @@
+# Capacités de mana
+
+1. Introduction
+  Remarque : Pendentif enchanté
+  Timing : Rituel < Éphémère < Capacités de Mana
+
+2. Différence
+  Peut-être joué pendant lancement d'un sort / activation capacité (Résumé procédure lancement ?)
+  Passe pas par la pile (-> Asphyxie, +), donc pas de réponse possible (-> Engin de sorcière)
+  Grosse exception : capacité de Loyauté (-> Chandra, torche de la défiance)
+
+3. Sphère chromatique
+  Règle 120.8
+  Mouchards desséchés, Piège explosif, Hache d'éclair
+  
+# Le combat
+
+  Multiple bloqueurs / attaquants
+  
+  Bloquer une créature qui ne peut pas être bloquée (Feuillage immédiat).
+  
+  Perdre la double initiative (Paladin à la lame d'argent)
+
+  Contact Mortel
+  
+  Piétinement : interaction avec Contact Mortel, Indestructible, Prévention de blessure (dont Protection)
+  Seul façon d'enlever une créature du combat et de quand même infliger blessures à adversaire
+  
+# Jouer après la fin du tour
+
+  Nombre infini d'étapes de nettoyage :
+  Confesseur + Pillard du drogskol + Emrakul-like
+
+# Survire à la mort
+
+  Avec le lien de vie
+  En ayant 0 point de vie ou moins mais que pendant la résolution d'un sort
+
+# Rédaction étrange
+  
+  Ralliement de la horde
+  Yeti en chasse (et Animation des morts)
+  
+# Comprendre les anciennes cartes
+  
+  "à votre réserve"
+  imblocable
+  retirez de la partie
+  joug des îles
+  interruption, source de mana, mono et poly artifact
+  
+  

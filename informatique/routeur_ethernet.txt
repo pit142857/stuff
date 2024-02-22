@@ -1,0 +1,27 @@
+=== Share a Wired Internet Connection in Windows 8 ===
+
+https://www.howtogeek.com/214080/how-to-turn-your-windows-pc-into-a-wi-fi-hotspot/
+
+Windows+R : "ncpa.cpl"
+  Propriétés de Wi-fi > Partage > Autoriser
+
+Windows+X : Invité de commande (admin)
+  netsh wlan set hostednetwork mode=allow ssid="<SSID>" key="<PASSWORD>"
+avec <SSID> = nom du réseau, <PASSWORD> = mot de passe
+
+Pour l'instant, <SSID> = "Cancoillotte", <PASSWORD> = "Thiefaine"
+  netsh wlan start hostednetwork
+pour démarrer le partage
+  netsh wlan stop hostednetwork
+pour arrêter
+  netsh wlan show hostednetwork
+pour voir qui est connecté
+
+=== ===
+
+https://4sysops.com/archives/how-to-find-the-wifi-password-in-windows-8-1/#view-wifi-password-of-current-connection
+
+Voir le nom de tous les réseaux auquel on s'est connecté :
+  netsh wlan show profile
+Voir le mot de passe d'un réseau :
+  netsh wlan show profile name="<NAME>" key=clear

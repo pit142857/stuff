@@ -1,0 +1,11 @@
+Métaplasme : modification phonétique qui altère l'intégrité d'un mot par addition, suppression, substitution ou permutation (les quatre opérations fondamentales décrites par le Groupe µ)
+
+# Métaplasme par addition
+  * prosthèse : ajout d'une voyelle en début de mot -> schola > escola
+  * phonème éphelcystique : ajout d'un phonème (souvent une consonne) à la fin d'un morphème afin d'éviter un hiatus
+  * paragoge (ou épithèse) : ajout d'un phonème non-étymologique à la fin d'un mot
+  * anaptyxe : ajout d'un phonème vocalique entre des consonnes
+  * épenthèse : ajout d'une phonème vocalique ou d'une consonne entre des consonnes -> numéro > nombre
+  * svarabhakti : ajout d'une voyelle pour faciliter la prononciation -> pneu [pəˈnø]
+
+... https://fr.wikipedia.org/wiki/M%C3%A9taplasme

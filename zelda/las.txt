@@ -1,0 +1,23 @@
+========== Airclimb ==========
+
+1. Aller en haut de l'échelle avec le coq
+2. Faire un Misladdering, c'est-à-dire être en haut de l'échelle, mais le jeu croit que Link est en bas. Quand on est dans cet état et que Link saute sur place avec la plume, cela fait le son et l'animation de la texture qui est en bas de l'échelle, et non de l'échelle elle-même. Il y a deux façon de faire ça :
+  (a) Sauter avec la plume, et appuyer légèrement sur bas quand Link est en l'air
+  (b) Marcher en bas à droite quand Link est tout à droite du haut de l'échelle
+3. Attraper le coq
+4. Appuyer très légèrement et brièvement sur Haut. Si c'est assez léger, et qu'on ne touche plus à rien, Link va attraper la vraie échelle (qui descend). Mais si on appuye à nouveau sur Haut quand Link est sur le point d'attraper l'échelle (se voit car Link se téléporte légèrement vers le bas), Link va attraper une fausse échelle qui monte
+5. Naviguer sur la fausse échelle avec haut et bas
+
+========== Egg pattern ==========
+
+Le chemin dans l'œuf est déterminé au moment où le fichier de jeu est créé, en utilisant une seed.
+La seed peut être manipulée, elle correspond au nombre de secondes écoulées depuis que la console a été redémarrée.
+Dans le donjon 4, dans la salle juste avant les palmes, il y a 5 dalles qui s'allument dans un ordre aléatoire. Il y a une correspondance entre cet ordre et celui de l'œuf, car ils utilisent tous les deux la même seed.
+
+Références :
+[x] https://rentry.co/las-rng-manip-primer
+
+========== Any% ==========
+
+https://pastebin.com/naRyqv7c
+https://docs.google.com/spreadsheets/d/1SvptG2G3m0NlOwKXWJkr7EhHiEUXU7NRXTT-Tk-GfTs/edit#gid=1166852441

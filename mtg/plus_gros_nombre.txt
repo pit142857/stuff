@@ -1,0 +1,9 @@
+** Gagner la partie en disant simplement un nombre plus grand que son adversaire **
+
+Je ne suis pas le premier à découvrir cette situation, mais je n'arrive pas à me souvenir de l'endroit où j'ai déjà pu lire une situation similaire.
+
+Dans une partie à deux joueurs, chaque joueur contrôle Vilis, courtier de sang *(il s'agit d'une créature avec « À chaque fois que vous perdez des points de vie, piochez autant de cartes. »)*, un Maniaque de laboratoire *(il s'agit d'une créature avec « Si vous deviez piocher une carte alors que votre bibliothèque ne contient aucune carte, vous gagnez la partie à la place. »)* et une Non-vie phyrexiane *(il s'agit d'un enchantement avec « Vous ne perdez pas la partie parce que vous avez 0 point de vie ou moins. » et « Tant que vous avez 0 point de vie ou moins, toutes les blessures vous sont infligées comme si leur source avait l'infection. »)*. Ainsi, si un des deux joueurs perd un nombre de points de vie plus grand que le nombre de carte dans sa bibliothèque, il gagne la partie.
+
+Maintenant, un joueur lance un sort quelconque (un Cadet Impatient par exemple) et l'autre joueur répond en lançant la carte qui nous intéresse, la [[Compétition des mages]]. D'après cette carte, chaque joueur va dire un nombre plus grand que le précédent, jusqu'à ce qu'un joueur décide de ne pas dire de nombre. Le joueur qui a dit le plus grand nombre va perdre ce nombre de points de vie, et donc gagner la partie grâce à la mise en place effectuée plus haut.
+
+Ainsi, dans cette situation précise, pour gagner la partie, il suffit de dire un nombre si grand que l'adversaire ne pourra pas en trouver de plus grand. Bon courage !

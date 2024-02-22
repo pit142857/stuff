@@ -1,0 +1,17 @@
+La version Innistrad : Chasse de minuit des règles vient de sortir, et ils en ont (enfin) profité pour mettre la règle du calcul de la dévotion à plat ; et elle devient officiellement une des premières exceptions au système d'interaction des effets continus (le système de couches). En effet, la dévotion est calculée un seule fois, entre l'application des couches 3 et 4 :
+
+> 700.5a A player’s devotion to each color and combination of colors, taking into account any effects that modify devotion, is calculated after considering any copy, control, or text-changing effects but before any other effects that modify the characteristics of permanents. This is an exception to 613.10. See also rule 613, “Interaction of Continuous Effects.”
+> *Example: Altar of the Pantheon is an artifact with no colored mana in its cost and an ability that says “Your devotion to each color and each combination of colors is increased by one.” Purphoros, God of the Forge is a permanent mana cost {3}{R} and an ability that says “As long as your devotion to red is less than five, Purphoros isn’t a creature.” If a player controls both of these permanents and another permanent that costs {R}{R}{R}, that player’s devotion to red is calculated to be five before Purphoros’s type-changing effect is applied, and Purphoros is a creature.*
+
+L'exemple donné par les règles montre le pourquoi de cette règle : comme il existe des cartes qui ont un effet qui s'applique en couche 4 et qui ont besoin de connaitre la dévotion à ce moment-là, il faut que celle-ci soit calculée avant la couche 4. Cependant, comme il serait très bizarre que la dévotion ne soit pas la même pour tous les effets, il a été décidé que la dévotion ne serait pas modifiée par les effets qui s'appliquent dans les couches suivantes, notamment la couche 6 dans laquelle l'Altar of Pantheon peut perdre ses capacités. C'est pour ça que depuis janvier 2020, on trouve la note suivante sous l'Altar of Pantheon :
+
+> If Altar of the Pantheon loses its abilities, you’ll still get a bonus to your devotion. This is because its effect is applied before any effect that would make it lose its abilities.
+(2020-01-24)
+
+Notez qu'avant aujourd'hui, ceci n'apparaissait nulle part dans les règles.
+
+Ce qui fait de cette règle une exception au système de couches, c'est que même si la dévotion n'est utilisée qu'en couche 7, on utilisera la valeur qu'elle avait entre les couches 3 et 4, et non la valeur qu'elle a en couche 7. Prenons un exemple :
+
+Je contrôle un Autel du panthéon qui dit « Votre dévotion à chaque couleur et à chaque combinaison de couleurs est augmentée de un. » qui a perdu toutes ces capacités (à cause par exemple d'un Confinement minimal). Je contrôle également Anax, endurci dans les Forges, qui a « La force d'Anax est égale à votre dévotion au rouge. » Dans ce cas, Anax profitera du bonus de dévotion accordé par l'Autel. En effet, la dévotion est calculée avant la couche 4, à un moment où l'Autel à toutes ces capacités, alors que ses capacités ne sont retirées qu'en couche 6. En appliquant le système de couche sans cette exception, Anax n'aurait pas eu de bonus de dévotion, car la force est calculée seulement en couche 7.
+
+Bref, amis du système des couches, ne vous faites pas avoir par la dévotion ! Si vous voyez un Autel du panthéon qui a perdu ses capacités, vous savez quoi faire !

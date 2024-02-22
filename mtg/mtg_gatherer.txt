@@ -1,0 +1,81 @@
+########## Coût de Mana ##########
+
+Pour chercher des symboles de mana spéciaux dans le coût de mana, il faut obligatoirement passer par une regex :
+  m/{pattern}/
+Des exemples de symboles :
+* (R/G)
+* (2/G)
+* (R/P)
+* ((1/2)W)
+Mais comme on est à l'intérieur d'une regex, il faut échapper les parenthèses :
+  m/\(R/G\)/
+Ce qui trouvera les cartes avec un coût de {R/G}
+Ainsi, pour trouver les Faucons coursiers, il faut entrer un coût de :
+  m/2\(R/G\)W/
+Pour chercher toutes les cartes avec un coût de mana hybride :
+  m/[WUBRG]/[WUBRG]/
+Les cartes avec un mana hybride suivie d'un mana classique :
+  m/\([wubrg]/[wubrg]\)[wubrg]/
+
+########## Symboles de Mana ##########
+  
+Pour chercher des symboles spéciaux dans le texte, il faut savoir comment ils sont encodés :
+
+* {T}
+* {Q}
+* {P}
+
+* {U}
+* {X}
+* {S}
+* {C}
+* {∞}
+
+* {(}U/B)}
+* {(}U/P)}
+* {(}2/B)}
+
+* {o{1/2}
+* {o{1/2*R}
+
+Grâce à cet encodage bizarre des symboles de mana double, {(} permet de rechercher tous ces doubles symboles.
+Attention, lorsque plusieurs symboles doubles s'enchaînent, on omet l'accolade fermante finale de chaque symbole, excepté le dernier.
+  {(}U/B){(}U/B)}
+  {(}U/B){(}U/B){(}U/B){(}U/B)}
+Quand on enchaine avec un symbole 1/2, on omet la première accolade ouvrante du symbole 1/2
+  {3}o{1/2}
+
+########## Autres symboles ##########
+
+Le symbole ½ est obtenu en écrivant {1/2}, sauf sur Avatar of Me, où il est directement écrit le caractère ½.
+
+########## Espace ##########
+
+Le symbole Espace (%20) est automatiquement transformé en le symbole "+", sauf s'il est entre guillemets.
+Dans une regex, ils ont implémenté "\s", qui est converti en espace.
+
+########## Type exact ##########
+
+Pour rechercher toutes les cartes qui ont un type donné :
+  subtype=+[m/(^|\s)<subtype>(\s|$)/]
+En effet, sans ça, rechercher tous les "APE" donnera également les "shAPEshifter" et les "spellshAPEr".
+On pourrait également se contenter d'enlever les sous-types gênants, mais on exclurait les potentielles cartes ayant le type cherché et un type gênant.
+
+########## Regex ##########
+
+Utilisé la regex [] ne marche pas dans l'URL, car le ] final est interprété comme la fin du champ de recherche.
+Exception : ça marche pour les coût de mana.
+Il faut utilisé les symboles ►◄ à la place dans l'URL.
+Dans le champ de recherche classique, les [] sont automatiquement remplacés par des ►◄.
+
+########## Cartes doubles ##########
+
+Les cartes doubles (i.e. avec deux morceaux, comme les inversions ou les //) buggent :
+Quand on fait une recherche sans regex, si le premier morceaux contient la recherche, le deuxième sera également trouvé.
+Quand on fait une recherche avec regex, seul le morceaux qui contient la recherche sera trouvé.
+
+Exemple :
+  text=+["Kitsune%20Mystic"]
+  text=+[m/("|)Kitsune%20Mystic(|")/]
+
+Le premier trouvera Kitsune Mystic et Autumn-Tail, Kitsune Sage, le deuxième seulement Kitsune Mystic.

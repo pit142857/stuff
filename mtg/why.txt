@@ -1,0 +1,124 @@
+RULES UPDATE:		September 30, 2016
+UP TO EXTENSION:	Commander (2016 Edition)
+
+HELP FOR RULES SYNTAX
+
+R.m-n	Rules from R.m to R.n included
+[m:n]	Sentences from m to n included
+[n]	n-th sentence ; short for [n:n]
+[am:nb] Letters from the m-th a to the n-th b incuded
+	When m or n is not specified, it repectively means 1 and "the last one"
+
+HELP FOR CARDS SYNTAX
+
+()	Expansion
+/	Or
+/+	Etc.
+\	Search the gatherer
+A=B	In search fields, search B in the field A
+:	Example
+[]	Further information
+%n	Refers to the n-the card of that line
++	With
+
+RULES		CARDS
+
+101.4a		Show and Tell
+103.2c		Power Play
+103.4b		Serum Powder
+103.5		\ "opening hand"
+104.4e		Divine Intervention / Celestial Convergence
+106.6a		: Mana Reflection + \ " When that mana is spent"
+106.8-10	Elemental Resonance
+106.11a		Gauntlet of Power
+106.12		Drain Power
+107.3i		Fireball (Beatdown Box Set)
+107.3h		: Altered Ego + Hangarback Walker
+107.4g		Rage Extractor
+108.2a [2]	\ card "graveyard from anywhere"
+108.2a [3]	Hedron Alignment
+110.5d		Worms of the Earth
+112.6c [(:)]	: Bringer of the Blue Dawn + Pendrell Flux [%2 enchants %1, %1 first ability can be used to pay %2 ability]
+112.6e		Haakon, Stromgald Scourge
+112.6k [2]	Prized Amalgam
+112.6m		Relentless Rats / Shadowborn Apostle
+112.11		\ "and can't have"
+114.2 (c)	Circu, Dimir Lobotomist
+114.6b		Spellskite / Mizzium Meddler
+120.3a		Dire Undercurrents / Combustible Gearhulk
+120.4 [3w-2s]	: Oblation [%1 targets a token]
+120.8		Chromatic Sphere
+121.4		Rasputin Dreamweaver
+201.2b-c	Spy Kit
+208.5		: Quicksilver Elemental + Chimeric Staff + Cytoshape + a vehicule
+		[animate %2, crew %4, activate %1's ability targeting %4, in response %3 to make %1 becoming a copy of %2, crew %1]
+301.5c [7:]     : Doubling Season + \ "Living weapon"
+301.5e/303.4k	Dominating Licid [order of layers for continuous interactions]
+400.7f		\ "The flashback cost is equal to its mana cost"
+400.7g		: Jace, Telepath Unbound [{-3} ability]
+400.7h		Jhoira of the Ghitu
+406.3 [4:]      Runic Repetition
+406.4		\ Subtype=Processor
+509.5c		\ "attacking creature becomes blocked"
+509.7a		: Brimaz, King of Oreskos [last ability, the attacking creature changes zone / controller]
+601.2b		: Trinisphere [%1 must know how many mana you want to pay before changing it to 3]
+601.2b [6]	Back from the Brink / Caller of the Untamed
+601.3b		: Sigarda's Aid [with a bestow creature]
+602.5c		\ "all activated abilities"
+603.9		Blood Tyrant / Withengar Unbound
+603.10		Rowen / Primitive Etchings / Keranos, God of Storms /+
+604.3a (4)	Aquamorph Entity
+605.3		Radiate /+
+605.3c		: Bog Initiate [trying to activate its mana ability using itself again and again]
+606.2		: Quicksilver Elemental + Gideon Jura [use %1 first ability on %2]
+607.2b		Uba Mask /+
+607.2c		Saproling Burst /+
+607.2d		Quirion Elves /+
+607.2f		Phyrexian Processor /+
+607.2h		Kavu Titan /+
+607.2k		\ "Siege enters"
+607.2m		\ "before you shuffle your deck to start the game"
+607.3		Strionic Resonator
+608.2b		: Glacial Ray + Hideous Laughter [splice %1 on %2]
+608.2b [9]	Frost Breath / Sudden Storm
+608.2d [3:]	Master of the Wild Hunt
+611.2c [3:]	Teleportal [with overload]
+612.5		Volrath’s Shapeshifter
+612.6		Spy Kit
+613.7a (c)      : Sutured Ghoul + Maro
+614.12a         : Future Sight + Stomping Ground
+614.12b		\ "Siege enters"
+614.13a		: Sutured Ghoul [%1 enters the battlefield with another creature from the graveyard]
+614.13b		Jund
+614.10b		Fasting / Time Vault
+614.15 [3]	Caravan Vigil /+
+615.5		Swans of Bryn Argoll / Guile
+700.3a		Camouflage : %1 + Palace Guard
+700.6a		City in a Bottle
+700.6b		Golgothian Sylex
+700.6c		Apocalypse Chime
+701.7c		Library of Leng
+701.9g [5:6]    Tree of Redemption
+701.17c		Lobotomy / Assembly Hall / Infernal Tutor /+
+701.17f		Aven Mindcensor
+701.23c		Plots That Span Centuries
+702.1a		Varolz, the Scar-Striped
+702.16h		\ "Protection from all colors"
+702.16i		Progenitus / Teferi's Protection
+702.16j		True-Name Nemesis
+702.16m		Spectra Ward / \ "this effect doesn't remove"
+702.56b		Paradox Haze
+704.5s		Rasputin Dreamweaver
+706.10d		Zada, Hedron Grinder
+706.12 [,-.]    : Wort, the Raidmother + Burning Vengeance
+707.2a [2]	Ashcloud Phoenix
+712.4e		: Paradoxical Outcome + a melded permanent
+713.2 [2:]	Karn Liberated
+714		\ "You control target player"
+715.1a		Day's Undoing
+718		Shahrazad
+800.4c          : Bribery + Act of Treason
+800.4i		Emrakul, the Promised End
+810.10a		Phyrexian Swarmlord
+805.9		\ "active player"
+807.4h		Darksteel Reactor : %1 [%1 with twenty counters]

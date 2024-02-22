@@ -1,0 +1,42 @@
+Adresses
+--------
+
+0x0050 : Consecutive Bomb Counter  (CBC)
+0x0627 : Consecutive Fairy Counter (CFC)
+0x052A : Drop Counter (DC)
+
+0x0018 - 0x0024 : RNG Array
+
+Fonctionnement
+--------------
+
+Au début, ces trois valeurs sont à 0.
+Quand un ennemi est tué, CBC et CFC augmentent de 1, puis DC augmente de 1.
+Si CBC devait monter au-dela de 10, il reste à 10 à la place.
+Puis si l'ennemi est un X, rien ne se passe et aucun drop.
+Sinon, les étapes suivants sont suivies :
+
+- D'abord, l'item drop est placé à (Rien)
+- Une pièce est lancée, et si le résulat est favorable (voir plus loin pour les savoir comment cela se passe), l'item drop est mis à une valeur précise, déterminée par le DC. Il faut regardé la drop_chart, et en fontion du DC et de l'ennmi tué, on obtient une valeur.
+- Si CBC=10, CBC passe à 0, et l'item drop est mis à (5 Rubis). Si l'ennemi a été tué avec une bombe, l'item drop est mis à (Bombe).
+- Si CFC=16, CBC passe à 0 (oui, c'est CBC qui est remis à zéro et non CFC), et l'item drop est mis à (Fée)
+
+La dernière valeur prise par l'item drop donne l'objet qui va être droppé par l'ennemi.
+
+Remise à zéro
+-------------
+
+Dès que Link subit des dégâts, CBC et CFC sont remis à zéro.
+Quand la console est éteinte ou reset, la RAM est remise à zéro, et donc aussi CBC, CFC et DC
+Après un Save/Retry/Continue, rien n'est remis à zéro. DC n'est donc jamais remis à zéro.
+
+Aléatoire
+---------
+
+Quand le jeu a besoin de savoir si un ennemi va dropper un item ou non*, il va regardé le nombre aléatoire situé dans la i-ème case du RNG array, où i est le numéro de l'ennemi (entre 0 et 12 a priori).
+Si ce nombre est inférieur à une valeur qui ne dépend que de la classe de l'ennemi (TODO : à regarder plus en détail), l'ennemi va dropper un item.
+Voici comment sont générés ces nombres :
+TODO
+Sinon, cf. le programme zelda_nes_drops.ml
+
+* Le jeu regarde cela une frame avant que DC soit incrémenté de 1.

@@ -1,0 +1,30 @@
+[quote='Kalitas_PkMTG']Pourquoi y a une telle règle ? C'est tellement chelou[/quote]
+C'est une très bonne question, à laquelle je vais répondre en présentant comment le système de couche a été créé puis a évolué.
+
+[u][b]De la naissance du système de couche[/b][/u]
+
+Le système de couche est un concept qui a été intégré aux règles entre la sixième et la septième édition, soit entre 1999 et 2001. Je n'ai malheureusement pas de date plus précise, mais toujours est-il que ce système n'existait pas dans les règles de la sixième édition du 23 avril 1999, et qu'il y en a une ébauche dans les règles de la septième édition du 23 juillet 2001.
+
+Son but est de permettre de savoir dans quel ordre il faut appliquer les effets continus. Par exemple, si j'ai en jeu une [carte]Bad Moon[/carte] et une [carte]Darkest Hour[/carte], on voudrait que toutes mes créatures soient noires et gagnent +1/+1, et ce même si je joue [carte]Darkest Hour[/carte] en dernier. Pour ce faire, avant la sixième édition, on utilisait un système de dépendance, qui disait que si appliquer un effet A change ce à quoi s'applique un effet B, alors l'effet B dépend de l'effet A, et il faut appliquer l'effet A en premier. C'est exactement ce qui se passe ici, car l'effet de [carte]Bad Moon[/carte] dépend de l'effet [carte]Darkest Hour[/carte].
+
+Le problème avec ce fonctionnement, c'est si un effet A dépend d'un effet B, mais que l'effet B dépend de l'effet A. Dans ce cas, ce système de dépendance échoue, et on applique juste les effets dans l'ordre dans lequel ils sont arrivés, ce qui peut être problématique si on ne se souvient plus vraiment dans quel ordre on a joué nos cartes... Le but est donc de limiter au maximum les fois où il faut se souvenir de l'ordre dans lequel on a joué nos cartes, et donc le nombre de cas où ce genre de boucle de dépendance peut apparaître. Je pense que c'est comme ça qu'a émergé l'idée d'un système de « couches », c'est-à-dire d'un système où certaines catégories d'effets seraient appliquées systématiquement avant d'autres. 
+
+C'est ainsi que dans les règles de la septième édition du 23 juillet 2001, une petite règle fait son apparition, l'air de rien. Elle dit qu'il faut appliquer respectivement les effets de copie, de changement de type, et de changement de F/E dus à des marqueurs avant tout le reste. Le système de couche était né. Il est loin de ressembler au système de couche actuel — le mot couche n'est même pas encore employé —, mais l'idée de vouloir appliquer certains effets en premier était bel et bien présente.
+
+[u][b]Une évolution progressive[/b][/u]
+
+Deux ans plus tard, dans les règles de la huitième édition du 1er juillet 2003, ce système de couche est étoffé, et commence à prendre de la prestance. Le système de couche n'est plus une sous-règle du système de dépendance, c'est le système de dépendance qui devient une sous-règle du système de couche. Il est encore un peu bancal, il alloue notamment une couche complète aux capacités de définition de caractéristique, et ne possède pas encore toutes les couches actuelles. Mais heureusement, avec la sortie de Mirrodin trois mois plus tard, cette règle est retravaillé, et donne naissance à un système de couche très similaire à celui que l'on connait aujourd'hui. Il comporte 6 couches (contre 7 aujourd'hui), qui ressemblent à ça :
+(1) les effets de copie,
+(2) les effets de changement de contrôle,
+(3) les effets de changement de texte,
+(4) les effets de changement de type,
+(5) tous les autres effets, exceptés ceux qui changent la force et/ou l'endurance,
+(6) et les effets qui changent la force et l'endurance.
+
+À ce stade, la plus grande partie du travaille est faite. Il reste encore trois changements à faire pour arriver au système actuel : la division de la couche gérant la force et l'endurance en plusieurs sous-couches, ce qui arriva avec Ravnica premier du nom en octobre 2005 ; la séparation de la couche « tous les autres effets, exceptés ceux qui changent la force et/ou l'endurance » en deux vraies couches, à savoir la couche « changement de couleur » et la couche « ajout et retrait de capacités », qui aura lieu avec la grande mise à jour des règles de Magic 2010 en juillet 2009 ; et la séparation de la première couche en deux sous-couches, qui vient juste d'avoir lieu avec Ikoria.
+
+[u][b]Un système qui roule[/b][/u]
+
+Je ne vais rentrer dans les détails du fonctionnement actuel du système de couche, car cela a déjà été fait, [url='notamment ici']https://www.smfcorp.net/mtg-articles-2321-les-couches.html[/url], mais l'idée est d'appliquer les effets continus dans l'ordre des couches. Cet ordre n'a évidemment pas été choisit au hasard, il repose sur le fait que certains types d'effet sont plus courants que d'autres. Par exemple, « Les gobelin ont la célérité » est habituel, mais « Les créatures avec la célérité sont des gobelins » est un truc qui n'existe pas à Magic. Cela suggère qu'en général, le gain de capacités dépend du type, et non l'inverse. C'est pour ça que la couche « changement de type » est logiquement avant la couche « ajout et retrait de capacités ». Ainsi, les effets de changement de type seront systématiquement appliqués avant les effets d'ajout ou de retrait de capacités, rendant finalement impossible toutes capacités de la forme « Les créatures avec la célérité sont des gobelins ». Si tu as réussi à suivre tout ça, tu auras remarqué que la couche qui gère la force et l'endurance des créatures est en dernier. Cela se justifie par le fait que le changement de force/endurance peut dépendre d'absolument tout. Elle peut même dépendre des capacités que possède une créature, comme sur [carte]Crosswinds[/carte]. Ainsi, un effet qui dirait « Les créatures avec une force de 2 ou moins ont le vol. » ne peut pas exister, pour la même raison que l'exemple précédent.
+
+Voilà, je ne sais pas si j'ai répondu à ta question, mais j'ai personnellement apprécié de faire toutes ces recherches pour avoir (enfin) un explicatif complet de l'évolution du système de couche de 1999 à nos jours.

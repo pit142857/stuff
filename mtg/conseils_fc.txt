@@ -1,0 +1,11 @@
+Une phrase ne peut commencer par « Lorsque ».
+Une capacité déclenchée dont la condition ne se produit qu'une fois pour l'objet utilise « Quand ».
+Une capacité déclenchée dont la condition peut se produire plusieurs fois pour l'objet utilise « À chaque fois ».
+Une capacité à mot-clé sans paramètre n'est précédé d'aucun déterminant.
+Une capacité à mot-clé avec paramètre est précédé d'un déterminant.
+Doit être justifié le retour à la ligne entre deux capacités de sort.
+« À chaque fois qu'une créature blessée par [source] meurt ce tour-ci. » n'est une formulation correcte que pour une capacité déclenchée retardée.
+« À chaque fois qu'une créature blessée par [source] ce tour-ci meurt. » n'est une formulation correcte que pour une capacité déclenchée non-retardée.
+Les guillemets extérieurs doivent être des guillemets français.
+Les guillemets intérieurs encadrant un nom de marqueur doivent être des guillemets français.
+Les guillemets intérieurs encadrant autre chose qu'un nom de marqueur doivent être des guillemets simples ou doubles. [Mu Yanling, danseuse céleste] [Toggo, forgeur d'armes gobelin]

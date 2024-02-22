@@ -1,0 +1,241 @@
+1. Game Concepts
+  100. General
+    100.1. Two-player VS Multiplayer game
+    100.2. Deck building rules
+    100.3. Additional material
+    100.4. Sideboard
+    100.5. Minimum deck size
+    100.6. MTR
+    100.7. Un-sets
+  101. The Magic Golden Rules
+    101.1. A card overrules the rules
+    101.2. "Can't" effect precedence
+    101.3. Ignore the impossible
+    101.4. APNAP order
+  102. Players
+    102.1. Active player
+    102.2. Opponent
+    102.3. Teammate
+    102.4. Your team
+  103. Starting the Game
+    103.1. Starting player
+    103.2. Shuffling the deck
+    103.3. Starting life total
+    103.4. Mulligan
+    103.5. Opening hand
+    103.6. Starting plane
+    103.7. First turn
+  104. Ending Game
+    104.1. Definition
+    104.2. Win
+    104.3. Lose
+    104.4. Draw
+    104.5. Leave the game
+    104.6. Restarting the game
+  105. Colors
+    105.1. Definition
+    105.2. Color of an object
+    105.3. Changing color
+    105.4. Choosing a color
+    105.5. Color pair
+  106. Mana
+    106.1. Definition
+    106.2. Mana symbols
+    106.3. Producing mana
+    106.4. Mana pool
+    106.5. Undefined mana
+    106.6. Mana restriction
+    106.7. Could produce
+    106.8. Add hybrid mana
+    106.9. Add Phyrexian mana
+    106.10. Add generic mana
+    106.11. Add snow mana
+    106.12. Tap for mana
+    106.13. Drain mana
+  107. Numbers and Symbols
+    107.1. Integers
+    107.2. Undefined number
+    107.3. Placeholder X
+    107.4. Mana symbols
+    107.5. Tap symbol
+    107.6. Untap symbol
+    107.7. Loyalty symbol
+    107.8. Level symbol
+    107.9. Tombstone icon
+    107.10. Type icon
+    107.11. Planeswalker symbol
+    107.12. Chaos symbol
+    107.13. Color indicator
+    107.14. Energy symbol
+    107.15. Chapter symbol
+    107.16. Class level bar
+  108. Cards
+    108.1. Oracle
+    108.2. Magic card
+    108.3. Owner
+    108.4. Controller
+    108.5. Nontraditional Magic cards
+  109. Objects
+    109.1. Definition
+    109.2. Zone
+    109.3. Characteristics
+    109.4. Controller
+    109.5. You
+  110. Permanents
+    110.1. Definition
+    110.2. Owner and controller
+    110.3. Characteristics
+    110.4. Type
+    110.5. Status
+  111. Tokens
+    111.1. Definition
+    111.2. Owner and controller
+    111.3. Text
+    111.4. Name and subtype
+    111.5. Token not created
+    111.6. Considered as a permanent
+    111.7. Cease to exist
+    111.8. Can't change zone
+    111.9. Legendary token
+    111.10. Predefined tokens
+    111.11. Copy of a permanent spell
+  112. Spells
+    112.1. Definition
+    112.2. Owner and controller
+    112.3. Characteristics
+    112.4. Changing characteristics
+  113. Abilities
+    113.1. Definition
+    113.2. Examples
+    113.3. Four categories
+    113.4. Mana ability
+    113.5. Loyalty ability
+    113.6. Zones where it functions
+    113.7. Source
+    113.8. Controller
+    113.9. Abilities aren't spells
+    113.10. Add or remove ability
+    113.11. Can't have an ability
+    113.12. Antonym
+  114. Emblems
+    114.1. Definition
+    114.2. Owner and controller
+    114.3. Characteristics
+    114.4. Zones where it functions
+    114.5. Antonym
+  115. Targets
+    115.1. Definition
+    115.2. Legal targets
+    115.3. One target per word "target"
+    115.4. Any target
+    115.5. Illegal target for itself
+    115.6. Zero targets
+    115.7. Change targets
+    115.8. Modal change
+    115.9. Checking what is targeted
+    115.10. Antonym
+  116. Special Actions
+    116.1. Definition
+    116.2. List
+    116.3. Priority
+  117. Timing and Priority
+    117.1. Definition
+    117.2. Antonym
+    117.3. Determining priority
+    117.4. Pass priority
+    117.5. Before priority
+    117.6. Shared Team Turns Option
+    117.7. In response
+  118. Costs
+    118.1. Definition
+    118.2. Activate mana abilities
+    118.3. Can't pay a cost
+    118.4. Cost with X
+    118.5. 0 Cost
+    118.6. No mana cost
+    118.7. Reducing a cost
+    118.8. Additional cost
+    118.9. Alternative cost
+    118.10. One payment per cost
+    118.11. Modified payment
+    118.12. Cost within an effect
+    118.13. Cost with multiple payment possible
+  119. Life
+    119.1. Starting life total
+    119.2. Damage causes life loss
+    119.3. Changing life
+    119.4. Pay life
+    119.5. Set life
+    119.6. State-based action
+    119.7. Can't gain life
+    119.8. Can't lose life
+    119.9. Trigger ability
+    119.10. Replacement effect
+  120. Damage
+    120.1. Definition
+    120.2. Possible sources
+    120.3. Result
+    120.4. Process
+    120.5. State-based action
+    120.6. Mark damage
+    120.7. Source of damage
+    120.8. Deal 0 damage
+    120.9. Trigger on damage dealt
+    120.10. Trigger on excess damage
+  121. Drawing a card
+    121.1. Definition
+    121.2. Multiple card draws
+    121.3. Empty library
+    121.4. State-based action
+    121.5. Antonym
+    121.6. Replacing card draws
+    121.7. Replacing into card draws
+    121.8. Drawing a card while casting a spell
+    121.9. Reveal a card as drawing it
+  122. Counters
+    122.1. Definition
+    122.2. Cease to exist
+    122.3. State-based action
+    122.4. State-based action
+    122.5. To move a counter
+    122.6. Counters being put
+    122.7. Trigger on putting the Nth counter
+    122.8. To not move a counter
+2. Parts of a Card
+  200. General
+    200.1. List
+    200.2. Characteristics
+    200.3. Noncard objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

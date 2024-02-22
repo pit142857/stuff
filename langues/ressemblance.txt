@@ -1,0 +1,25 @@
+Ergatif :
+
+  Jeanne d'arc brule.
+  Jeanne d'arc brule du bois.
+
+Causatif (et factitif) : https://fr.wikipedia.org/wiki/Causatif
+
+  La mère fait manger son poisson. -> Le poisson est nourri par la mère
+  La mère fait manger son poisson à son enfant. -> L'enfant mange son poisson parce que la mère l'y force
+  La mère fait manger son poisson par son enfant. -> L'enfant mange le poisson de la mère parce qu'elle l'y force
+
+Adjectif verbal / Participe présent :
+  
+  Il y a une voiture volant dans le ciel. -> Il y a une voiture (qui vole dans le ciel)
+  Il y a une voiture volante dans le ciel. -> Il y a dans le ciel (une voiture qui vole)
+  
+  Il y a un homme excellant à l'université. -> Il y a un homme (qui excelle à l'université)
+  Il y a un homme excellent à l'université. -> Il y a à l'université (un homme qui excelle)
+  
+  fatigant/fatiguant 
+
+Subjonctif / Indicatif :
+  
+  Je cherche une maison qui a le toit vert. -> Une maison en particulier, qui se trouve avoir le toit vert
+  Je cherche une maison qui ait le toit vert. -> Une maison quelconque, du moment qu'elle a le toit vert

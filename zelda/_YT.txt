@@ -1,0 +1,281 @@
+Sword & Shield Route
+--------------------
+
+- Allez de la maison de Link au crawlspace en ramassant 1 rubis :
+  * Backflip depuis la maison de Link
+  * Backwalk, et saut de côté (et marcher un peu vers l'herbe) pour attraper un rubis dans les hautes herbes
+  * Backflip pour monter sur la rampe, s'aligner pour aller en direction du trou de la barrière
+  * Backwalk (avec un backflip au milieu pour sauter la barrière) jusqu'au crawlspace
+- Re-sortir par le crawlspace avec l'épée et 13 rubis :
+  * Target, backwalk, 2 rubis des hautes herbes, rubis bleu
+  * marcher à droite jusqu'au mur, 4 sauts de côté jusqu'au coffre (utiliser le panneau pour reculer en face du coffre)
+  * Backwalk, sauts de côté, rubis bleu, sauts de côté, crawlspace
+- Sortir de la zone d'entraînement avec 25 rubis :
+  * Backflip pour 1 rubis, saut de côté à gauche
+  * 3 backflip pour 1 rubis, pour 5 rubis et monter sur la barrière, et pour descende de la barrière
+  * Sortir son épée pendant le dernier backflip
+  * 3 sauts de côté à gauche, attaque en fente (Cibler + Haut + B) pour 5 rubis
+  * Backflip pour monter sur la barrière
+  * 3 sauts de côté à gauche pour sortir de la zone surélevée
+- Aller au magasin avec 35 rubis :
+  * Rouler jusqu'à l'extrémité droite de la barrière et monter
+  * Roulade pour sauter puis jumpslash pour faire la Rubee Bridge Skip
+  * 2 sauts de côté à gauche, rubis bleu, sauter vers la première plateforme
+  * Sauter sur les plateformes pour 5 rubis
+  * Monter sur la racine le plus à gauche possible, et jumpslash pour skip le texte de la fille
+  * Entrer dans le magasin
+- Sortir du magasin avec le bouclier :
+  * Prendre le rubis bleu à droite (ne pas rouler, sinon Link parlera au marchand)
+  * Acheter le bouclier pour 40 rubis et sortir
+
+
+WESS Escape
+-----------
+
+Étapes :
+- WESS Setup complet :
+  * Sortir du magasin (sans faire de roulade pour ne pas avoir trop de vitesse à la sortie)
+  * Une fois que Link ne bouge plus, target, saut de côté à gauche, neutral roll re-target, tourner de 90° à gauche
+  * Saut de côté à droite. Normalement, Link doit être sur la côté, aligné avec celle-ci
+  * Reculer un peu jusqu'à ce que le haut de la minimap touche le bas de la partie plate de la petite plateforme carrée
+  * Faire un saut de côté à droite et appuyer sur B environ une frame après A. Comme Link met du temps à sortir son épée, il fera son jumpslash à temps
+  * WESS en mettant le stick légèrement à droite (si on le met à gauche, Link reste dans l'eau)
+- WESS Setup Backup :
+  * Retourner sur la côte, être parallèle à la côte, et se positionner la où la terre est le plus jaune, à la bordure de là où elle devient noire
+  * Faire un saut de côté à droite et appuyer sur B environ une frame après A. Comme Link met du temps à sortir son épée, il fera son jumpslash à temps
+  * WESS
+
+
+Skulltula Bypass
+----------------
+
+Note : Aller à gauche, donner un coup à la Skulltula pour qu'elle se balance, et avancer avec une roulade quand elle se balance de l'autre côté
+
+
+
+BotW Actor Glicth
+-----------------
+
+Étapes :
+- Pendant que Link sort du crawlspace, orienter le stick à mi-chemin entre bas et bas-gauche
+- Dès que Link se tourne dans cette direction, appuyer sur A pour faire une roulade
+- Marteler A pour ouvrir la porte (vraiment ? ne faut-il pas attendre un peu, s'avancer, et ensuite ouvrir la porte ?)
+Notes :
+- Si Link bonk, le stick était trop à gauche
+- Si Link n'ouvre pas la porte, le stick était trop en bas
+
+
+DeadHand 1 Cycle
+----------------
+
+Note : Faire un jumpslash juste après que DeadHand fasse un gauche-droite avec ses bras
+
+
+BotW Vine Clip
+--------------
+
+Vidéo : https://youtu.be/AbbLcln2PIs
+Étapes : 
+- Reculer en diagonale dans le coin jusqu'à ce que Link s'accroche aux vignes
+- Remonter, tourner de 90° à gauche, cibler, coup d'épée, tourner de 90° à gauche
+- Appuyer sur B quand la Skulltula remonte, et qu'elle est presque au plus haut
+- Appuyer rapidement sur Bas, Cibler, maintenir reculer jusqu'à ce que Link descende deux fois des vignes. Penser à relâcher Cibler dès que Link est sur les vignes pour avoir la bonne caméra
+- Pause Buffer jusqu'à la frame 4 :
+  1. Pas de Skulltula
+  2. Deux pattes fines
+  3. Une grosse patte longue qui passe par C-bas
+  4. Une grosse patte courte qui s'arrête en C-droite
+  Si on mal fait le setup, les frames peuvent ressembler à :
+  1. Pas de Skulltula
+  2. Une patte et demi fine (voire pas de skulltula)
+  3. Une grosse patte longue qui passe par la gauche de C-droite et descend jusqu'à la même hauteur que le bas de C-bas (ou qui descend peu s'il n'y a pas eu de Skulltula à la frame précédente)
+  4. Pas de Skulltula, ou alors on aperçoit un bout de grosse patte en haut à droite
+- Sur la frame 4, appuyer sur A et Bas
+- Sur la frame 5, laisser Bas maintenu
+- Sur la frame 6, appuyer sur Haut
+- Une fois que Link est passé à travers le mur, lâcher tout jusqu'à ce qu'il aille dans l'eau
+- Une fois dans l'eau, appuyer sur Bas puis Cibler
+- Nager en direction de Haut-Droite, puis suivre le courant d'eau
+- Atteindre le coffre de Bombchus grâce à un jumpslash 
+
+DoT Skip
+--------
+
+Notes :
+- Pour se coincer dans la porte, d'abord Backflip puis ensuite saut de côté
+- Pendant le setup du poteau, la direction du Back-roll de Link semble changer à chaque essaie, le premier essaie étant du bon côté
+- Si le Setup est fait à partir du poteau, on peut faire le Sidehop pour clip en orientant le stick légèrement vers le bas :
+  * Orienter le stick à fond vers le bas puis relâcher, de sorte à ce que la caméra zoom sur la tête de Link (cette étape semble inutile)
+  * Orienter le stick progressivement vers le bas jusqu'à ce que Link change d'animation (continuer encore un peu petit vers le bas)
+  * Appuyer sur A, orienter le stick en diagonale bas-gauche, et marteler A (Faire un sidehop est semble-t'il frame-perfect)
+- Quand on clip, si Link n'a pas crié, faire B + Gauche ; s'il a crié, faire B + Haut
+
+
+Kakariko Owl Skip + Bridge Teleport
+-----------------------------------
+
+Vidéo : https://youtu.be/8LvwzNnpKXo?t=14m21s
+Étapes :
+- Sortir du village Cocorico
+- Sans descendre l'escalier, aller sur le mur de droite et le cibler
+- Faire 3 sauts de côté pour descendre les escaliers
+- Pour ne pas parler au hibou : se retourner, cibler le panneau et reculer pour longer le mur
+- Dès que le Link ne cible plus le panneau, cibler le mur
+- Saut de côté à gauche, neutral roll de-target, coup d'épée, tourner de 90° à droite, re-target (si on re-target avant de donner le coup d'épée, Link va re-cibler le mur)
+- Saut de côté à droite
+- Aller au pont en reculant
+- Au pont, longer le rebord et marcher sur la chaîne
+- Lâcher tout pour être téléporter en haut du pont
+
+
+Cross Gerudo Bridge
+-------------------
+
+Vidéo : https://youtu.be/VVW4yqYPHpg
+Étapes :
+- Cibler le mur de gauche au niveau du pont, faire un Shield Turn vers la gauche et reculer jusqu'à tomber et s'accrocher au pont
+- Aller 2 fois à droite tout en restant suspendu au pont, appuyer sur haut pour remonter
+- Attendre que Link soit bien remonté (il doit se téléporter de quelques pixels vers la droite)
+- Faire demi-tour avec un Shield Turn, Shield Scoot trois fois
+- Tourner à gauche avec un Shield Turn, Shield Scoot une fois
+- Tourner à gauche avec un Shield Turn, faire un Hookshot Turn-around
+- Viser en bas jusqu'à aperçevoir le point rouge, viser légèrement à droite. Le point rouge doit être en bas à droite du point en bois, tout en lui étant tangent
+Notes :
+- Shield Scoot : comme le Shield Turn, mais relâcher le bouclier une frame de plus, afin d'avancer pendant une frame
+- Hookshot Turn-around : Sortir le grappin pour être à la première personne, maintenir Bas, appuyer sur A, puis appuyer une frame après sur le grappin (faire un pause-buffer pour appuyer sur A et sur le grappin une frame après). À la frame où il faut appuyer sur le bouton du grappin, on voit Link qui fait dos à la caméra. S'il fait face à la caméra, on a appuyé une frame trop tard. Dans cas, appuyer sur A pour quitter la première personne, faire demi tour avec un Shield Turn, et recommencer le Hookshot Turn-around
+- Ne pas hésiter à cibler avec L pour recentrer la caméra après chaque Shield Turn
+
+
+Wasteland w/o Lens of Truth
+---------------------------
+
+Vidéo : https://youtu.be/h5_EiPTjdEk
+Étapes :
+- Aller au poteau en face de l'entrée
+- Suivre la bande sombre à gauche de ce poteau, jusqu'à un peu après la vallée
+- Tourner de 90° à gauche, suivre la vallée en restant à droite, jusqu'au point le plus bas
+- Remonter, et passer à gauche de la vallée à la première bande claire ; continuer jusqu'au sommet
+- Viser la caisse au loin un peu à gauche, et repérer la bande sombre qui la contient
+- Rouler en direction de l'intersection de cette bande et du bas de la colline, et continuer pendant 2 roulades
+- Tourner un peu à droite, et marcher jusqu'au 2 poteaux, en évitant de croiser à droite le creux de la vallée.
+
+
+Shadow Early with Hookshot Jump
+-------------------------------
+
+Vidéo : https://youtu.be/2xzy7i1pwwM
+Étapes :
+- Tuer le Poe pour être tranquille
+- Cibler le mur, tourner de 90° pour avoir le mur à gauche, saut de côté contre le mur, neutral roll re-target pour avoir le bon angle
+- Avancer jusqu'à monter la barrière, puis reculer légèrement jusqu'à la redescendre, puis reculer encore un peu
+- Faire un bonk dans le coin formé par la barrière et le mur, et marteler le bouton du grappin
+- Link rendre dans une animation où il va périodiquement sortir automatiquement son grappin
+- Attendre la troisième période (ou plus), de sorte à ce que Link ne sorte son grappin que pendant quelques frames
+- Pendant la première de ces frames, appuyer très brièvement (pendant une frame) sur le bouton du grappin
+- Dès que Link saute, maintenir Haut pour atterrir sur le rebord qui mène au Temple de l'Ombre.
+
+
+Waterfall Skip with Hover Boots
+-------------------------------
+
+Setup trouvé à l'arrache, peut surement être amélioré, mais 100% accurate
+Image : ./Waterfall.jpg
+Étapes :
+- Équiper les bottes des airs
+- Cibler le mur rouge, et faire des sauts de côté vers la droite jusqu'à être dans le coin
+- Faire 2 sauts de côté à gauche (bien attendre qu'un saut soit terminé avant de commencer le suivant, à cause des bottes des airs)
+- Backflip (bien attendre qu'il soit finit, même s'il est au dessus du vide), saut de côté à gauche, neutral roll re-target
+- Demi-tour (via Shield Turn), 3 saut de côté à gauche, lâcher L/Z
+- Avancer tout droit, faire une roulade un peu après que le mur soit touché
+- Bien maintenir Haut afin d'accrocher le bord.
+
+
+Ice Cavern Barrier Skip
+-----------------------
+
+Skipper les 2 barrières de glace avec les bottes des airs
+Site : http://www.zeldaspeedruns.com/oot/dungeon-tricks/ice-cavern
+Note : Pour la première barrière, il faut changer la position du stick dès que Link clip : à ce moment là, on voit encore sa tête (c'est vraiment tôt)
+
+
+Adult DoT Skip
+--------------
+
+Vidéo : https://youtu.be/IAnRIAQfEUU
+Étapes :
+- Cibler la Porte du Temps, backflip, neutral roll re-target pour avoir l'angle
+- Aller dans la coin habituel du DoT Skip en gardant L/Z appuyé
+- Lacher tout, appuyer sur R, et faire des Crouch Stab à droite ; si la caméra vient au dessus de Link, recommencer cette étape
+  (c'est que les crouch stabs n'ont pas été fait assez vite, ou qu'il y a eu des pauses entre les Crouch Stabs)
+- Faire un Crouch Stab à droite, et appuyer sur pause une frame après ; à partir de maintenant, orienter le stick à gauche
+- Attendre 4 frames (tout en gardant les boutons appuyés, ici R et Gauche) :
+  1. Levée : Link lève son épée et son bouclier
+  2. Écarté : Link tient son bouclier loin de lui
+  3. Rapproché : Link rapproche son bouclier
+  4. Éclat : L'épée de Link fait des éclats, c'est la bonne frame (on entend également le bruit de l'épée contre la porte si on n'a pas Pause buffer la frame 3)
+- Sur cette frame, équiper les bottes des airs, lâcher tout, et orienter le stick
+  * à droite pour faire un Prelude Skip
+  * en diagonale bas-droite pour finir le DoT Skip.
+  
+Spirit Temple Silver Block Skip
+-------------------------------
+
+Vidéo pour le Setup : https://youtu.be/c7sfziLfQp0
+Vidéo pour le Saut  : https://youtu.be/BRq6qDtiLzA
+Étapes :
+- Monter sur le rebord au niveau du deuxième trait vertical en partant de la droite
+- Prendre l'angle en visant et en alignant la droite du bouton C-droite avec la droite du pilier le plus à gauche
+- Commencer une roulade en direction du bloc argenté, et mettre le bottes des airs dès que la roulade est commencée
+- "Shape the model" pour que le glicth fonctionne...
+
+
+Megajump to Deku Tree
+---------------------
+
+Vidéo : https://youtu.be/m6xPbz5m8hk
+Étapes : Dans la description
+Note : Faire le jumpslash assez tôt
+
+
+Adult Bottle GIM
+----------------
+
+Vidéo pour le Equip Swap : https://youtu.be/OAFY5IxOJRA
+Vidéo pour le Superslide Teleport : https://youtu.be/-ELoSialHaw
+Vidéo pour le Swim on Land : https://youtu.be/dTOXHEkaCaY
+Étapes :
+- Brûler la toile qui mène au frères 2-3-1 :
+  * Faire un Equip Swap avec un Bâton Mojo (bien orienter le stick en diagonale bas-gauche)
+  * Brûler la toile
+- Faire le Superslide Teleport :
+  * S'aligner avec la toile verticale
+  * Shield Turn en diagonale bas-gauche
+  * Faire des sauts de côté pour aller dans le coin
+  * Avancer avec 2 roulades vers l'avant (Haut + A), et attendre que la plante Mojo finisse d'attaquer
+  * Faire une roulade vers l'avant supplémentaire pour être pas trop loin de la petite plante
+  * Dès que la plante Mojo commence son animation d'attaque, aller en avant et marteler A pour faire le Superslide
+  * Quand Link est dans le coin vers la barrière, lâcher tout, et attendre que Link ne bouge plus
+- En première personne, aligner (en gros, pas précis) le milieu du bouton A avec la torche de droite de la paire de torche autour du Crawl Space
+- Maintenir L/Z et bas-gauche jusqu'à ce que Link plonge
+- Tout en continuant de maintenant L/Z, faire gauche / haut-gauche (quand Link plonge trop profond, relâcher le stick) dans le but de faire nager Link
+- Faire le Swim on Land :
+  * Visée L/Z et reculer
+  * Start, équiper les bottes de plombs, et maintenant orienter le stick vers le haut jusqu'à être sur la terre
+  * Start, équiper les bottes Kokiri, et lâcher tout
+  * Appuyer sur A puis marteler Grappin pour pouvoir marcher ; si ça a fonctionné, le bouton A indique un chiffre
+- Récupérer des Noix Mojo (en tuant une plante Mojo par exemple)
+- Finaliser le GIM en allant dans l'eau profonde devant les frères 2-3-1
+
+
+Fire Temple Block Clip
+----------------------
+
+Vidéo : https://youtu.be/n27uxkaKrpo
+Étapes :
+- Aller dans le coin entre le mur et le bloc
+- Cibler le mur, coup d'épée, tourner de 90° à droite
+- Cibler le bloc, avancer vers le bloc, appuyer et relâcher A pour attraper et lâcher le bloc
+- Donner un coup d'épée et laisser enfoncer B pour charger une attaque
+- Relâcher B pour faire une attaque tourbillon
+- Sortir une bombe et la Late Shield Drop
+- Avancer vers le coin entre le mur et le bloc, cibler le mur, maintenir Haut jusqu'à passer à travers le mur (quand la bombe explose)

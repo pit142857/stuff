@@ -1,0 +1,9 @@
+Monnaie :
+  1 Franc = 100 centimes
+  
+Jargon :
+  5 centimes = 1 sous
+  1 Franc = 1 livre
+  5 Francs = 1 écu
+  10 Francs = 1 pistole
+  20 Francs = 1 Napoléon d'or / 1 Louis d'or

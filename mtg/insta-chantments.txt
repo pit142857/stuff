@@ -1,0 +1,22 @@
+Dix cartes de Magic sont ce qu'on appelle des insta-chantemnt (qu'on pourrait traduire en éph-enchantement) :
+https://scryfall.com/search?q=o%3A%22If+you+cast+it+any+time+a+sorcery+couldn%E2%80%99t+have+been+cast%22&unique=cards&as=grid&order=name
+Chacune de ces dix cartes est un enchantement qui peut être joué en tant qu'éphémère, mais dans ce cas, l'enchantement est sacrifié à la fin du tour. La capacité qui permet de faire ça est originalement formulée :
+
+> Vous pouvez choisir de jouer ~ comme un éphémère ; si vous faites ainsi, enterrez-le à la fin du tour.
+
+Hors, aujourd'hui, la formulation est :
+
+> Vous pouvez lancer ~ comme s'il avait le flash. Si vous l'avez lancé à un moment où un rituel n'aurait pas pu être lancé, le contrôleur du permanent qu'il devient le sacrifie au début de la prochaine étape de nettoyage.
+
+Voici la raison de cette complexité.
+
+En fait, cette capacité est assez bizarre. Il s'agit d'une capacité statique (celle qui permet de lancer la carte comme si elle avait le flash) qui crée un capacité déclenchée retardée (celle qui demande de sacrifier la carte) ; et la capacité déclenchée fonctionne deux zones après la capacité statique : la capacité statique (celle qui permet de lancer la carte) fonctionne dans la zone où on lance la carte (le plus souvent, la main), ensuite, la carte est lancée et va sur la pile en tant que sort, puis le sort se résout et devient un permanent sur le champ de bataille. Hors, quand une carte change deux fois de zone, il est normalement impossible pour elle de se souvenir de son existence passée. En fait, même quand une carte change une fois de zone, elle n'est pas censée se souvenir de son passé, mais comme il y a beaucoup de cas où c'est nécessaire (par exemple, pour un permanent, savoir si le coût de kick a été payé quand on a lancé le sort), il y a des exceptions dans les règles.
+
+Ainsi, on observe les quatre changements suivants entre la formulation originale et celle actuelle :
+
+1. Ces cartes disent maintenant qu'on peut les lancer comme si elles avaient le flash, et non plus à tout moment où on pourrait jouer un éphémère. Il est important que le sacrifice n'est lieu que si on a lancé la carte en utilisant sa propre capacité de "comme si elle avait le flash", et non une autre capacité (comme la capacité du Planétaire mécanique vedalken qui dit « Vous pouvez lancer les sorts comme s'ils avaient le flash. ») C'est pour ça qu'il est formulé « Si vous l'avez lancé à un moment où un rituel n'aurait pas pu être lancé » plutôt qu'un simple « Si vous faites ainsi »
+2. La carte parle du permanent que ce sort devient et pas seulement de « il », parce que ce « il » fait référence au sort. C'est nécessaire pour régler le problème du double changement de zone.
+3. C'est le contrôleur de ce permanent qui le sacrifice, et non « vous », au cas où cette carte changerait de contrôleur.
+4. La carte n'est pas sacrifié au début de l'étape de fin (qui est normalement la nouvelle formulation pour dire « à la fin du tour »), mais au début de l'étape de nettoyage. En effet, la fin d'un tour de Magic se passe dans l'ordre suivant : étape de fin, puis les blessures sont retirées des permanents, et enfin les capacités qui se déclenchent au début de l'étape de nettoyage le font. Du coup, si un éph-enchantement est sacrifié à l'étape de fin, le bonus d'endurance disparait avant que les blessures soient enlevées, ce qui annule tout l'intérêt de jouer un éph-enchantement en éphémère pour sauver une créature de blessures adverses. Tous les éph-enchantement ne donnent pas de bonus d'endurance, mais pour une raison d'harmonie, la même formulation est utilisée sur les 10 cartes du cycle.
+
+**Sources** : Late September 2009 Update Bulletin & July 2009 Update Bulletin

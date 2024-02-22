@@ -1,0 +1,8 @@
+cartes : Searing Blaze, Chef's Kiss
+
+Dans une partie multijoueur, Amy (dont c'est le tour) contrôle un permanent qui est à la fois une créature et un planeswalker. Nick lance Searing Blaze en choisissant ce permanent pour les 2 cibles. En réponse, Amy lance Chef's Kiss en ciblant Searing Blaze. Laquelle ou lesquelles de ces façons sont légales pour choisir les cibles aléatoirement ?
+
+A. On choisit au hasard la première cible parmi les adversaires d'Amy et les planeswalkers qu'ils contrôlent, puis on choisit au hasard la seconde cible parmi les créatures contrôlées par ce joueur ou le contrôleur de ce planeswalker.
+B. On choisit au hasard la première cible parmi les adversaires d'Amy et les planeswalkers qu'ils contrôlent, puis on choisit au hasard la seconde cible parmi les créatures qui ne sont pas contrôlées par Amy. Si la créature n'est pas contrôlée par le joueur ou le contrôleur du planeswalker choisi pour la première cible, on recommence cette procédure depuis le début.
+C. On choisit au hasard la deuxième cible parmi les créatures qui ne sont pas contrôlées par Amy, puis on choisit au hasard la première cible parmi son contrôleur et les planeswalkers qu'il contrôle.
+D. Aucune de ces réponses.

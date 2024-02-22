@@ -1,0 +1,58 @@
+Vu qu'un parle de dépendances, voici un petit jeu en rapport :
+
+**Il faut avoir simultanément un artefact non-créature et une [[Marche des Machines]] en jeu.**
+
+Voici une réponse possible, assistée par https://soothsilver.github.io/ContinuousEffectsSandbox (cf. plus bas pour savoir quoi copier-coller), qui illustre le principe de dépendance et ses limites :
+
+On a en jeu une Marche des Machines (mais qui est un artefact à la place d'un enchantement, via l'effet de copie d'Effigie du Dieu-machine), Treille de mycosynthèse et Purphoros, dieu des Forges. Question : est-ce que Purphoros est une créature ?
+
+On s'intéresse donc à la couche 4.
+
+On a trois permanents en jeu, avec chacun un effet s'appliquant en couche 4 :
+(1) Effigie du Dieu-machine, qui est arrivé comme une copie de Marche des Machines. Au début de la couche 4, c'est donc un artefact avec « **Chaque artefact non-créature est une créature-artefact** de force et d'endurance chacune égale à son coût converti de mana. »
+(2) Treille de mycosynthèse, c'est un artefact avec « **Tous les permanents sont des artefacts en plus de leurs autres types.** »
+(3) Purphoros, dieu des Forges, c'est une créature-enchantement avec « Tant que votre dévotion au rouge est inférieure à cinq, **Purphoros n'est pas une créature**. »
+
+**Cas 1** : il n'y a pas d'autre permanent en jeu
+
+Dans ce cas, il n'y a pas de dépendance. On applique donc dans l'ordre des timestamps.
+- Si (1) a le plus vieux timestamp, on applique (1). On ré-évalue les dépendances : toujours pas de dépendance, on applique donc dans l'ordre des timestamps, et Purphoros n'est pas une créature quelque soit l'ordre relatif de (2) et (3).
+- Si (2) a le plus vieux timestamp, on applique (2). On ré-évalue les dépendances : (1) se met à dépendre de (3), et l'ordre d'applications des effets est donc (2), (3), (1). Ainsi, Purphoros est une créature.
+- Si (3) a le plus vieux timestamp, on applique (3). On ré-évalue les dépendances : (1) se met à dépendre de (2), et l'ordre d'applications des effets est donc (3), (2), (1). Ainsi, Purphoros est une créature.
+
+Ainsi, l'effet de Marche des machines s'applique toujours en dernier, sauf s'il est arrivé en jeu en premier.
+
+**Cas 2** : il y a un autre permanent non-artefact non-créature en jeu, disons une montagne.
+Maintenant, (1) dépend de (2), car appliquer (2) à la montagne en fait un artefact non-créature, et change donc l'ensemble des éléments à qui peut s'appliquer (1). Ça n'était pas le cas dans le cas 1, car tous les permanents étaient soit des artefacts, soit des créatures.
+Ainsi, si (1) est le plus vieux timestamp, avec la novelle dépendance, on a (1) qui s'applique après (2).
+- Si l'ordre des timestamps est (1), (2), (3), comme (1) dépend de (2), il attend pour s'appliquer après (2). On applique (2), faisant de Purphoros un artefact. On ré-évalue les dépendances, et maintenant (1) dépend de (3) : Appliquer (3) fait de Purphoros un artefact non-créature, changeant à qui s'applique (1). L'ordre d'applications des effets est donc (2), (3), (1). Purphoros est une créature.
+- Si l'ordre des timestamps est (1), (3), (2), comme (1) dépend de (2), il attend pour s'appliquer après (2). L'ordre d'applications des effets est (3), (2), (1). Purphoros est une créature.
+Si (2) ou (3) est le plus vieux timestamp, on retombe sur des cas similaires, je vous laisse refaire ou vous amuser avec https://soothsilver.github.io/ContinuousEffectsSandbox, mais Purphoros est bien une créature.
+
+Conclusion : Purphoros est une créature, sauf si tous les permanents sont des créatures ou des artefacts, et que la carte qui a l'effet des Marche des Machines est arrivé en premier. C'est pour ça qu'il faut absolument que Marche des Machines soit un artefact pour que Purphoros puisse ne pas être une créature. J'avais oublié ce détail dans un précédent message traitant de ce cas.
+
+Pour https://soothsilver.github.io/ContinuousEffectsSandbox, voici ce qu'il faut copier-coller aux bons endroits :
+
+```
+March of the Machines
+artifact
+
+noncreature artifact
+addtype:creature
+setpt:3/3
+```
+
+```
+Mycosynth Lattice
+artifact
+
+addtype:artifact
+```
+
+```
+Purphoros, God of the Forge
+6/5 enchantment creature
+
+this
+losetype:creature
+```

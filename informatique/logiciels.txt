@@ -1,0 +1,108 @@
+========== Éditeur ==========
+
+CASIO FA-124
+Hex Editor Neo
+Jubler subtitle editor
+Kid3 (Tag editor)
+Magic Set Editor
+MiKTeX
+RPG VX Ace
+Sumatra PDF
+
+========== Émulateur ==========
+
+Dolphin
+DOSBox
+EmuHawk
+KEN EPSXe
+Mupen 64
+Nestopia
+Oracle VM VirtualBox
+PCSX2 1.4.0
+Project64 2.2
+VisualBoy Advance
+W-CDi-Emu
+
+========== Hacking ==========
+
+Auto Hot Key
+CCleaner
+Decrypter
+DungeonMaster
+GC-Tool
+IcoSauve
+Lunar IPS
+NBT Explorer
+ppf-o-matic3
+ProduKey
+QuickPar
+ResHacker
+Scene Navi
+SMB-Util
+SMPlayer
+SMSManager
+ZeldaTech
+
+========== Musique ==========
+
+Audacity
+iTunes
+Melodie Assistant
+TuxGuitar
+LilyPond
+
+========== Programmation ==========
+
+Caml Light
+Coq
+CodeBlocks
+Python
+WampServer
+WinGHCi
+Xcas
+
+========== Vidéo ==========
+
+Bandicam
+Camtasia Studio 7
+ffmpeg
+imageMagick
+OBS Studio
+Pazera Free MP4 to AVI Converter
+UMPlayer
+VLC
+VSDC Free Video Editor
+
+========== Image ==========
+
+IcoFX
+Inkscape
+GIMP
+
+========== Autre ==========
+
+7-Zip
+DAEMON Tools Lite
+GeoGebra
+Joy2Mouse
+JoyToKey
+Notepad++
+Super macro
+WinRAR
+
+========== Jeux ==========
+
+Cave Story
+DOSBox 0.74
+I wanna be the guy Gaiden
+I wanna be the guy
+Le Donjon Sansfond
+Minecraft
+Open Hexagon 2
+Open Hexagon
+Slender
+Surgeon Simulator 2013
+Tarzan
+TmUnitedForever
+TmUnlimiter
+Zelda Solarus

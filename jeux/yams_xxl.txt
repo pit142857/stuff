@@ -1,0 +1,37 @@
+# Les colonnes
+
+On joue avec plusieurs colonnes simultanément. Chaque colonne a une règle différente :
+
+- Normal
+- Montant : on ne peut remplir une case que si on a remplit toutes celles en dessous
+- Descendant : on ne peut remplir une case que si on a remplit toutes celles au dessus
+- Sec : 1 seul lancer
+- Annonce : on doit annoncer la combinaison après le 1er lancer
+
+# Les combinaisons
+
+On choisit les combinaisons avec lesquelles on joue. En général, on en prend 6 :
+
+- Brelan : 3 dés identiques
+- Carré : 4 dés identiques
+- Full : 3 dés identiques + 2 dés identiques
+- Suite : 5 dés qui se suivent
+- Sandwich : Un seul 1 et un seul 6. Vaut la somme des 3 autres dés
+- Escalier : 5 dés différente
+- Triche : 5 dés identiques, mais on a le droit de cacher 4 points avec ses doigts
+
+- Petit : La somme est plus petite que le grand
+  Grand : La somme est plus grande que le petit
+- Chance : La somme des dés
+- Malchance : Moins la somme des dés
+- Égal 1 : La somme des dés
+  Égal 2 : La somme des dés si égale à Égal 1, sinon moins Égal 1
+- Multiplication : Le produit du plus petit dé et du plus grand
+
+# Pouvoir
+
+On choisit une carte au hasard. Chaque joueur gagne des jetons (entre parenthèses) qu'il peut dépenser pour utiliser la carte :
+
+- Spatule (1d6) : retourne un dé
+- Mélange (1d6) : relance un dé
+- La main (1d3) : relance n'importe quel nombre de dés.

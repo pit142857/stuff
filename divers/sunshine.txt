@@ -1,0 +1,15 @@
+ 1 : Collines Bianco
+ 3 : Port Ricco -> Caisse + 1 pièce	
+ 5 : Gelato-lès-flots -> Bateaux
+10 : Parc Pinna
+20 : Baie Noki
+25 + Yoshi : Turbobuse
+30 + Tubobuse : Catabuse
+30 : Lunettes
+
+4.4 : Yoshi
+
+
+Dès que la hutte du pécheur disparait, plus de saut muraux sur la grande arche.
+
+La zone ensoleillée grossit dynamiquement avec le nombre de soleils

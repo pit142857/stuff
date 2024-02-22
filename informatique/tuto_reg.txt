@@ -1,0 +1,25 @@
+La classe HKEY_CLASSES_ROOT\AppX43hnxtbyyps62jhe9sqpdzxn1790zetc fait référence aux extensions suivantes:
+.bmp, .dib, .gif, .heic, .ico, .jfif, .jpe, .jpeg, .jpg, .jxr, .png, .thumb, .tif, .tiff, .wdp
+
+- Rendre "Créer une vidéo" accessible uniquement via Maj+Clic
+- Rendre "Modifier avec photo" accessible uniquement via Maj+Clic
+- Créer un "Éditer avec Gimp"
+
+<<<<<<<<<<<<<<<<<<<<
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\AppX43hnxtbyyps62jhe9sqpdzxn1790zetc\Shell\ShellCreateVideo]
+"Extended"="1"
+
+[HKEY_CLASSES_ROOT\AppX43hnxtbyyps62jhe9sqpdzxn1790zetc\Shell\ShellEdit]
+"Extended"="1"
+
+[HKEY_CLASSES_ROOT\AppX43hnxtbyyps62jhe9sqpdzxn1790zetc\Shell\GimpEdit]
+@="Éditer avec Gimp"
+"Icon"="C:\\Program Files\\GIMP 2\\bin\\gimp-2.10.exe"
+
+[HKEY_CLASSES_ROOT\AppX43hnxtbyyps62jhe9sqpdzxn1790zetc\Shell\GimpEdit\command]
+@="\"C:\\Program Files\\GIMP 2\\bin\\gimp-2.10.exe\" \"%1\""
+
+>>>>>>>>>>>>>>>>>>>>

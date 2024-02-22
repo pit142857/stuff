@@ -1,0 +1,11 @@
+Inutile, il le sait déjà :
+
+Bonjour Marco !
+Suite à ta run d'hier qui est morte sur un Critical Wiggle, j'ai investigué un peu, afin d'éviter que ça arrive par la suite. Notamment, puisqu'on fait la majorité du Fire avec 1/16 de cœur, ça peut arriver souvent.
+Déjà, on sait tous que le Critical Wiggle arrive toutes les 256 frames dès qu'on a 1 cœur ou moins. À 20 FPS, cela signifie qu'un Critical Wiggle arrive toutes les 256/20 = 12.8 secondes. Ce qui est moins connu (mais quand même expliqué par Fig sur OoT-Speedrunning), c'est que ce timer est remis à zéro à chaque loading zone. Cela signifie qu'en étant consistant, les Critical Wiggles arriveront toujours exactement aux même endroits dans le Fire.
+Notamment, si tout se passe bien au début du Fire, le 4e Critical Wiggle (qui a donc lieu 12.8 * 4 = 51.2 secondes après être entré dans le Fire) arrivera dans la salle de Darunia, pendant le trajet qui va de la small key à la porte, normalement pendant le dernier saut (celui de la petite plateforme vers l'entrée). Cependant, si tu fail un trucs au début du Fire (genre le Time Stop), tu décales ce timing. Et c'est ce qui s'est passé dans ta run d'hier. Le Critical Wiggle qui aurait dû avoir lieu pendant le dernier saut a eu lieu juste avant le saut précédent.
+Ainsi, je pense qu'il est possible d'anticiper les moments clés du Fire pendant lesquels un Critical Wiggle est susceptible d'arriver (dans les cas où tu es consistant, je ne sais pas à quel point c'est faisable).
+Si tu veux checker quand arriveront ces Wiggles, la Watch pour une practice rom sur OoT 1.0 est : 801C853C
+À chaque fois que cette adresse atteint un multiple de 256, si tu as un cœur ou moins, il y aura un Critical Wiggle. Cela arrive toutes les 12.8 secondes à 20 FPS, mais comme le menu pause fonctionne à 30 FPS (et que ce timer continu même sur le menu pause), ça décale tout.
+Dans un monde idéal où tu ne mets pas le jeux en pause dans le Fire, il suffirait de démarrer un métronome au début du Fire, qui tick tous les 12.8 secondes, de façon à être prévenu du moment où un Wiggle peut arriver (et il suffirait par exemple de target à ce moment-là pour être sur de garder l'angle actuel). Comme il y a actuellement une seule pause dans le Fire, il y a peut-être moyen de se débrouiller.
+Voilà, j'espère ne pas t'embêter, et que ça pourra t'aider à obtenir le WR !

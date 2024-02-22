@@ -1,0 +1,5 @@
+Cartes : Juniper Order Advocate, Sylvan Paradise
+
+Question : Je contrôle 2 Juniper Order Advocate, tous les deux verts grâce à Sylvan Paradise. Quels elle la plus grand valeur de N tel que je puisse Crew N en engageant juste ces 2 créatures ? 2, 3, 4, 5 ou 6 ?
+
+Réponse : Je pense que c'est 6, parce qu'on engage toutes les créatures pour Crew simultanément

@@ -1,0 +1,48 @@
+Récemment, je me suis intéressé à savoir s'il fallait oui ou non faire des retours à la ligne entre les différentes capacités d'un éphémère ou d'un rituel, ce qui est une question essentielle quand on veut formuler une funcard de la façon la plus fidèle possible. J'en suis à arriver à cette sorte de mini-article dont je ne sais pas trop quoi faire (car je ne suis pas sûr que ce sujet intéresse grand monde). Dans le doute, je le mets là, dans l'espoir que ça serve un jour à quelqu'un.
+
+Ici, je me concentre uniquement sur les capacités de sort, c'est-à-dire les instructions qu'on suit quand on résout un sort d'éphémère ou de rituel. En effet, pour les autres capacités, on suit les même règles que pour les permanents. Pour rappel, un paragraphe égale une capacité, et donc faire un retour à la ligne, c'est changer de paragraphe, et donc changer de capacité.
+
+La règle générale est que, sur un éphémère ou un rituel, il n'y a qu'une seule capacité de sort. Il existe cependant un certain nombre d'exceptions, que je vais essayer de présenter ici de façon exhaustive (n'hésitez pas à en rajouter si vous en trouver des nouvelles).
+
+1. Les cantrip, c'est-à-dire les cartes qui se remplacent en faisant piocher une carte à son contrôleur. Il faut noter que si le nombre de carte à piocher dépend d'un paramètre, ça n'est pas un cantrip ; et que si la pioche est suivi d'une défausse, ça n'est pas non plus un cantrip. En revanche, si la pioche a lieu au début de l'entretien du prochain tour, c'est bien un cantrip. Il y a cependant quatre cartes qui font exceptions à cette observation, à savoir [carte]Examiner toutes les possibilités[/carte], [carte]Prédestination[/carte], [carte]Visions nées du sérum[/carte] et [carte]Obscure expérimentation[/carte], qui sont toutes rédigées en une seule capacité de sort malgré leur côté cantrip.
+
+2. Certaines cartes avec une action mot-clé dont le texte de rappel est écrit, comme Amassez, Soutenez, Enquêtez, Regard, Surveillez ou Explorer. Dans ce cas, l'action mot-clé peut être une capacité de sort à elle seule. Le mot « terminez », qui n'est pas un mot-clé au sens strict, tombe aussi sous le joue de ces règles, avec les deux cartes suivantes :
+
+[list][*][carte]Fin glorieuse[/carte][/*][*][carte]Mandat de paix[/carte][/*][/list]
+3. Les cartes avec un mot de capacité. Un mot de capacité est un mot écrit en italique qui permet de repérer facilement des capacités qui ont des effets similaires. Les mots de capacité qui peuvent être des capacités de sort sont à ce jour :
+Inflexible, Addenda, Délire, Heure fatidique, Férocité, Acharnement, Toucheterre, Art des métaux, Morbidité, Saccage, Révolte, Maîtrise de sort, Seuil, Chromatique, Convergence, Dilemme du conseil, Domaine, Union des forces, Pourparler, Irradiance, Balayage, Offre tentante, Maquis, Volonté du conseil.
+Notez que seuls les treize premiers mots de capacité induisent un changement de capacité, car ils indiquent un effet conditionnel. En revanche, les onze autres mots de capacité indiquent juste que le sort utilise une mécanique particulière, et sont juste écrit au début de l'unique capacité de sort.
+
+4. Les cartes qui ont plusieurs fois la même capacité ou des capacités très similaires :
+
+[list][*][carte]Distorsion d'angoisse[/carte][/*][*][carte]Don de puissance[/carte][/*][*][carte]Gloire martiale[/carte][/*][*][carte]Graines de force[/carte][/*][*][carte]Stratagème d'Azorius[/carte][/*][*][carte]Danse du chaudron[/carte][/*][/list]
+5. Certaines cartes qui s'exilent à la résolution :
+
+[list][*][carte]Livrer au mal[/carte][/*][*][carte]Summum de la révélation[/carte][/*][*][carte]Trahison mnémonique[/carte][/*][*][carte]Stunning Reversal[/carte][/*][*][carte]Renaissance vengeresse[/carte][/*][*][carte]Guidé par les sylves[/carte][/*][*][carte]Protection de Téfeiri[/carte][/*][/list]
+6a. Le cycle des pactes de Vision de l'avenir, dans lequel chaque carte a pour deuxième capacité de sort « Au début de votre prochain entretien, payez [coût]. Si vous ne le faites pas, vous perdez la partie. » :
+
+[list][*][carte]Pacte d'intervention[/carte][/*][*][carte]Pacte de négation[/carte][/*][*][carte]Pacte de tuerie[/carte][/*][*][carte]Pacte du titan[/carte][/*][*][carte]Pacte de l'invocateur[/carte][/*][/list]
+6b. Le cycle des offrandes de Commander 2014, dans lequel chaque carte a deux capacités de sort commençant chacune par « Choisissez un adversaire. », excepté l'offrande volcanique qui a deux autres capacités de sort :
+
+[list][*][carte]Offrande bienveillante[/carte][/*][*][carte]Offrande intellectuelle[/carte][/*][*][carte]Offrande infernale[/carte][/*][*][carte]Offrande volcanique[/carte][/*][*][carte]Offrande sylvestre[/carte][/*][/list]
+6c. Le cycle des expertises de la Révolte éthérique, dans lequel chaque carte a pour deuxième capacité de sort « Vous pouvez lancer une carte avec un coût converti de mana inférieur ou égal à N depuis votre main sans payer son coût de mana. » :
+
+[list][*][carte]Expertise de Sram[/carte][/*][*][carte]Expertise de Baral[/carte][/*][*][carte]Expertise de Yahenni[/carte][/*][*][carte]Expertise de Kari Zev[/carte][/*][*][carte]Expertise de Rishkar[/carte][/*][/list]
+6d. Une partie d'un cycle des decks de planeswalker Magic 2019, dans lequel chaque carte a pour deuxième capacité de sort « Regardez les cinq cartes du dessus de votre bibliothèque. Vous pouvez révéler une carte [d'une certaine couleur] parmi elles et la mettre dans votre main. Mettez le reste au-dessous de votre bibliothèque dans un ordre aléatoire. » Les deux autres cartes du cycle  sont des permanents, elles n'ont donc pas de capacité de sort :
+
+[list][*][carte]Influence d'Ajani[/carte][/*][*][carte]Butin de Liliana[/carte][/*][*][carte]Feu des dragons de Sarkhan[/carte][/*][/list]
+7. Les trois cartes suivantes sont rédigées avec deux capacités de sorts, la deuxième étant « Cherchez dans votre bibliothèque et/ou votre cimetière une carte appelée [nom], révélez-la et mettez-la dans votre main. Si vous cherchez dans votre bibliothèque de cette manière, mélangez-la. » Cependant, ces cartes sont à rapprocher de cartes [carte]Vague de flammes de Chandra[/carte], [carte]Rejet de Dovin[/carte], [carte]Cri de guerre de Gideon[/carte], [carte]Ruse de Jace[/carte], [carte]Combustion libératrice[/carte], [carte]Influence de Liliana[/carte], [carte]Hospitalité selon Oko[/carte], [carte]Dispersion de Ral[/carte], [carte]Trahison de Tezzeret[/carte], [carte]Dédain de Vraska[/carte] et [carte]Regard pétrificateur de Vraska[/carte], qui elles sont rédigées avec une seule capacité de sort.
+
+[list][*][carte]Surgissement de Chandra[/carte][/*][*][carte]Courant saisissant[/carte][/*][*][carte]Rhythmic Water Vortex[/carte][/*][/list]
+8. Deux cartes qui ont un effet systématique qui se déroulent après un effet conditionnel. Cela permet de séparer ce qui fait parti de l'effet conditionnel de ce qui fait parti de l'effet systématique :
+
+[list][*][carte]Mythos of Brokkos[/carte][/*][*][carte]Sans échappatoire[/carte][/*][/list]
+9. Une carte étrange. Elle est rédigée en deux capacités de sort, alors que toutes les autres cartes utilisant le kick sont rédigées avec une seule capacité de sort :
+
+[list][*][carte]Étendues de chasse[/carte][/*][/list]
+10. Trois cartes ont deux capacités de sort, et je n'ai aucune explication :
+
+[list][*][carte]Évasion dans les friches[/carte][/*][*][carte]Tamiser le sable[/carte][/*][*][carte]Filandres[/carte][/*][/list]
+11. Quatre cartes ont deux capacités de sort, mais seulement dans l'oracle :
+
+[list][*][carte]Battle Cry[/carte][/*][*][carte]Bargain[/carte][/*][*][carte]Song of Blood[/carte][/*][*][carte]Yawgmoth's Will[/carte][/*][/list]

@@ -1,0 +1,118 @@
+========== Archives ==========
+
+
+- *  : Grande éloquence - À lancer lors d'un débat sur les règles du Cul de Chouette, ou sur autre chose. Vous gagnez ce débat et vous avez le dernier mot.
+
+
+P - Règles des plans :
+
+PG - Plan terrestre    : La base
+PB - Plan démonique    : Celui qui fait mal
+PW - Plan sympathique  : Le sympatoche
+PR - Plan électrique   : Au plus rapide
+PU - Plan amnésique    : C'est quoi les règles déjà ?
+PY - Plan hyperbolique : Pour les matheux
+
+
+PG - Plan terrestre :
+PG1 - Transplanage : Tour des plans en 80 tours
+
+PB - Plan démonique :
+PB1 - Labyrinthe : Seul contre tous
+PB2 - Magie      : Les défis de Merlin
+PB3 - Expulsion  : Fallait mieux jouer
+
+PW - Plan sympathique :
+PW1 - Soufflette       : Duel de 421
+PW2 - Attrape l'oiseau : Plus que 19 solutions possibles
+
+PR - Plan électrique :
+PR1 - Doublé          : L'unique chouette
+PR2 - Sirotage        : Dé-robage
+PR3 - Chouette-velute : Les premiers seront les derniers
+PR4 - Zbradaraldjan   : Ni oui ni non
+
+PU - Plan amnésique :
+PU1 - Quêtes : Chemin vers la guérison
+
+
+
+# PG - Plan terrestre
+
+
+
+## PG1 - Transplanage
+
+La partie commence sur le plan terrestre. Quand un joueur fait un sloubi 116, il peut choisir un des plans afin que l'on transplane sur ce plan. Tant que l'on est sur un plan, les règles de ce plan s'applique, et les règles des autres plans ne s'applique plus.
+
+
+## PB1 - Labyrinthe
+
+Le Chante-Sloubi se fait seul. Le joueur ne gagne rien, sauf s'il parvient à atteindre Sloubi 116 et à le dire correctement. Dans ce cas, il peut enfermer n'importe quel nombre d'adversaires dans un labyrinthe.
+
+Quand un joueur enferme des adversaires dans un labyrinthe, il choisit une ou plusieurs combinaisons, appelées « sorties », suivant les critères suivants :
+- La somme des difficultés des combinaisons « sorties », doit valoir 6.
+- Une combinaison composée de trois dés différents a une difficulté de 6.
+- Une combinaison composée de trois dés identiques a une difficulté de 1.
+- Les autres combinaisons ont une difficulté de 3.
+
+Quand c'est le tour d'un joueur enfermé dans le labyrinthe, au lieu de jouer normalement, il va avoir au plus 3 lancers pour faire la combinaison de son choix, il peut conserver des dés entre chaque lancé et s'arrêter quand il veut. Une fois qu'il a fait ses 3 lancers ou qu'il s'est arrêté, le joueur qui l'a enfermé dans le labyrinthe va lui donner un indice sous la forme suivante : il va lui dire qu'elle est le nombre minimum de dés qu'il lui faut relancer à partir de la combinaison qu'il vient de faire pour obtenir une des combinaisons « sorties ». Si ce nombre est zéro, ce joueur sort du labyrinthe, sinon il y reste. Dans les deux cas, son tour se termine.
+
+
+- Portail dimensionnel (80 pièces d'or) : On change de plan.
+
+
+## PW1 - Soufflette
+
+Le défi soufflette est modifié : les deux joueurs impliqués dans le défi ont chacun au plus trois lancers pour faire une combinaison, ils peuvent conserver des dés entre chaque lancé et s'arrêter quand ils veulent. Le joueur qui a lancé le défi soufflette choisit quel joueur fait ses lancers en premier, et l'autre joueur les fait en second. Avant de jouer, le joueur qui a lancé le défi choisit un nombre de points inférieur au minimum des scores des deux joueurs divisé par 10. Le joueur qui a fait la moins bonne combinaison donne au joueur qui a fait la meilleur combinaison un nombre de points égal au nombre de points mis en jeu, multiplié par la valeur de la combinaison faite par le gagnant (celui qui a fait la meilleur combinaison). En cas d'égalité sur les combinaisons, celui qui l'a faite en le moins de coup gagne. En cas d'égalité, les deux joueurs recommence.
+
+Les combinaisons sont (avec leur nombre de points) :
+- 421 (10 points)
+- Passe 7 : 111 (7 points)
+- Passe n : 11n (n points)
+- n en viande : nnn (n points)
+- Suite (2 points)
+- Autre (1 point)
+Entre deux combinaisons, la plus forte est celle qui rapporte le plus de points. En cas d'égalité, le « passe n » est meilleur que le « n en viande », qui est meilleur qu'une suite. Entre deux combinaisons « autre », la plus forte est celle qui est la meilleure en triant les dés des combinaisons du plus grand au plus petit. Exemple : 5-1-6 est meilleure que 5-3-5 car 651 > 553.
+
+
+## PR2 - Sirotage
+
+(Clin d'œil à l' « Attrape-Oiseau » des règles des PP64, https://www.fichier-pdf.fr/2016/02/07/regles-pdf/regles-pdf.pdf)
+Après une chouette, n'importe quel joueur peut siroter. C'est le premier joueur qui attrape le dé différent qui sirote.
+
+## PR3 - Chouette-velute
+
+(Clin d'œil aux règles originales)
+En cas d'égalité, tous les joueurs à égalité perdent un nombre de point égal à la valeur de la Chouette-velute.
+
+
+
+# PU - Plan amnésique
+
+
+## PU1 - Quêtes
+
+Les règles suivantes disparaisse du jeu : A2, A3, A4, A5, A6, B1, B2, B3, B4, BX, C1, C2, C3, C4, C5, C6, CX, D1.
+À chaque fois qu'un joueur réalise une des quêtes, la règles correspondante réapparaît.
+Quand un joueur termmine la dernière quête, on change de plan, la destination étant choisie par ce joueur .
+
+Les règles, avec les quêtes associées, sont :
+- A2 (Rapidité) : Faire une velute.
+- A3 (Sirotage) : Faire un cul de chouette.
+- A4 (Néant) : Faire une suite (notez qu'une suite n'existe que d'après A2).
+- A5 (Civet) : Réussir un sirotage.
+- A6 (Bévue) : Faire une chouette.
+- B1 (Soufflette) : Faire un chouette-velute.
+- B2 (Plafond) : Gagner des points pendant son tour.
+- B3 (Boucliette) : Gagner un défi grelottine que l'on subit.
+- B4 (Valeurs) : Perdre des points pendant son tour.
+- BX (Frigelle) : Perdre 20 points ou plus sur une suite
+- C1 (Banque) : Faire une combinaison qui somme à 13 ou plus.
+- C2 (Chante-sloubi) : Tout le monde gagne des points pendant le même tour.
+- C3 (Attrape l’oiseau) : Gagner les points d'une chouette-velute que l'on a pas faite.
+- C4 (Sirop-golo) : Gagner un pari.
+- C5 (Donne asymétrique) : Avoir un nombre de points multiple de sa valeur.
+- C6 (Nénette) : Gagner exactement un point.
+- CX (Droit de vidage) : Se faire sauter son tour.
+- D1 (Vœux) : Finir sont tour avec un nombre de points multiple de dix.

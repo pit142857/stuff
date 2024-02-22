@@ -1,0 +1,11 @@
+A solution I've got that has the same probabilty than a 2-dice roll :
+You roll 3 dice, and the result you get depend on what happened :
+- If the 3 dice are equal, the result is 7
+- If 2 dice are equal to A and the third one is equal to B (so B is not equal to A), the result is A+B
+- Otherwise, the 3 dice are different, and there are 2 cases :
+    - If the 3 dice make an arithmetic progression with common difference of 2 (meaning 135 or 246), the result is 7
+    - Otherwise, let S be the sum of the 3 dice. There are 2 cases :
+        - If S <= 10 then the result is S - 4
+        - If S >= 11 then the result is S - 3
+The result you get is between 2 and 12, and the probabiliy to get a number is the same as if you have rolled 2 dice and sum them.
+That's more a catalogue than a formula, but at least that gives the good probability.

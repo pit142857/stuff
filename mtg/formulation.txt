@@ -1,0 +1,4 @@
+Touch of Moonglove
+  Whenever a creature dealt damage by that creature dies this turn,
+Unscythe, Killer of Kings
+  Whenever a creature dealt damage by equipped creature this turn dies,

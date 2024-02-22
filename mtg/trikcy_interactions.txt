@@ -1,0 +1,39 @@
+========== Cycle d'aura ==========
+
+Deux [[Steal Enchantment]] et une [[Aura Graft]]
+
+========== Aura sans enchanter ==========
+
+L'adversaire a une aura en jeu. La cibler avec [[Liquimetal Coating]] puis [[Opportunistic Dragon]]
+L'aura sera alors détachée puis mise au cimetière.
+
+========== Aura avec l'équipement ==========
+
+Avoir [[Experiment Kraj]], un Licid et un [[Ensouled Scimitar]] animé en jeu, utiliser la capacité du Kraj sur ces deux créatures, puis activer la capacité que le Kraj a gagné du Licid.
+
+========== Piocher pendant le lancement d'un sort ==========
+
+[[Chromatic Sphere]]
+
+========== Créature un jour, créature pour toujours ==========
+
+Attacher [[Frogify]] à un permanent qui est temporairement une créature lui permet de rester une créature pour toujours
+
+[*] https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=473009
+
+========== Permanent sans type ==========
+
+Ne pas avoir de dévotion au bleu. Lancer [[Soul Summons]] pour manifester [[Thassa, God of the Sea]], lui attacher [[Frogify]], puis retourner Thassa.
+
+On utilise les règles des couches pour savoir comment les différents effets continues interagissent.
+Couche 4 : l'effet de Thassa et de Frogify essaient de s'appliquer. On applique d'abord celui avec le timestamp le plus vieux. Comme une aura reçoit un timestamp quand elle est attachée et qu'une créature reçoit un timestamp quand elle retournée face visible, on applique d'abord l'effet de Frogify. Thasse est donc une créature légendaire : grenouille. Puis, on applique son effet, et elle perd les types créature et grenouille.
+Couche 5 : bleu
+Couche 6 : sans capacité
+Couche 7 : 1/1
+
+========== Permanent sans type ni sur-type ==========
+
+Ne pas avoir de dévotion au bleu. Avoir [[Vesuvan Shapeshifter]] face cachée et [[Erebos, God of the Dead]] sur le champ de bataille. Lancer [[Spark Double]] pour créer une copie de Erebos non-légendaire. Lancer [[Frogify]] sur le Vesuvan Shapeshifter face cachée. Retourner Vesuvan Shapeshifter face visible et copier la copie non-légendaire de Erebos.
+
+Tout marche comme l'exemple précédent, sauf qu'on utilise la couche 1 pour gérer les effets de copie.
+On a finalement un permanent sans aucun type, sous-type ou sur-type sur le champ de bataille.

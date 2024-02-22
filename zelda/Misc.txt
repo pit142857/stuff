@@ -1,0 +1,795 @@
+========== Ressources ==========
+
+Code désassemblé : http://computerarcheology.com/NES/Zelda/
+Détail des instructions : http://obelisk.me.uk/6502/reference.html
+
+RAM : https://datacrystal.romhacking.net/wiki/The_Legend_of_Zelda:RAM_map
+Items : http://thealmightyguru.com/Games/Hacking/Wiki/index.php/The_Legend_of_Zelda
+
+========== Adressage ==========
+
+Il y a un décalage entre les adresses présentées ci-dessous et les adresses utilisées par l'émulateur.
+Dans la Bank 1, le décalage est de 0x3870.
+Ainsi, pour écrire JMP B751, il faut écrire JMP 7EE1
+Dans la Bank 7, le décalage est de 0x0000.
+Dans le Bank 6, le décalage est de 0x0010, ou 0x0000.
+Dans le Bank 5, le décalage est de -0x000A.
+
+B751 correspond au début d'un morceau de code vide de taille $1F = 31 octets dans la Bank 1. Il est utile pour injecter son propre code.
+
+Correspondance :
+  
+  Bank - offset .nes - Code en ligne - Interne (JMP)
+  1      0000 695D     0xA94D          $70DD
+  1      0000 69CF     0xA9BF          $714F
+
+========== Bombes ==========
+
+Achat d'un sac de bombes :
+
+  L'achat d'un sac plus grand implique l'exécution de ce morceau de code (localisé dans la Bank 1) :
+  
+  8B86: AD 7C 06      LDA   067C       ; charge le nombre maximum de bombes que Link peut porter
+  8B89: 18            CLC              ;
+  8B8A: 69 04         ADC   #$04       ; incrémente cette valeur de 4
+  8B8C: 8D 7C 06      STA   067C       ; sauvegarde cette nouvelle valeur
+  8B8F: 8D 58 06      STA   0658       ; remplit le sac de bombe
+  8B92: 4C 8D 8C      JMP   MMC1_0+C8D ;
+  
+  Dans le cas du fichier "Legend of Zelda, The (E) [!].nes", ce morceau de code se trouve à l'adresse 0x4B86
+  Ce décalage de 0x4010 est dû à :
+  - 0x0010 à cause de l'entête du fichier stipulant qu'il s'agit d'un fichier NES
+  - 0x4000 surement à cause de l'emplacement des Banks ?
+  
+  Pour trouver ce morceau de code dans un fichier .nes, il suffit de chercher les bits :
+  AD 7C 06 18 69 04
+
+Changer de combien le nombre de bombes augmente quand on achète un sac plus grand :
+
+  Remplacer le 04 à l'adresse 0x8B8B par la quantité voulue
+
+Supprimer le remplissage automatique :
+  
+  Remplacer le 58 à l'adresse 0x8B90 par 7C
+
+Utilisation d'une bombe :
+
+  L'utilisation d'une bombe implique l'exécution de ce morceau de code (localisé dans la Bank 1) :
+  
+  A94D: AD 58 06      LDA   0658        ; charge le nombre de bombes
+  A950: F0 FA         BEQ   MMC1_1+94C  ; si nul, RTS
+  A952: A2 10         LDX   #$10        ;
+  A954: B5 AC         LDA   00AC,X      ; charge l'emplacement de bombe 1
+  A956: F0 11         BEQ   MMC1_1+969  ; si vide, c'est bien
+  A958: 29 F0         AND   #$F0        ;
+  A95A: C9 10         CMP   #$10        ; est-ce qu'il y a déjà une bombe dans cet emplacement
+  A95C: D0 0B         BNE   MMC1_1+969  ; sinon, c'est bien
+  A95E: E8            INX               ;
+  A95F: B5 AC         LDA   00AC,X      ; charge l'emplacement de bombe 2
+  A961: F0 06         BEQ   MMC1_1+969  ; si vide, c'est bien
+  A963: 29 F0         AND   #$F0        ; 
+  A965: C9 10         CMP   #$10        ; est-ce qu'il y a déjà une bombe dans cet emplacement
+  A967: F0 42         BEQ   MMC1_1+9AB  ; si oui, RTS
+  A969: 8A            TXA               ; .bien - transfère l'emplacement de bombe (1 ou 2) dans A
+  A96A: 49 01         EOR   #$01        ; échange l'emplacement (1 -> 2, 2 -> 1)
+  A96C: A8            TAY               ; transfère l'autre emplacement de bombe (2 ou 1) dans Y
+  A96D: B9 AC 00      LDA   00AC,Y      ; charge l'autre emplacement de bombe
+  A970: F0 04         BEQ   MMC1_1+976  ; si vide, on débute la pose de la bombe, saute à .bombe
+  A972: C9 13         CMP   #$13        ; 
+  A974: 90 35         BCC   MMC1_1+9AB  ; s'il y a une bombe ou de la fumée, RTS
+  A976: CE 58 06      DEC   0658        ; .bombe - moins une bombe
+  A979: A9 20         LDA   #$20        ;
+  A97B: 8D 04 06      STA   SND_Request ;
+  A97E: A9 00         LDA   #$00        ;
+  A980: 95 28         STA   0028,X      ;
+  A982: A9 11         LDA   #$11        ;
+  A984: 95 AC         STA   00AC,X      ; stocke la bombe dans l'emplacement vide
+  A986: A9 01         LDA   #$01        ;
+  A988: 8D D0 03      STA   03D0        ;
+  A98B: A9 10         LDA   #$10        ; .animation
+  A98D: 85 AC         STA   <00AC       ; animation de Link posant une bombe
+  A98F: A0 F0         LDY   #$F0        ;
+  A991: 85 01         STA   <GP_01      ; contient 10
+  A993: 84 02         STY   <GP_02      ; contient F0 = -10
+  A995: A5 98         LDA   <0098       ; charge la direction de Link (Est ou Ouest)
+  A997: 95 98         STA   0098,X      ; stocke cette direction pour la donner à la bombe
+  A999: 20 3C 71      JSR   713C        ; calcul le décalage avec la direction (+10 ou -10) pour que la bombe ne soit pas collée à Link
+  A99C: 65 70         ADC   <0070       ; additionne la position X de Link à l'écran
+  A99E: 95 70         STA   0070,X      ; stocke cette position dans la position X de la bombe
+  A9A0: A5 98         LDA   <0098       ; 
+  A9A2: 4A            LSR   A           ;
+  A9A3: 4A            LSR   A           ; charge la direction de Link (Nord ou Sud)
+  A9A4: 20 3C 71      JSR   713C        ; calcul le décalage avec la direction (+10 ou -10) pour que la bombe ne soit pas collée à Link
+  A9A7: 65 84         ADC   <0084       ; additionne la position Y de Link à l'écran
+  A9A9: 95 84         STA   0084,X      ; stocke cette position dans la position Y de la bombe
+  A9AB: 60            RTS               ;
+  
+  ---
+  
+  A9AC: A0 00         LDY   #$00        ; .decalage
+  A9AE: 84 00         STY   <GP_00      ; initialise GP_00 à 0, on rappelle que GP_01 vaut +10 et GP_02 vaut -10
+  A9B0: 29 03         AND   #$03        ; si la direction de Link est perpendiculaire à l'axe considéré (N/S ou E/O)
+  A9B2: F0 06         BEQ   MMC1_1+9BA  ; retourne le contenu de GP_00, à savoir 0
+  A9B4: C8            INY               ;
+  A9B5: 29 01         AND   #$01        ; si la direction est positive,
+  A9B7: D0 01         BNE   MMC1_1+9BA  ; retourne le contenu de GP_01, à savoir +10
+  A9B9: C8            INY               ; 
+  A9BA: B9 00 00      LDA   GP_00,Y     ; sinon, retourne le contenu de GP_02, à savoir -10
+  A9BD: 18            CLC               ;
+  A9BE: 60            RTS               ;
+
+Bombes infinies :
+  
+  Effectuer le changement d'instructions :
+  
+  A976: CE 58 06      DEC   0658        ;  ->   AD 58 06      LDA   0658        ;
+  
+Bombes infinies conditionnelles :
+  
+  Effectuer le changement d'instructions :
+  
+  A976: CE 58 06      DEC   0658 ;  ->   4C E1 7E      JMP   B751 (-3870) ;
+  ---
+  B751: FF FF FF                 ;  ->   AD 7F 06      LDA   067F         ;
+  B754: FF FF FF                 ;  ->   D0 03         BNE   +03          ;
+  B756: FF FF FF                 ;  ->   CE 58 06      DEC   0658         ;
+  B759: FF FF FF                 ;  ->   4C 09 71      JMP   A979 (-3870) ;
+
+========== Flamme ==========
+
+Utilisation de la bougie :
+  
+  Bank 1 :
+
+  A9BF: A2 10         LDX   #$10        ;
+  A9C1: B5 AC         LDA   00AC,X      ; charge l'emplacement de la flamme 1
+  A9C3: F0 05         BEQ   MMC1_1+9CA  ; si vide, c'est bien
+  A9C5: E8            INX               ;
+  A9C6: B5 AC         LDA   00AC,X      ; charge l'emplacement de la flamme 2
+  A9C8: D0 F4         BNE   MMC1_1+9BE  ; si non-vide, RTS
+  A9CA: AD 5B 06      LDA   065B        ; .bien -  charge le type de bougie (bleue ou rouge)
+  A9CD: C9 01         CMP   #$01        ; est-ce que la bougie est rouge ?
+  A9CF: D0 05         BNE   MMC1_1+9D6  ; si non, saute à .flamme
+  A9D1: AD 13 05      LDA   0513        ; charge si la bougie a déjà été utilisée sur cette écran
+  A9D4: D0 E8         BNE   MMC1_1+9BE  ; si oui, RTS
+  A9D6: A9 01         LDA   #$01        ; .flamme
+  A9D8: 8D 13 05      STA   0513        ; écrit que la bougie a été utilisée
+  A9DB: A9 00         LDA   #$00        ;
+  A9DD: 9D 94 03      STA   0394,X      ; gère le déplacement de la flamme, décrémente à chaque frame jusqu'à atteindre la valeur F0 = -10, ou incrémente jusqu'à 10 (selon la direction)
+  A9E0: 9D A8 03      STA   03A8,X      ; gère le déplacement de la flamme, alterne entre 80 et 00
+  A9E3: A9 20         LDA   #$20        ;
+  A9E5: 9D BC 03      STA   03BC,X      ; ??
+  A9E8: A9 21         LDA   #$21        ;
+  A9EA: 95 AC         STA   00AC,X      ; stocke la flamme dans l'emplacement de flamme vide
+  A9EC: A9 04         LDA   #$04        ;
+  A9EE: 20 80 6D      JSR   6D80        ; bruit de flamme
+  A9F1: A9 04         LDA   #$04        ;
+  A9F3: 9D D0 03      STA   03D0,X      ; animation de la flamme
+  A9F6: 20 1B 71      JSR   711B        ; réutilisation du code où Link pose une bombe pour poser une flamme (.animation)
+  A9F9: 60            RTS               ;
+
+========== Vie ==========
+
+Affichage de la vie :
+  
+  Bank 1 :
+  
+  A57B: A0 03         LDY   #$03  ; charge la position 03 dans le HUD
+  A57D: AD 6F 06      LDA   066F  ;
+  A580: 85 0E         STA   <000E ;
+  A582: AD 70 06      LDA   0670  ;
+  A585: 85 0F         STA   <000F ;
+  A587: 20 79 6E      JSR   6E79  ; stock les cœurs plein et à moitié plein dans le HUD
+  
+Vie non affichée :
+  
+  A587: 20 79 6E      JSR   6E79 ;  ->  AE 79 6E      LDX   6E79 ;
+  
+Routine d'affichage de la vie :
+
+  Bank 1
+
+  A6E9: 84 0D         STY   <000D      ;
+  A6EB: A5 0E         LDA   <000E      ; contient 066F, le nombre de cœurs
+  A6ED: 48            PHA              ; 
+  A6EE: 29 0F         AND   #$0F       ; récupère le nombre de cœurs pleins
+  A6F0: 85 00         STA   <GP_00     ; le stock en GP_00
+  A6F2: A9 0F         LDA   #$0F       ;
+  A6F4: 38            SEC              ;
+  A6F5: E5 00         SBC   <GP_00     ; récupère le nombre de cœurs vides ou nuls
+  A6F7: 85 00         STA   <GP_00     ; le stock en GP_00
+  A6F9: 68            PLA              ;
+  A6FA: 4A            LSR   A          ;
+  A6FB: 4A            LSR   A          ;
+  A6FC: 4A            LSR   A          ;
+  A6FD: 4A            LSR   A          ; récupère le nombre total de cœurs
+  A6FE: 85 01         STA   <GP_01     ; le stock en GP_01
+  A700: A9 0F         LDA   #$0F       ;
+  A702: 38            SEC              ;
+  A703: E5 01         SBC   <GP_01     ; récupère le nombre de cœurs nuls
+  A705: 85 01         STA   <GP_01     ; le stock en GP_01
+  A707: A2 00         LDX   #$00       ;
+  A709: 98            TYA              ;
+  A70A: 18            CLC              ;
+  A70B: 69 07         ADC   #$07       ;
+  A70D: 85 0B         STA   <000B      ;
+  A70F: A0 07         LDY   #$07       ;
+  A711: C0 FF         CPY   #$FF       ;
+  A713: D0 09         BNE   MMC1_1+71E ;
+  A715: A5 0D         LDA   <000D      ;
+  A717: 18            CLC              ;
+  A718: 69 12         ADC   #$12       ;
+  A71A: 85 0B         STA   <000B      ;
+  A71C: A0 12         LDY   #$12       ;
+  A71E: A5 0E         LDA   <000E      ;
+  A720: F0 04         BEQ   MMC1_1+726 ;
+  A722: E4 01         CPX   <GP_01     ;
+  A724: B0 04         BCS   MMC1_1+72A ;
+  A726: A9 24         LDA   #$24       ;
+  A728: D0 1D         BNE   MMC1_1+747 ;
+  A72A: E4 00         CPX   <GP_00     ;
+  A72C: F0 06         BEQ   MMC1_1+734 ;
+  A72E: 90 15         BCC   MMC1_1+745 ;
+  A730: A9 F2         LDA   #$F2       ; cœur plein
+  A732: D0 13         BNE   MMC1_1+747 ; saute vers la fin
+  A734: A5 0F         LDA   <000F      ; - début - contient la valeur 0x0670, correspond au dernier cœur
+  A736: F0 0D         BEQ   MMC1_1+745 ; si nul, saute au cœur vide
+  A738: C9 80         CMP   #$80       ; 
+  A73A: B0 F4         BCS   MMC1_1+730 ; si plus grand que la moitié, saute au cœur plein
+  A73C: A9 00         LDA   #$00       ; ??
+  A73E: 8D 29 05      STA   0529       ; ??
+  A741: A9 65         LDA   #$65       ; demi-cœur
+  A743: D0 02         BNE   MMC1_1+747 ; saute vers la fin
+  A745: A9 66         LDA   #$66       ; cœur vide
+  A747: 84 0C         STY   <000C      ; - fin -
+  A749: A4 0B         LDY   <000B      ;
+  A74B: 99 02 03      STA   0302,Y     ; boucle pour stocker ces informations dans le HUD
+  A74E: C6 0B         DEC   <000B      ;
+  A750: A4 0C         LDY   <000C      ;
+  A752: 88            DEY              ;
+  A753: E8            INX              ;
+  A754: E0 10         CPX   #$10       ;
+  A756: D0 B9         BNE   MMC1_1+711 ;
+  A758: 60            RTS              ;
+
+Affichage de quarts de cœur dans la vie :
+  
+  A738: C9 80         CMP   #$80       ;  ->  C9 C0         CMP   #$C0         ; remplace moitié par 3/4
+  ---
+  A73E: 8D 29 05      STA   0529       ;  ->  4C E1 7E      JMP   B751 (-3870) ; saute dans la partie vide
+  ---
+  B751: FF FF FF                       ;  ->  8D 29 05      STA   0529         ; refait action "??"
+  B754: FF FF                          ;  ->  A5 0F         LDA   <000F        ; recharge 0x670
+  B756: FF FF                          ;  ->  C9 80         CMP   #$80         ; compare à moitié
+  B758: FF FF                          ;  ->  B0 09         BCS   +09          ; saute 3/4
+  B75A: FF FF                          ;  ->  C9 40         CMP   #$40         ; compare à 1/4
+  B75C: FF FF                          ;  ->  B0 0A         BCS   +0A          ; saute moitié
+  B75E: FF FF                          ;  ->  A9 01         LDA   #$32         ; 1/4 cœur
+  B760: FF FF FF                       ;  ->  4C D7 6E      JMP   A747 (-3870) ; saute fin
+  B763: FF FF                          ;  ->  A9 03         LDA   #$31         ; 3/4 cœur
+  B765: FF FF FF                       ;  ->  4C D7 6E      JMP   A747 (-3870) ; saute fin
+  B768: FF FF FF                       ;  ->  4C D1 6E      JMP   A741 (-3870) ; moitié, saute moitié
+  
+  Bank 2
+  
+  Dans le cas du fichier "Legend of Zelda, The (E) [!].nes", ce morceau de code se trouve à l'adresse 0x0000 8a9f. Ce décalage de 0x0010 est dû à l'entête du fichier stipulant qu'il s'agit d'un fichier NES.
+  
+  Il faut rajouter ces deux images de cœur 3/4 et 1/4 :
+  
+  ;   .11.13..    31
+  ;   1111113.
+  ;   1111133.
+  ;   1111113.
+  ;   1111133.
+  ;   .11111..
+  ;   ..111...
+  ;   ...1....
+  8a8f: 6C FE FE FE FE 7C 38 10 04 02 06 02 06 00 00 00
+  
+  ;   .33.33..    32
+  ;   1133333.
+  ;   1333333.
+  ;   1133333.
+  ;   1333333.
+  ;   .13333..
+  ;   ..333...
+  ;   ...3....
+  8a9f: 6C FE FE FE FE 7C 38 10 6C 3E 7E 3E 7E 3C 38 10
+
+========== Lasers ==========
+  
+Condition pour envoyer des lasers :
+  
+  Bank 7 :
+  
+  F865: AD 6F 06      LDA   066F        ; charge le nombre de cœurs total / nombre de cœurs pleins
+  F868: 48            PHA               ;
+  F869: 29 0F         AND   #$0F        ; récupère le nombre de cœurs pleins
+  F86B: 85 00         STA   <GP_00      ; le stock en GP_00
+  F86D: 68            PLA               ; 
+  F86E: 4A            LSR   A           ;
+  F86F: 4A            LSR   A           ;
+  F870: 4A            LSR   A           ;
+  F871: 4A            LSR   A           ; récupère le nombre de cœurs total
+  F872: C5 00         CMP   <GP_00      ; compare nombre de cœurs total et nombre de cœurs pleins
+  F874: D0 DE         BNE   MMC1_3+1854 ; si plein différent de total, RTS
+  F876: AD 70 06      LDA   0670        ; charge le dernier cœur
+  F879: C9 80         CMP   #$80        ; le compare à la moitié
+  F87B: 90 D7         BCC   MMC1_3+1854 ; si plus petit, RTS
+  
+Adapter la condition pour envoyer des lasers avec les quarts de cœurs affichés :
+  
+  F879: C9 80         CMP   #$80 ;  ->  C9 C0         CMP   #$C0 ;
+  
+Toujours envoyer des lasers :
+  
+  F874: D0 DE         BNE   MMC1_3+1854 ;  ->  A9 DE         LDA   #$DE ;
+  ---
+  F87B: 90 D7         BCC   MMC1_3+1854 ;  ->  A9 D7         LDA   #$D7 ;
+
+Ne jamais envoyer de lasers :
+  
+  F872: C5 00         CMP   <GP_00      ;  ->  A9 01         LDA   #$01 ;
+
+========== Son 1 cœur ==========
+  
+Condition pour le son 1 cœur :
+  
+  Bank 7 :
+  
+  ED18: AD 6F 06      LDA   066F        ; charge le nombre de cœurs total / nombre de cœurs pleins
+  ED1B: 29 0F         AND   #$0F        ; récupère le nombre de cœurs pleins
+  ED1D: D0 08         BNE   MMC1_2+2D27 ; si non-nul, saute à ED27 (saute chargement son)
+  ED1F: AD 04 06      LDA   SND_Request ;
+  ED22: 09 40         ORA   #$40        ;
+  ED24: 8D 04 06      STA   SND_Request ;
+  ED27: A5 10         LDA   <0010       ;
+
+Enlever le son 1 cœur :
+
+  ED1B: 29 0F         AND   #$0F        ;  ->  ED1B: A9 0F         LDA   #$0F        ;
+
+========== Drops ==========
+
+Liste des drops :
+  
+  Bank 4 :
+  
+  B042: 22 ; A - to 0
+  B043: 18 ; A - to 1
+  B044: 22 ; A - to 2
+  B045: 18 ; A - to 3
+  B046: 23 ; A - to 4
+  B047: 18 ; A - to 5
+  B048: 22 ; A - to 6
+  B049: 22 ; A - to 7
+  B04A: 18 ; A - to 8
+  B04B: 18 ; A - to 9
+  B04C: 0F ; C - to 0
+  B04D: 18 ; C - to 1
+  B04E: 22 ; C - to 2
+  B04F: 18 ; C - to 3
+  B050: 0F ; C - to 4
+  B051: 22 ; C - to 5
+  B052: 21 ; C - to 6
+  B053: 18 ; C - to 7
+  B054: 18 ; C - to 8
+  B055: 18 ; C - to 9
+  B056: 22 ; B - to 0
+  B057: 00 ; B - to 1
+  B058: 18 ; B - to 2
+  B059: 21 ; B - to 3
+  B05A: 18 ; B - to 4
+  B05B: 22 ; B - to 5
+  B05C: 00 ; B - to 6
+  B05D: 18 ; B - to 7
+  B05E: 00 ; B - to 8
+  B05F: 22 ; B - to 9
+  B060: 22 ; D - to 0
+  B061: 22 ; D - to 1
+  B062: 23 ; D - to 2
+  B063: 18 ; D - to 3
+  B064: 22 ; D - to 4
+  B065: 23 ; D - to 5
+  B066: 22 ; D - to 6
+  B067: 22 ; D - to 7
+  B068: 22 ; D - to 8
+  B069: 18 ; D - to 9
+
+Routine de drops :
+  
+  Bank 4 :
+  
+  B0AB: A4 01         LDY   <GP_01      ;
+  B0AD: B9 3A B0      LDA   $B03A,Y     ; charge le type d'ennemi ? A B C ou D
+  B0B0: 18            CLC               ;
+  B0B1: 6D 2A 05      ADC   052A        ; ajoute le compteur de drops
+  B0B4: A8            TAY               ;
+  B0B5: B9 42 B0      LDA   $B042,Y     ; lit dans la table ci-dessus le drop à donner
+  B0B8: 85 00         STA   <GP_00      ; le stock dans GP_00
+  B0BA: A9 23         LDA   #$23        ; charge l'objet "fée"
+  B0BC: AC 27 06      LDY   0627        ; charge le compteur consécutif de fées
+  B0BF: C0 10         CPY   #$10        ; si 16 ennemis consécutifs ont été tués...
+  B0C1: F0 0E         BEQ   MMC1_1+10D1 ; ... saute à .stock
+  B0C3: A5 50         LDA   <0050       ; charge le compteur consécutif de bombes
+  B0C5: C9 0A         CMP   #$0A        ; si moins de 10 ennemis consécutifs ont été tués...
+  B0C7: 90 12         BCC   MMC1_1+10DB ; ... saute à .fin1
+  B0C9: A9 0F         LDA   #$0F        ; charge l'objet "5 rubis"
+  B0CB: A4 51         LDY   <0051       ; charge l'indicateur de tuerie
+  B0CD: F0 02         BEQ   MMC1_1+10D1 ; si nul, saute à .stock
+  B0CF: A9 00         LDA   #$00        ; charge l'objet "bombes"
+  B0D1: 85 00         STA   <GP_00      ; .stock - le dernier objet chargé va être drop
+  B0D3: A9 00         LDA   #$00        ;
+  B0D5: 85 50         STA   <0050       ; réinitialise le compteur consécutif de bombes
+  B0D7: 85 51         STA   <0051       ; réinitialise l'indicateur de tuerie
+  B0D9: F0 09         BEQ   MMC1_1+10E4 ; saute à .fin2
+  B0DB: A4 01         LDY   <GP_01      ; .fin1
+  B0DD: B5 18         LDA   0018,X      ;
+  B0DF: D9 3E B0      CMP   $B03E,Y     ;
+  B0E2: B0 11         BCS   MMC1_1+10F5 ;
+  B0E4: A9 FF         LDA   #$FF        ; .fin2
+  B0E6: 9D A8 03      STA   03A8,X      ;
+  B0E9: A5 00         LDA   <GP_00      ;
+  B0EB: 95 AC         STA   00AC,X      ;
+  B0ED: C9 23         CMP   #$23        ;
+  B0EF: D0 03         BNE   MMC1_1+10F4 ;
+  B0F1: 4C F4 B1      JMP   MMC1_1+11F4 ;
+  B0F4: 60            RTS               ;
+  B0F5: 4C 5F B1      JMP   MMC1_1+115F ;
+
+========== Caves ==========
+
+Caves :
+  
+  Bank 6 :
+  
+  8400 - 847F : Colonne, Palette, Eau
+  8480 - 84FF : Type, Palette
+  8680 - 86FF : Ligne, Escaliers, Quête, Ennemies
+  
+  Chaque plage contient 128 adresses, chaque adresse correspond à une ou plusieurs caractéristiques d'un écran donné, les écrans étant pris dans l'ordre normal.
+  
+  8400 - 847F : 7654 3210
+    Bits 7654 : Colonne du point de réapparition. 0 pour la colonne 0 en partant de la gauche, ... F pour la colonne 15.
+    Bit 3 : Si 1, Zora présent.
+    Bit 2 : Si 1, son de vagues.
+    Bits 10 : Palette du bord.
+  
+  8480 - 84FF : 7654 3210
+    Bits 765432 : Type de cave
+    Bits 10 : Palette du centre.
+  
+  8680 - 86FF : 7654 3210
+    Bit 7 : Si 1, la cave ne sera pas là dans la quête 1.
+    Bit 6 : Si 1, la cave ne sera pas là dans la quête 2.
+    Bits 54 : Position des escaliers.
+    Bit 3 : Si 1, les ennemis apparaîtront depuis les côtés. 
+    Bits 210 : Ligne du point de réapparition. 0 pour la ligne 1 en partant du haut, ... 7 pour la ligne 8.
+
+========== Objets ==========
+
+Appuyer sur B pour utiliser un objet :
+
+  Bank 5 :
+  
+  ; Legend of Zelda, The (U)(PRG0)[!]
+  ; sur d'autre variantes, les adresses changent
+  
+  8E1C: AD 56 06      LDA   0656        ; charge l'objet en B
+  8E1F: C9 0F         CMP   #$0F        ; si c'est la lettre,
+  8E21: F0 4E         BEQ   MMC1_0+E71  ; saute ailleurs
+  8E23: 20 E2 E5      JSR   MMC1_2+25E2 ; sinon (SwitchAJumpRet, Bank 7), fait un JSR suivant une adresse ci-dessous :
+  8E26: 38 8E               $8E38       ; pas d'objet
+  8E28: DD 70               $70DD       ; bombes
+  8E2A: 72 8E               $8E72       ; flèche sans arc ?
+  8E2C: A6 8E               $8EA6       ; arc ?
+  8E2E: 4F 71               $714F       ; bougie
+  8E30: 71 EF               $EF71       ; flûte ?
+  8E32: A7 8E               $8EA7       ; nourriture ?
+  8E34: B6 8E               $8EB6       ; potion ?
+  8E36: C7 8E               $8EC7       ; baguette de feu
+  8E38: AD 74               $74AD       ;
+
+Modifier la baguette de feu :
+
+  Bank 5 :
+  
+  8E36: C7 8E               $8EC7       ;  ->  2A AC               $AC2A       ;
+  ---
+  AC2A: FF ... FF ; (0x 0001 6c3a) ->
+    A2 10         LDX   #$10        ;
+    B5 AC         LDA   00AC,X      ; charge l'emplacement de la flamme 1
+    F0 05         BEQ   +05         ; si vide, c'est bien
+    E8            INX               ;
+    B5 AC         LDA   00AC,X      ; charge l'emplacement de la flamme 2
+    D0 F4         BNE   -0C         ; si non-vide, RTS
+    A5 5A         LDA   <0054       ; 
+    D0 F0         BNE   -10         ; si on est dans une grotte, RTS
+    A5 10         LDA   <0010       ; 
+    D0 EC         BNE   -14         ; si on est dans un donjon, RTS
+    A9 06         LDA   #$06        ; stocke 6 pour charger la bank 6
+    20 2A EB      JSR   $EB2A       ; saute dans la bank 7 pour remplacer la 5 par la 6, récupère des infos en GP_00, GP_01 et GP_02, remet la bank 5
+
+    A5 02         LDA   GP_02       ; charge le type de grotte
+    29 FC         AND   #$FC        ; récupère le type de grotte
+    F0 E1         BEQ   -1F         ; si vide, RTS
+    A4 16         LDY   <0016       ;
+    B9 2D 06      LDA   $062D,Y     ; charge le numéro de quête (0 ou 1)
+    F0 04         BEQ   +04         ;
+    A9 40         LDA   #$40        ;
+    D0 02         BNE   +02         ;
+    A9 80         LDA   #$80        ;
+    25 01         AND   GP_01       ; récupère zéro si la grotte est dans la quête actuelle
+    D0 D0         BNE   -30         ; si non-nul, RTS
+    
+    A5 00         LDA   GP_00       ; charge la colonne (X) du point de réapparition
+    29 F0         AND   #$F0        ; récupère la colonne (X)
+    95 70         STA   0070,X      ; stocke la colonne dans la position X de la flamme
+    A5 01         LDA   GP_01       ; charge la ligne (Y) du point de réapparition
+    0A            ASL               ;   
+    0A            ASL               ;   
+    0A            ASL               ;   
+    0A            ASL               ;   
+    29 70         AND   #$70        ;
+    18            CLC               ;
+    69 4F         ADC   #$4F        ; récupère la ligne (Y)
+    95 84         STA   0084,X      ; stocke la ligne dans la position Y de la flamme
+    
+    A9 10         LDA   #$10        ;
+    9D 94 03      STA   0394,X      ; gère le déplacement de la flamme, décrémente à chaque frame jusqu'à atteindre la valeur F0 = -10, ou incrémente jusqu'à 10 (selon la direction)
+    A9 00         LDA   #$00        ;
+    9D A8 03      STA   03A8,X      ; gère le déplacement de la flamme, alterne entre 80 et 00
+    95 98         STA   0098,X      ; donne la direction nulle à la flamme
+    A9 20         LDA   #$20        ;
+    9D BC 03      STA   03BC,X      ; ??
+    A9 21         LDA   #$21        ;
+    95 AC         STA   00AC,X      ; stocke la flamme dans l'emplacement de flamme vide
+    A9 04         LDA   #$04        ;
+    20 80 6D      JSR   6D80        ; bruit de flamme
+    A9 04         LDA   #$04        ;
+    9D D0 03      STA   03D0,X      ; animation de la flamme
+    60            RTS               ;
+    
+  Bank 7 :
+    
+  EB2A: FF FF FF ;  ->  20 AC FF      JSR   $FFAC  ; change la bank 5 en bank 6 
+  EB2D: FF FF FF ;  ->  4C D0 AC      JMP   $ACE0 (-10)  ; saute dans la bank 6
+    
+  Bank 6 :
+    
+  ACE0: FF ... FF ; (0x 0001 ace0) ->
+
+    A4 EB         LDY   <00EB       ; charge la position de la map actuelle
+    B9 00 84      LDA   8400,Y      ; 
+    85 00         STA   GP_00       ; charge la colonne (X) du point de réapparition en GP_00
+    B9 80 86      LDA   8680,Y      ; 
+    85 01         STA   GP_01       ; charge la ligne (Y) du point de réapparition en GP_01
+    B9 80 84      LDA   8480,Y      ;
+    85 02         STA   GP_02       ; charge le type de grotte en GP_02
+    A9 05         LDA   #$05        ; stocke 5 pour charger la bank 5
+    4C AC FF      JMP   $FF4C       ; saute dans la bank 7 pour remplacer la 6 par la 5, puis RTS
+  
+  Bank 2 :
+  
+  ;   ....2...    4A
+  ;   2..22..2
+  ;   22.22.22
+  ;   .211112.
+  ;   .122221.
+  ;   12332221
+  ;   12322221
+  ;   12222221
+  851f: 00 00 00 1C 42 B1 A1 81 08 99 DB 42 3C 7E 7E 7E
+
+  ;   12222221    4B
+  ;   .122221.
+  ;   ..1111..
+  ;   ...22...
+  ;   ...22...
+  ;   ...22...
+  ;   ...22...
+  ;   ...22...
+  852f: 81 42 3C 00 00 00 00 00 7E 3C 00 18 18 18 18 18
+  
+========== Affichage Rubis, Clés et Bombes ==========
+
+Affichage du nombre de rubis, clés et bombes :
+
+  Bank 1 :
+  
+  A58A: A2 02         LDX   #$02       ;
+  A58C: AD 6D 06      LDA   066D       ; charge le nombre de rubis
+  A58F: A0 1B         LDY   #$1B       ;
+  A591: 20 50 6D      JSR   6D50       ; routine de conversion en base 10 : écrit le contenu de A en base 10 à l'adresse $0302,Y
+  A594: A0 21         LDY   #$21       ;
+  A596: AD 64 06      LDA   0664       ; 
+  A599: F0 13         BEQ   MMC1_1+5AE ; si on n'a pas de clé magique, saute à .clé
+  A59B: 84 00         STY   <GP_00     ;
+  A59D: A9 21         LDA   #$21       ; charge un X (sprite stockés dans la bank 2)
+  A59F: 85 01         STA   <GP_01     ; le met en GP_01
+  A5A1: A9 0A         LDA   #$0A       ; charge un A (sprite stockés dans la bank 2)
+  A5A3: 20 75 6D      JSR   6D75       ; le met en GP_02, et met le vide (#$024) en GP_03
+  A5A6: A2 08         LDX   #$08       ;
+  A5A8: 20 55 6D      JSR   6D55       ; écrit GP_01, GP_02 et GP_03 à l'adresse $0302,Y
+  A5AB: 4C 46 6D      JMP   6D46       ; saute à .bombe
+  A5AE: A2 08         LDX   #$08       ; .clé
+  A5B0: AD 6E 06      LDA   066E       ; charge le nombre de clés
+  A5B3: 20 50 6D      JSR   6D50       ; routine de conversion en base 10
+  A5B6: A2 0E         LDX   #$0E       ; .bombe
+  A5B8: AD 58 06      LDA   0658       ; charge le nombre de bombes
+  A5BB: A0 27         LDY   #$27       ;
+  A5BD: 4C 50 6D      JMP   6D50       ; routine de conversion en base 10, puis RTS
+  
+Afficher la position de Link à la place des nombres de clés et bombes :
+  
+  Bank 1 : (0x 0000 65c0)
+  
+  A5B0: AD 6E 06      LDA   066E ;  ->  A5 70 EA      LDA   <0070   NOP ;
+  A5B3: 20 50 6D      JSR   6D50 ;
+  A5B6: A2 0E         LDX   #$0E ;
+  A5B8: AD 58 06      LDA   0658 ;  ->  A5 84 EA      LDA   <0084   NOP ;
+  A5BB: A0 27         LDY   #$27 ;
+  A5BD: 4C 50 6D      JMP   6D50 ;
+
+========== HUD Dynamique ==========
+
+Il s'agit de la partie du HUD qui peut changer au cours de la partie (comme le nombre de rubis ou la vie, mais bizarrement pas les objets).
+Le HUD Dynamique est géré dans un tableau qui commence à l'adresse $0302 et termine au premier octet FF rencontré. Il est mis à jour une frame sur deux. Pour faire cela, ce tableau est artificiellement vidé une frame sur deux en écrivant FF à l'adresse $0302.
+
+Chaque élément du tableau est un bloc constitué de plusieurs octets de la forme :
+  
+  BB PP NN XX XX XX ... XX
+
+Où :
+
+  BB est égal à $20, il correspond sûrement à la partie de l'écran dans laquelle il faut écrire
+  PP correspond au numéro de la case où il faut écrire. +$01 correspond à augmenter de 8 pixels vers la droite, +$20 de 8 pixels vers le bas
+  NN contient des flags et une taille : N = 7654 3210
+    7 : Vertical (les sprites sont appliqué verticalement)
+    6 : Répété (le sprite est répété plusieurs fois)
+    54 3210 : Taille (correspond à la taille du bloc, sauf si le flag Répété est mis, auquel cas la taille du bloc est 1, et ce nombre correspond au nombre de fois où le sprite est répété)
+  Si de la forme 4N, cela signifie taille 1, répété N fois
+  XX chacun de ces octets correspond à l'adresse d'un sprite dans la bank 2
+
+Par exemple, le bloc suivant permet d'écrire "X0 " entre le nombre de rubis et le nombre de clés :
+
+  20 8c 03 21 00 24
+
+À l'adresse $A507 de la bank 1 (0x0000 6517) se trouve le modèle pour ce tableau :
+
+20 b6 08 24 24 24 24 24 24 24 24 ; Taille 8 : vide (vie)
+20 d6 08 24 24 24 24 24 24 24 24 ; Taille 8 : vide (vie)
+20 6c 03 21 00 24 ; Taille 3 : X0  (rubis)
+20 ac 03 21 00 24 ; Taille 3 : X0  (clé)
+20 cc 03 21 00 24 ; Taille 3 : X0  (bombe)
+ff ;
+
+========== HUD Statique ==========
+
+Il s'agit de la partie du HUD qui ne change pas au cours de la partie (la mention " -LIFE- ", le cadre des objets). Il commence dans la bank 6 à l'adresse $A2E4 (0x0001 a2f4 sur le .nes).
+Le HUD y est encodé comme pour le HUD Statique, avec des blocs. On peut y lire :
+
+  20 6f 0e 69 0b 6b 69 0a 6b 24 24 62 15 12 0f 0e 62 ; Taille 15 : ┌B┐┌A┐  -LIFE-
+  20 cf 06 6e 6a 6d 6e 6a 6d                         ; Taille  6 : └─┘└─┘
+  20 8f c2 6c ; Taille 1, répété 2 fois, vertical : │
+  20 91 c2 6c ; Taille 1, répété 2 fois, vertical : │
+  20 92 c2 6c ; Taille 1, répété 2 fois, vertical : │
+  20 94 c2 6c ; Taille 1, répété 2 fois, vertical : │
+  20 6b 84 f7 24 f9 61 ; Vertical, taille 4 : rubis, espace, clé, bombe
+  ff ; Fin du HUD Statique
+
+Ensuite commence l'inventaire :
+
+  29 84 09 12 17 1f 0e 17 1d 18 1b 22 ; Taille 9 : INVENTORY
+  ff ;
+
+  29 c7 04 69 6a 6a 6b ; Taille 4 : ┌──┐
+  29 cf 01 69 ; Taille 1 : ┌
+  29 d0 4b 6a ; Taille 1, répété 11 fois : ─
+  29 db 01 6b ; Taille 1 : ┐
+  ff ;
+  
+  29 e7 c2 6c ; Taille 1, répété 2 fois, vertical : │
+  29 ea c2 6c ; Taille 1, répété 2 fois, vertical : │
+  29 ef c4 6c ; Taille 1, répété 4 fois, vertical : │
+  29 fb c4 6c ; Taille 1, répété 4 fois, vertical : │
+  ff ;
+  
+  2a 27 04 6e 6a 6a 6d ; Taille 4 : └──┘
+  ff ;
+  
+  2a 42 0c 1e 1c 0e 24 0b 24 0b 1e 1d 1d 18 47 ; Taille 12 : USE B BUTTON
+  2a 64 08 0f 18 1b 24 1d 11 12 1c ; Taille 8 : FOR THIS
+  2a 6f 01 6e ; Taille 1 : └
+  2a 70 4b 6a ; Taille 1, répété 11 fois : ─
+  2a 7b 01 6d ; Taille 1 : ┘
+  ff ;
+  
+  2b 43 07 0c 18 16 19 0a 1c 1c ; Taille 7 : COMPASS
+  2a a5 03 16 0a 19 ; Taille 3 : MAP
+  2a 8c 10 f5 f5 fd f5 f5 fd f5 f5 fd f5 f5 f5 fd f5 f5 f5 ; Taille 16 : Haut de la map
+  ff ;
+  
+  2b ac 10 f5 fe f5 f5 f5 fe f5 f5 f5 f5 fe f5 f5 f5 fe f5 ; Taille 16 : Bas de la map
+  ff ;
+  
+Palettes de l'inventaire : (0x0001 a3c0)
+  2b d9 43 05 ; Taille 1, répété 3 fois : 
+  2b dc 4b 00 ; Taille 1, répété 11 fois : 
+  ff ;
+  
+  2b e9 56 55 ; Taille 1, répété 20 fois : 
+  ff
+
+========== Palette ==========
+
+Dans la bank 6 à l'adresse $A2D3 (0x0001 a2e3) se trouve la palette du HUD Statique :
+
+  23 c2 0e ; Position et taille 15
+  40 00 00 44 55 55 ; Haut
+  00 00 04 00 00 44 55 55 ; Bas
+
+C'est encodé comme les blocs du HUD, sauf que le contenu XX d'un octet correspond à un groupe de palette. On rappelle (cf. NES_Doc) que chaque octet correspond à un groupe de 8x8 sprites, divisé en 4 groupes de taille 2x2.
+Si XX = 3322 1100, alors on a la palette :
+  
+  00 11
+  00 11
+  
+  22 33
+  22 33
+
+Par exemple, XX = 04 correspond à :
+  
+  00 11
+  00 11
+  
+  00 00
+  00 00
+
+========== HUD ==========
+
+Modifier le HUD pour avoir la vie en haut, ainsi qu'un compteur de meurtres :
+
+  Bank 1 (0x0000 6517) :
+  
+  A507: 20 b6 08 24 24 24 24 24 24 24 24 ;  ->  20 96 08 24 24 24 24 24 24 24 24 ;
+  A512: 20 d6 08 24 24 24 24 24 24 24 24 ;  ->  20 76 08 24 24 24 24 24 24 24 24 ;
+  
+  Bank 6 (0x0001 a2e3) :
+  
+  A2D3: 23 c2 0e 40 00 00 44 55 55 ;
+  A2DE: 00 00 04 00 00 44 55 55    ;  ->  00 00 04 00 00 44 05 05    ; changement de palette
+  A2E4: 20 6f 0e 69 0b 6b 69 0a 6b ;  ->  20 6f 06 69 0b 6b 69 0a 6b ;
+  A2ED: 24 24 62 15 12 0f 0e 62    ;  ->  20 d8 05 30 24 24 24 24    ; affichage du crâne
+
+  Bank 1 :
+
+  A5BD: 4C 50 6D      JMP   6D50 ;  ->  4C E1 7E      JMP   B751 ;
+  ---
+  B751: FF ... FF ; ->
+  
+    20 50 6D      JSR   6D50 ;
+    A9 20         LDA   #$20 ;
+    8D 2A 03      STA   032A ;
+    A9 D9         LDA   #$D9 ;
+    8D 2B 03      STA   032B ;
+    A9 03         LDA   #$03 ;
+    8D 2C 03      STA   032C ;
+    A9 FF         LDA   #$FF ;
+    8D 30 03      STA   032A ;
+    AD 27 06      LDA   0627 ; charge le nombre de morts
+    A0 2D         LDY   #$2D ;
+    4C 50 6D      JMP   6D50 ;
+  
+  Bank 2 : (0x0000 8a8f.)
+  
+  ;   .222222.    30
+  ;   22222222
+  ;   22222222
+  ;   22.22.22
+  ;   22222222
+  ;   22222222
+  ;   .222222.
+  ;   .2.22.2.
+  
+  8a8f: 00 00 00 00 00 00 00 00 7E FF FF DB FF FF 7E 5A

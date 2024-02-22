@@ -1,0 +1,5 @@
+Pour l'anecdote, il est possible de faire un permanent sans type de permanent depuis Sombracier (sorti en février 2004) avec Neurok Transmuter + March of the Machines. Cela est détaillé dans le complément de règles du Neurok Transmuter via un complément datant de décembre 2004 : https://scryfall.com/card/dst/27/neurok-transmuter Cela signifie-t-il que WotC a mis 10 mois à s'en rendre compte ? C'est possible. Ce qui est sûr en revanche, c'est que la règle qui précise qu'un permanent sans type de permanent reste un permanent n'est dans les comprules que depuis Future Sight, sorti en mai 2007, soit 2 ans après s'en être rendu compte.
+
+À propos, la règle en question dit :
+> If a permanent somehow loses all its permanent types, it remains on the battlefield. It’s still permanent.
+Cette règle n'a pas évoluée depuis 2007 (à part le "on the battlefield" qui était "in play" à l'époque), et on remarque donc que le "somehow" est là depuis 14 ans, comme si on était encore étonné que cela puisse se produire. D'ailleurs, le mot "somehow" est utilisé 8 fois dans les comprules actuelles

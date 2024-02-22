@@ -1,0 +1,103 @@
+========== How to ==========
+
+Modify one of these keys :
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\DMA Design Ltd\GTA2\Debug]
+"bob_debug_display"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\DMA Design Ltd\GTA2\Debug]
+"bob_debug_display"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\DMA Design Ltd\GTA2\Debug]
+"bob_debug_display"=dword:00000001
+
+========== Options ==========
+
+[X] Skip Police: No wanted level, no cops car
+[X] Show All Arrows: Show all mission arrows
+[X] Skip Tiles: Only actors are rendered, and aren't un-rendered
+[X] Show instruments: Show life in percentage and respect, car speed, gear, acceleration and damage
+[ ] Skip Mission: Crash
+[X] Skip User: No HUD
+[ ] Do Test: ???
+[ ] Show Imaginary Things: ???
+[ ] Show Collision Box: ???
+[X] Skip Recycling: Cars can't spawn
+[X] Skip Lid: No floor
+[X] Show Camera: Show camera coordinates
+[X] Show Counters: Show car counters
+[X] Show Timing: Show fps
+[X] Show Physics: Show car physic
+[X] Skip Frontend: Skip password and menu, and jump to used map, script and style
+[X] Show Cycle: Show frame count
+[X] Show Horn: Show (P)layer car and (H)orny cop car
+[X] Do Mike: Show memory and render informations
+[ ] Show Hidden Faces: ???
+[X] Skip dummies: no pedestrians
+[X] Show Traffic light: Show light cycle
+[X] Show Car/Ped IDs: Show Car/Ped IDs
+[X] Show Junction IDs: Show Road junction IDs
+[X] Skip Skidmarks: No Skidmarks
+[ ] Do Corner: ???
+[X] Do Blood: Killed pedestrians leave blood
+[ ] Do Release Replay: ???
+[X] Show Brief Number: Show Mission Brief Text IDs
+
+========== Keys ==========
+
+F1: Previous radio station
+F2: Next radio station
+F3: Increase radio volume
+F4: Decrease radio volume
+
+F6: Pause
+F7: Cycle through dialog
+F8: Show Desktop
+F9: Show Location
+
+========== Map - Script - Style ==========
+
+Map to Use: *.gmp
+Script to Use: *.scr
+Style to Use: *.sty
+
+Level 3: bil.*
+Level 2: ste.*
+Level 1: wil.*
+
+========== Traffic Light Cycle ==========
+
+There is 8 phases. Each phase lasts a number of frames and defines traffic light for North/South roads, traffic light for East/West road and light for pedestrians.
+
+Phase - Frames - North/South - East/West - Pedestrians
+  1   -   100  -    Green    -    Red    -     Red
+  2   -    24  -   Orange    -    Red    -     Red
+  3   -    24  -     Red     -    Red    -     Red
+  4   -   100  -     Red     -   Green   -     Red
+  5   -    24  -     Red     -  Orange   -     Red
+  6   -    24  -     Red     -    Red    -     Red
+  7   -   150  -     Red     -    Red    -    Green
+  8   -    80  -     Red     -    Red    -     Red
+
+========== Cars ==========
+
+For more informations abour cars, see GTA2/data/nyc.gci
+
+* 3 gears
+* Damage:
+  0% - 49% : Normal, 3 gears available
+  50% - 77% : On fire, 2 gears available
+  78% - 99% : Totally on fire, 1 gear available
+  100% : Explode
+
+========== Respect ==========
+
+Each gang has a respect between -100 and 100
+
+When you kill a gang member, you lose an amount of respect for this gang and gain an equal amount for an another gang. This amount is:
+- 1 if driven over
+- 5 otherwise
+
+========== Bonuses ==========
+
+see https://gtaforums.com/topic/880995-gta2-bonuses/

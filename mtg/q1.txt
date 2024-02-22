@@ -1,0 +1,11 @@
+!cards: Sliversmith, Chromatic Sphere, Breathstealer's Crypt, Darksteel Colossus
+
+Question :
+
+Je contrôle un Sliversmith, une Chromatic Sphere et un Breathstealer's Crypt. La carte du dessus de ma bibliothèque est un Darksteel Colossus. Je n'ai aucune carte en main, et j'ai 1 point de vie. J'active la capacité du Sliversmith. Au moment où j'ai l'opportunité d'activer des capacités de mana, j'active la capacité de ma Chromatic Sphere. Au moment où je dois payer les coûts de la capacité du Sliversmith, je veux utiliser le mana que Chromatic Sphere vient de produire et me défausser de la carte que je viens de piocher grâce à Chromatic Sphere. Est-ce légal ? Si oui, que se passe-t-il ?
+
+Réponse :
+
+C'est légal. En effet, pendant qu'on active la capacité du Sliversmith, le Darksteel Colossus pioché reste face caché et est traité comme s'il n'avait pas de caractéristique. Ça n'est donc pas une carte de créature, et le Breathstealer's Crypt ne me force pas à défausser le Darksteel Colossus à moins de payer 3 points de vie.
+
+De plus, le Darksteel est mis au cimetière à un moment où la capacité n'a pas fini d'être activée, il est donc mis au cimetière face cachée et sans caractéristique, et sa capacité de remplacement n'est pas visible à ce moment-là. Il n'est pas mélangé à ma bibliothèque.

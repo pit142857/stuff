@@ -1,0 +1,67 @@
+But : Dictionnaire (par ordre alaphabétique) + Lien vers un blason utilisant ce terme
+- http://blasons.free.fr/heraldique/heraldique.php (Tutoriel)
+- http://armorialdefrance.fr/ (Dictionnaire)
+- https://armorialdefrance.fr/demande_dept.php (Exemples)
+
+Exemple : https://armorialdefrance.fr/page_blason.php?ville=N
+remplacé N par la valeur donnée en exemple (donnée entre crochet)
+[218] signifie donc "Allez voir https://armorialdefrance.fr/page_blason.php?ville=218"
+
+Prochain (le but est, comme le freecell, de tous les faire dans l'ordre) : [57]
+
+Hardcore :
+    - [33]
+
+- Partitions :
+    - ( ) Plain
+    - (|) Parti : mi-parti [33]
+    - (-) Coupé
+    - (\) Tranché
+    - (/) Taillé
+    - (+) Écartelé
+    - (x) Écartelé en sautoir
+
+- Repartitions (= partition compliquée) :
+    - Gironné : coupé en 8 (= écartelé + écartelé en sautoir)
+    - Équipolé : coupé en 9 (= parti de deux + coupé de deux)
+    - Échiqueté : coupé en 36 (= parti de cinq + coupé de cinq )
+      Échiqueté de N tires (N>1) (= parti et coupé, de sorte que le nombre de ligne/colonne (le minimum) vale N, et de sorte à ce que toutes les pièces soient carrées). [218]
+      Si N=1 : Componné
+    - Division en chevron [52]
+
+- Pièces (= figures géométriques) :
+    - (|) Pal
+    - (-) Fasce
+    - (\) Bande
+    - (/) Barre
+    - (+) Croix
+    - (x) Sautoir
+
+- Positions (= mot en -é) :
+- Affronté (face à face) [219]
+- Accosté (à dextre et senestre) [219]
+- Chargé (meuble posé sur une pièce)
+- Brochant (pièce posé sur une pièce, un meuble ou sur le champ) [533] [7] [53]
+- Contourné (symétrie d'axe verticale)
+- Accompagné (autour d'un fasce, d'un chevron, d'un pairle, etc.)
+- Accosté (pièce autour du pal, de la bande ou de la barre, disposé dans le même sens)
+- Cantonné (autour d'une croix ou d'un sautoir)
+- Passé en sautoir (deux pièces disposé en X)
+- Semé (quand un meuble rempli une région) [1452]
+- Cousu (une pièce de métal sur métal, ou de couleur sur couleur) [11000]
+- Surmonté (une pièce au dessus d'une autre) [3718]
+
+- Meubles (= figures figuratives) :
+- Batiment :
+- Avant-Mur
+- Maçonné (briques)
+- Ouvert (porte)
+- Ajouré (fenêtre)
+- Tour
+- Animaux : [5425]
+- Armé (griffes)
+- Lampassé (langue)
+- Couronné (couronne)
+- Vilainé (pénis)
+- Arbre :
+- Fruité

@@ -1,0 +1,2 @@
+on prend Everlasting Torment qui dit que toutes les sources de dégâts ont le wither, on fait de Skullbriar un artefact avec 2 marqueurs +1/+1, et on lance Prismari Command avec les modes 1 et 4 
+comme ça, on met 2 marqueurs -1/-1 sur le Skullbriar, et on le détruit avant que les sba ne soient vérifiées

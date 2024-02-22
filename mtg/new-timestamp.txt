@@ -1,0 +1,11 @@
+After digging into old comprules, here's what I found:
+- At first (say before M10), an object would receive a new timestamp when it changes zone, with the only exception that an Aura, Equipment or Fortification gets a new timestamp when it becomes attached to an object or a player.
+- With M10, they added the description of the timestamp of a continuous effect, but that's it.
+- With Innistrad (in 2011) and the invention of double face cards, nothing changed.
+- With Magic Origin (in 2015), they were what I call the "face down timestamp update": now, a permanent that transforms or turns face up or face down gets a new timestamp, and a Conspiracy that turns face up gets a new timestamp. This changes appears in the Magic Origins Update Bulletin, but it is not explained.
+
+I still don't now why they made that change, but we can see that it was not obvious at all to give a new timestamp to an object changing face, as it took 4 years to make this new rule.
+
+Hence, currently, the only two exceptions to the rule that basically says "timestamp = when that object enters the zone it's in" are for objects that get attached and objects that change face. The first exception was here since the beginning, and the other one comes with the abundance of new cards that change face (transform dfc, return of morph in Khans of Tarkir, and conspiracies with Hidden agenda). I think the aim is to put as few exception as possible to the idea  "timestamp = when that object enters the zone it's in". If we start to add exception for flip card, we could argue that leveler card, saga card, class card should also have an exception, and why not vehicles that get crewed, animated land, card that becomes a copy of another card, etc.
+
+For me, the question is not "why flip cards don't get a new timestamp?", but rather "why cards changing face get a new timestamp?" I don't have a definite answer, but I think that conspiracies with Hidden agenda play a role in this change, as it seems reasonable to say that a conspiracy like Immediate Action should have the timestamp of the moment it gets turned face up.

@@ -1,0 +1,14 @@
+B: Bass Drum
+S: Snare Drum
+
+1 & 2 & 3 & 4 &
+
+B   S   B   S
+
+B   S   B B S
+
+B   S B B   S
+
+B   S B   B S
+
+B   S S   B S B

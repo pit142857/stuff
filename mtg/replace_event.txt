@@ -1,0 +1,8 @@
+"If [event], you may cast a spell" is bad:
+-> Miracle
+
+"If [event], you may pay [mana]" is bad: 
+Valentin, Dean of the Vein
+
+"If [event], draw a card instead" is bad:
+Nefarious Lich -> Lich's Mastery

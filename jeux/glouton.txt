@@ -1,0 +1,59 @@
+Paire : 2 dés x identiques - x points
+Glouton : 3 dés x identiques - 10 points
+Grenouille : suite de raison 1 - 2 points
+Kangourou : suite de raison 2 - 5 points
+421 : 421 - 0 point
+
+Paire :
+  On peut relancer le dé différent. Si on fait un glouton, on gagne les points du glouton.
+  Sinon, on ne gagne aucun point (mais on peut continuer à jouer)
+  
+Grenouille :
+  Le premier joueur à taper dans ses mains et à dire « Grenouille, ça chatouille » gagne directement les points sans passer par la réserve. En cas d'égalité pour le plus rapide, on ajoute juste les points à sa réserve.
+
+Kangourou :
+  Comme la grenouille, sauf qu'il faut taper deux fois des mains et dire « Pas mou l'kangourou »
+
+421 :
+  ???
+
+Imposteur :
+  Si on n'a pas de combinaison, on peut cacher 1 point d'un dé, mais on n'a pas les effets
+
+Autre :
+125
+126
+134
+136
+145
+146
+156
+235
+236
+245
+256
+346
+356
+
+Impostures forcées :
+125 -> 124 - 0 point
+126
+134 -> 124 - 0 point
+136
+145 -> 144 - 4 points
+146
+156
+235 -> 234 - 2 point
+236 -> 226 - 2 point
+245 -> 244 - 4 points
+256 -> 246 - 5 points
+346 -> 246 - 5 points
+356
+
+Impostures impossibles :
+223 -> 222
+445 -> 444
+321 -> 221
+432 -> 422
+543 -> 443
+654 -> 644

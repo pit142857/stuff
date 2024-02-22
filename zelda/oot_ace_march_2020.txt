@@ -1,0 +1,39 @@
+https://youtu.be/RoHHGavNraQ
+https://youtu.be/5A51_byMBXs
+https://media.discordapp.net/attachments/644288851799441447/679868319951487036/unknown.png
+
+---------- Further information ----------
+
+filename: 87Nジほブeぞ
+hex: 0807B897 27A2C94A 
+meaning (order reversed to match what is executed):
+  ADDIU $v0, $sp, 51530      ;set $vo to point to the next cutscene value
+  J     2024028              ;jump to some gossip stone overlay code that add 1 to what $v0 points to
+
+link's instance payload: 0804697D
+  this payload is made of:
+  - link's angle: 0804
+  - last target or spin attack link's angle: 697D
+  (this payload is located at address 0x1DB25C)
+meaning:
+  J     1156596              ;jump to filename
+this payload is preceded by some code that can be executed harmlessly:
+  NOP                        ;00000000 (39 times)
+  LB    $t8,45660($at)       ;8038B25C
+  NOP                        ;00000000
+  DSLLV $zero, $zero, $zero  ;00000014
+  NOP                        ;00000000
+  J     1156596              ;actual payload: jump to filename
+the harmless part is 43-word long, which is the size of the range of the rock angle which control the jump:
+the rock angle needs to be between 8F7A and 8FA5 when being dropped
+in dannyb's setup, the angle is 8F80, which is in the range
+  
+---------- MIPS Tip ----------
+
+NB: when there are 2 instructions in the same 64-bit code, they are executed the other way around
+
+if this instruction assembles in that
+  J dec  ;08XXXXXX
+then
+  dec = int(0xXXXXXX)/4
+  XXXXXX = hex(4*dec)

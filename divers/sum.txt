@@ -1,0 +1,73 @@
+
+                   v       v   v    x
+Cin     (+0.5) 0   0   1   1   1    1
+Cwithin (-4.5) 1   1   0   0   2    2
+Cout    (-5)   0   1   0   1   0    1
+Sum     (22.5) 18  13  23  18  14   9
+
+3 sommes possibles :
+
+14+18+13 = 45
+23+9+13 = 45
+18+9+18 = 45
+
+L'option Sum=9 est impossible.
+En effet, si on met un 9 dans cette boite, il ne peut pas aller en ligne 3.
+Il est donc un chiffre d'un des opérandes. Comme il y a des retenus partout, on a 9+1 = 10.
+Ainsi, le chiffre de l'opérande égal celui de la somme, ce qui est impossible par Sudoku.
+
+===
+
+Une possibilité de 14+18+13=45
+
+  |||   | |
+  186 934 725
++ 745 821 693
+= 932 756 418
+
+===
+
+Boite 14 :
+
+Le 9 est en bas à gauche
+Les colonnes centrales et de droite sont toujours échangeables
+Les 2 premières lignes sont toujours échangeables
+
+387
+526
+914
+
+278
+635
+914
+
+158
+764
+923
+
+Boite 18 :
+
+Les 2 premières lignes sont toujours échangeables
+
+912
+573
+486
+
+912
+735
+648
+
+931
+752
+684
+
+9..
+8..
+756
+
+921
+843
+765
+
+https://f-puzzles.com/?load=N4IgzglgXgpiBcBOANCALhNAbO8QBUALGAAgEMATCzCAewDsRUyBXNQ2gJwRAAVMSARgAsAJgAcAVgDsTEJxY4wMNDwByXALZksJdjE6baJMCwq0A1ixIKl5AA72sATwB0AHXoBlGDHrkwEkQAWmoAcwF6Fk0AIwMwZBtaAHcSYRIAaiTUyRIAXmySADY5MM4ICgQAbSrgAF9kesaGptaW9uaAXWRajrbmgf767t7BvvGxkaGJ6a6e2YXxqZmVyfnVxbnRzcXlsf3d7vRiQ1pNFQNq0CwIehgwaqqQACVJAGFBOWeit9Evn4AzCBOp0WiAbncHvAai9hG9hF8AfCvqJkahnoI3kCQWCIfdHi8keJEW9ZOjUWSXpjZDjGuDbvjoU9nnCSuj3myXj9Kc9pKSvuJ+bTrgyoTDnohfl9JUD0ZKEXK3pJgaC6XixczUZ90Ui/jqsSrcaKCRK3sT0YLEF8+Vb0XzicL6ZCTXzlXbkTijmgYAAPVTQ0AAYxgWCwYpe7wADMDUAA3HQsXAgDJyABmDDQbx4AGJI3n83JILAEJHXJIwcHQ+Hvm9o0d41hEzw8mmM1m8Ln83nC9BcKXy6CgA==
+

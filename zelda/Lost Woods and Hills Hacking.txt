@@ -1,0 +1,62 @@
+The Legend of Zelda
+Lost Woods & Lost Hills Hacking
+
+By Dr. Floppy 
+
+
+
+Outline
+
+I) Intro / Basic Information 
+II) Altering Screen Coordinates 
+III) The Lost Hills Sequence 
+IV) The Lost Woods Sequence 
+V) Additional Information 
+VI) Outro 
+
+
+Section 1: Intro / Basic Information 
+
+	If you’re reading this, you’re probably interested in altering the location(s) and/or escape sequences of the Lost Woods/Hills in The Legend of Zelda. Well, that’s exactly what this tutorial is for! Be advised that I tend to prefer quoting data locations as they appear in an actual hex editor. In other words, the game might view a byte of information as being stored at $7800, but due to the sixteen-byte header that precedes all .ines ROM files, that byte will appear to be located at $7810 when viewed in a hex editor. I usually include all original values when I specify such things, so it shouldn’t be hard to figure out which location I’m referencing. 
+
+
+Section 2: Altering Screen Coordinates 
+
+	The first (and easiest) thing to change is the actual location of titular arenas. The Zelda overworld consists of 128 screens, arranged on a 16x8 grid. The game associates the values $00-$0F with the screen positions on the top row, going left to right. The second row down consists of slots $10-$1F. The bottom row consists of slots $70-$7F. (You can figure out everything in between.) 
+
+In the original game, the Lost Woods are located in slot $61, which is the second screen in the second-from-bottom row. The Lost Hills are located in slot $1B, which is the fifth-to-last place of the second row. One thing I should probably clarify now is that these values refer to objective positions within the 128-screen array. They have NOTHING to do with the identities assigned to individual screen layouts. The layouts are shorthand for land/tree/water/mountain/etc. arrangements, some of which (the lake grottos) are repeated. What we’re concerned with here is location behavior, which the game views as a linear, non-repeating sequence from $00-7F. 
+
+Lost Woods Location: $6DB7 (default = $61) 
+Lost Hills Location: $6DD9 (default = $1B) 
+
+
+Section 3: The Lost Hills Sequence 
+
+	To best understand how to program new escape sequences, one must first understand that the game assigns specific values to movement in each of the four cardinal directions: 
+
+Northbound = 	$08 
+Southbound = 	$04 
+Eastbound = 	$01 
+Westbound = 	$02 
+
+The original Lost Hills sequence was four northbound movements in a row. Thus, the sequence at $6DAB-E should arouse a bit of suspicion… 
+
+
+Section 4: The Lost Woods Sequence 
+
+	“Go North, West, South, West to the Forest of Maze.” Keeping in mind the table from Section 3, check out the four bytes starting at $6DA7. 
+
+
+Section 5: Additional Information 
+
+	So, you’ve changed the coordinates at which the game requires a special route from which to escape/proceed. You’ve altered those routes to your liking. Now you’re done, right? Well, not exactly… 
+
+Have you ensured that your new paths actually lead someplace special? Have you ensured that there’s at least one direction that can be used as an emergency escape, i.e. whence you originally came? (These controls can be found at $6DD0 and $6DE2 for the Woods and Hills, respectively.) Have you made sure that the first (not to mention last) step in your new routes AREN’T in the auto-escape direction? You might also want to consider updating the in-game messages that reveal how to get through the original renditions of these areas.  
+
+
+Section 6: Outro 
+
+	That’s it! If you have any questions, comments or general feedback, I can be reached at DrFloppyMD@aol.com. And be sure to check out the hack which inspired this document, The Legend of Iowa, which will (hopefully) be released in late 2009. 
+
+
+~*~ Floppyright 2009, Dr. Floppy ~*~

@@ -1,0 +1,97 @@
+0x03000054 (1) : Monde actuel : - 0 (Brinstar)
+				- 1 (Kraid)
+				- 2 (Norfair)
+				- 3 (Ridley)
+				- 4 (Tourian)
+				- 5 (Crateria)
+				- 6 (Chozodia)
+
+0x03000059 (1) : Position X actuelle sur la Map
+0x0300005A (1) : Position Y actuelle sur la Map
+
+0x03000063 (1) : Nombre d'objets collectés dans le Brinstar
+0x03000064 (1) : Nombre d'objets collectés dans le Kraid
+0x03000065 (1) : Nombre d'objets collectés dans le Norfair
+0x03000066 (1) : Nombre d'objets collectés dans le Ridley
+0x03000067 (1) : Nombre d'objets collectés dans le Tourian
+0x03000068 (1) : Nombre d'objets collectés dans le Crateria
+0x03000069 (1) : Nombre d'objets collectés dans le Chozodia
+
+0x03000144 (2) : Position X de l'écran
+0x03000146 (2) : Position Y de l'écran
+0x03000148 (1) : Vitesse X de l'écran
+0x03000149 (1) : Vitesse Y de l'écran
+
+0x03000150 (1) : Horloge (Heures)
+0x03000151 (1) : Horloge (Minutes)
+0x03000152 (1) : Horloge (Secondes)
+0x03000153 (1) : Horloge (Images)
+
+0x030013DE (1) : Horloge pour la Super Vitesse
+0x030013E2 (1) : 10=Droite ; 20=Gauche
+
+0x030013EA (2) : Vitesse X de Samus
+0x030013EC (2) : Vitesse Y de Samus
+
+0x03001530 (2) : Vie max
+0x03001532 (1) : Missiles max
+0x03001534 (1) : Supers Missile max
+0x03001535 (1) : Bombes de Puissance max
+
+0x03001536 (2) : Vie actuelle 
+0x03001538 (1) : Missiles actuels
+0x0300153A (1) : Supers Missile actuels
+0x0300153B (1) : Bombes de Puissance actuelles
+
+0x0300153C (4) : Objets récupérés :
+					- 0x00000101 : Rayon Long
+					- 0x00000202 : Rayon Glace
+					- 0x00000404 : Rayon Vague
+					- 0x00000808 : Rayon Plasma
+					- 0x00001010 : Rayon Charge
+					- 0x00008080 : Bombe
+					- 0x01010000 : Méga Saut
+					- 0x02020000 : Accélérateur
+					- 0x04040000 : Saut Spatial
+					- 0x08080000 : Vrille
+					- 0x10100000 : Costume Varia
+					- 0x20200000 : Costume de Gravité
+					- 0x40400000 : Morphing Ball
+					- 0x80800000 : Poigne de Fer
+
+(Si le chiffre non-nul le plus à droite devient nul,
+		l'objet est utilisable mais est affiché non-équipé)
+(Si le chiffre non-nul le plus à gauche devient nul,
+		l'objet est affiché équipé mais est non-utilisable)
+
+
+0x03001542 (1) : 0x01 => Objets déchifrés
+
+0x03001600 (2) : Position X dans la salle actuelle
+0x03001602 (2) : Position Y dans la salle actuelle
+
+0x04000130 (2) : Inputs : 0x03FF moins : - 0x0001 (A)
+					 - 0x0002 (B)
+					 - 0x0004 (Select)
+					 - 0x0008 (Start)
+					 - 0x0010 (Right)
+					 - 0x0020 (Left)
+					 - 0x0040 (Up)
+					 - 0x0080 (Down)
+					 - 0x0100 (R)
+					 - 0x0200 (L)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

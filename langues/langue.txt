@@ -1,0 +1,60 @@
+Pronoms grammaticaux :
+
+- Première personne : Inclusif / Exclusif [1]
+- Deuxième personne : Vouvoiement
+- Troisème personne : Genré
+- Quatrième personne : Obviation [2]
+
+[1] https://fr.wikipedia.org/wiki/Nous_exclusif_et_inclusif#Cas_particulier_du_samoan
+[2] https://fr.wikipedia.org/wiki/Obviation
+
+
+Structure d'actance :
+
+- Ergatif [1]
+
+[1] https://fr.wikipedia.org/wiki/Structure_d%27actance
+
+
+Déclinaisons :
+
+Beaucoup de cas différents [1]
+Le hongrois aurait 17 cas, mais il s'agit juste de suffixes (un peu comme en japonais) [2]
+
+[1] https://fr.wikipedia.org/wiki/Cas_grammatical
+[2] https://fr.wikipedia.org/wiki/Nom,_adjectif_et_num%C3%A9ral_en_hongrois#La_d%C3%A9clinaison
+
+
+Genres :
+
+- Masculin : animé personnel, animé impersonnel, inanimé (Polonais) [1]
+- Féminin :
+- Neutre :
+- Ambigène : Masculin au singulier et Féminin au pluriel [1]
+
+Les langues bantoues aurait une vingtaine de genres [2]
+
+[1] https://fr.wikipedia.org/wiki/Genre_grammatical#Nombre_de_genres
+[2] https://fr.wikipedia.org/wiki/Classe_nominale#Langues_bantoues
+
+
+Nombres :
+
+- Singulier
+- Duel
+- Triel
+- Quadriel
+- Paucal
+- Pluriel
+
+- Cas du singulatif : Sans désinence au pluriel, désinence spécial quand mis au singulier [1]
+- Peut être généralisé à tous les nombres : chaque mot a un nombre sans désinence qui correspond à la quantité que l'on trouve dans la nature [2]
+
+[1] https://fr.wikipedia.org/wiki/Nombre_grammatical#Singulatif
+[2] https://fr.wikipedia.org/wiki/Nombre_grammatical#Nombre_inverse
+
+Négation contextuelle :
+
+La négation dépend du verbe que l'on emploie (moyen français) [1]
+
+[1] https://fr.wikipedia.org/wiki/N%C3%A9gation_en_fran%C3%A7ais

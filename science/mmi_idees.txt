@@ -1,0 +1,6 @@
+- Construire son propre Dobble (1h)
+- Complexité de un (20min)
+- Carré plus que parfait (1h) :
+  * http://villemin.gerard.free.fr/Wwwgvmm/CarreMag/CMordre4.htm
+  * http://villemin.gerard.free.fr/Wwwgvmm/CarreMag/aaaCMag/CarEnch.htm
+  * http://villemin.gerard.free.fr/Wwwgvmm/CarreMag/CMor4Pan.htm#pan44

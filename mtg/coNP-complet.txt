@@ -1,0 +1,11 @@
+Pour ceux que ça intéresse et qui s'y connaissent en théorie de la complexité, savoir si une assignation des bloqueurs est légale ou non est un problème coNP-complet. L'article qui le prouve est ici : https://research-explorer.app.ist.ac.at/download/478/4658/IST-2018-950-v1%2B1_2016_Chatterjee_The_complexity.pdf
+
+D'après ce papier, une situation compliquée de blocage peut être créée via un Tromokratis attaquant (« Tromokratis ne peut pas être bloqué à moins que toutes les créatures que le joueur défenseur contrôle ne le bloquent. »), plein de Sagacité attaquant (« La Sagacité ne peut être bloquée excepté par trois créatures ou plus. »), plein de Chasse (« La créature ciblée bloque la créature ciblée ce tour-ci si possible. »), et X créature adverses. Les Chasse sont lancées comme suit :
+- On lance X moins 1 Chasse en ciblant Tromokratis et la même créature adverse (disons un Cadet impatient pour fixer les choses).
+- Pour chaque Sagacité, on choisit 3 créatures adverses différentes et on lance 3 Chasse, chacune ciblant cette Sagacité et une de ces créatures différentes.
+
+Dans cette situation, il y a en gros 2 possibilité de blocage :
+- Soit toutes les créatures adverses bloquent Tromokratis. En particulier, le Cadet impatient bloque Tromokratis, satisfaisant les X - 1 restrictions "si possible" des Chasse lancées sur Tromokratis et ce Cadet impatient adverse.
+- Soit l'adversaire arrive à grouper toutes ses créatures 3 par 3 de sorte à ce que chaque groupe de 3 bloque la Sagacité qui lui a été assignée par les Chasse. Dans ce cas, il arrive à satisfaire X restrictions "si possible", ce qui est plus que la possibilité précédente.
+
+Ainsi, si un tel groupement 3 par 3 est possible, le première possibilité de blocage est illégale ; mais s'il est impossible, la première possibilité est légale. Cependant, savoir si un tel groupement est possible ou non est un problème mathématique très difficile, il s'agit du problème de couverture exacte https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_la_couverture_exacte#. Savoir si la première possibilité de blocage est légale nécessite donc de résoudre un problème extrêmement compliqué, voire impossible si le nombre de Sagacité est très grand.
