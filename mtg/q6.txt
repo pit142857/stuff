@@ -6,3 +6,6 @@ A. On choisit au hasard la première cible parmi les adversaires d'Amy et les pl
 B. On choisit au hasard la première cible parmi les adversaires d'Amy et les planeswalkers qu'ils contrôlent, puis on choisit au hasard la seconde cible parmi les créatures qui ne sont pas contrôlées par Amy. Si la créature n'est pas contrôlée par le joueur ou le contrôleur du planeswalker choisi pour la première cible, on recommence cette procédure depuis le début.
 C. On choisit au hasard la deuxième cible parmi les créatures qui ne sont pas contrôlées par Amy, puis on choisit au hasard la première cible parmi son contrôleur et les planeswalkers qu'il contrôle.
 D. Aucune de ces réponses.
+
+Réponse : A. D'après les notes de règles de la carte High Troller, il faut choisir les cibles dans l'ordre de la carte :
+If a spell or ability has two or more targets where the legality of one or more of those targets depends on what one or more of the other targets are, the targets are chosen at random in the order specified on the card. If choosing one player or object as a target would cause no legal targets to remain for another target, that player or object can’t be randomly chosen.
