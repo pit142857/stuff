@@ -1,0 +1,2 @@
+# Change pdf dimnesion 
+convert in.pdf -units pixelsperinch -density 72 -page a4 out.pdf
