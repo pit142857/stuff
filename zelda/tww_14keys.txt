@@ -14,31 +14,38 @@ There are 12 small keys in the game:
 - 3 in Earth Temple
 - 2 in Wind Temple
 
+The 14 picked keys are:
+- 3/4 in Dragon Roost Cavern (we have to use 1 key to unlock the first door)
+- 7/8 transferred keys (the freestanding key in Earth Temple is toot hard tu store)
+- 4 from another Dragon Roost Cavern via Back in Time
+
+It it possible to get the 2 remaining keys, for a total of 16 keys, using Actor Unloading
+
 ========== PasteBin ==========
 
-The goal of Max DRC (Dragon Roost Cavern) keys is to have your key counter in DRC say 14. 
+The goal of Max DRC (Dragon Roost Cavern) keys is to have your key counter in DRC say 14.
 14 keys is the most possible keys obtainable in any dungeon with our current knowledge.
- 
+
 Here's how it works:
- 
+
 There are 12 keys in the entire game, 4 of which are in DRC. We can use storage to transfer 7 of the 8 keys in other dungeons.
-When you store a small key chest and leave the dungeon WITHOUT reloading any areas, the game never properly gives the key to the dungeon you were in. So it waits for the next time you enter a dungeon, when it then gives you the key. So if the next dungeon you enter is DRC, then you essentially carried over a key from one dungeon to DRC. 7 of 8 are possible to transfer, there is one key in Earth Temple that is not in a chest, and storing it does not have the same effects. 
-Another problem we have is that we are required to use one key at the beginning of DRC. There is a mandatory use of one key to progress through the dungeon. Doing some basic math: 
+When you store a small key chest and leave the dungeon WITHOUT reloading any areas, the game never properly gives the key to the dungeon you were in. So it waits for the next time you enter a dungeon, when it then gives you the key. So if the next dungeon you enter is DRC, then you essentially carried over a key from one dungeon to DRC. 7 of 8 are possible to transfer, there is one key in Earth Temple that is not in a chest, and storing it does not have the same effects.
+Another problem we have is that we are required to use one key at the beginning of DRC. There is a mandatory use of one key to progress through the dungeon. Doing some basic math:
 	4 keys in DRC, we have to use one, so 3. 7 of the 8 keys are transferable = 10 keys in DRC
- 
+
 So where the heck does 14 keys come from??
- 
+
 Back in Time.
 The first portion of the run is setting up a premade file for the file that will actually obtain all 14 keys. The goal of this file is to store all 4 DRC keys without reloading any areas.
 After we store all 4 DRC keys, we then activate Back in Time, this gives the new BiT file 4 keys. It actually transferred the keys from the premade file to this new file. From this BiT file, we save the game, which essentially erases all progress we've made, and puts us back at the beginning of the game. The exception here is that we have 4 keys in DRC, AND all the keys in DRC are still obtainable.
- 
+
 Referring back to our math from earlier, we start this file with 4 DRC keys, we then transfer 7 of the 8 keys from the other dungeons, then we recollect the 3 of the 4 keys in DRC (we have to use one remember?), giving us a total of 14 keys.
- 
- 
- 
+
+
+
 FAQ:
 Q: If you can dupe keys in Back in Time, couldn't you just do this as many times you want for infinite keys?
 A: No, the number of keys you transfer in BiT is exactly equal to how many keys you stored, not the total key count in that dungeon. So if you had 8 keys in DRC, stored 3 keys, then did BiT, the new BiT file will have 3 keys, not 11.
- 
+
 Q: If all you have to do in the premade file is store all 4 keys in DRC, why do you have to do so much?
 A: In order to store every key in DRC in one trip, we need 2 extra keys from other dungeons. We need 1 key to open first door of DRC, and we need another key to get through a locked door backwards on the 2nd floor. We can transfer one key from Forbidden Woods, but we still need another, which requires us to go to Tower of the Gods.
