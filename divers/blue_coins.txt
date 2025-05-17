@@ -19,13 +19,13 @@ Bianco Hills:
 [30] Episode 8 + Yoshi
 
 Ricco Harbor:
-[20] Episode 1
-[21] Episode 2
+[21] Episode 1
+[22] Episode 2
 [25] Episode 3
 [26] Episode 4
 [27] Episode 6
 [28] Episode 8 + Yoshi
-[+2] Turbo Nozzle?
+[+1] Blooper (Episode 2)
 [+1] Rocket Nozzle
 
 Gelato Beach:
