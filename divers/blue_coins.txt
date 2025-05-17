@@ -21,12 +21,14 @@ Bianco Hills:
 Ricco Harbor:
 [21] Episode 1
 [22] Episode 2
-[25] Episode 3
-[26] Episode 4
-[27] Episode 6
-[28] Episode 8 + Yoshi
+[24] Episode 3
+[25] Episode 4
+[26] Episode 6
+[27] Episode 8 + Yoshi
 [+1] Blooper (Episode 2)
 [+1] Rocket Nozzle (Episode 3)
+[+1] Episode 3 + Yoshi
+
 
 Gelato Beach:
 [23] Episode 1
