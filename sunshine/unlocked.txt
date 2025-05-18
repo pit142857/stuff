@@ -1,0 +1,24 @@
+Delfino Plaza:
+ 1 : Bianco Hills
+ 3 : Ricco Harbor -> Crate + 1 piece
+ 5 : Gelato Beach -> Boats
+10 : Pinna Park
+20 : Noki Bay
+25 + Yoshi : Turbo Nozzle
+30 + Turbo Nozzle : Rocket Nozzle
+30 : Sunglasses
+
+Everywhere:
+Pinna Park Episode 4 : Yoshi
+
+Bianco Hills:
+Episode 4: Rocket Nozzle
+Episode 6: Turbo Nozzle
+
+Ricco Harbor:
+Episode 3: Rocket Nozzle
+Episode 7: Turbo Nozzle
+
+Gelato Beach:
+Episode 4: Turbo Nozzle
+Episode 5: Rocket Nozzle

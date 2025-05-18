@@ -4,9 +4,9 @@ Delfino Plaza:
 [09] 1 Shine
 [11] Bianco Hills Statue raised
 [15] Bianco Hills unlocked
-[16] Gelato Beach unlocked (5 shines)
-[18] Yoshi unlocked (episode 4.4)
-[19] Turbo Nozzle unlocked (Yoshi + 25 shines)
+[16] Gelato Beach unlocked
+[18] Yoshi unlocked
+[19] Turbo Nozzle unlocked
 [20] After Corona Moutain
 
 Bianco Hills:
@@ -19,19 +19,16 @@ Bianco Hills:
 [30] Episode 8 + Yoshi
 
 Ricco Harbor:
-[21] Episode 1
-[22] Episode 2
-[24] Episode 3
-[25] Episode 4
-[26] Episode 6
-[27] Episode 8 + Yoshi
-[+1] Blooper (Episode 2)
-[+1] Rocket Nozzle (Episode 3)
-[+1] Episode 3 + Yoshi
-
+[21] Episode 1 (two coins visible but not obtainable)
+[23] Episode 2 (Blooper, includes one visible)
+[26] Episode 3 (Rocket Nozzle, include one visible)
+[27] Episode 4
+[28] Episode 6
+[30] Episode 8 + Yoshi
 
 Gelato Beach:
-[23] Episode 1
+[22] Episode 1
+[23] Episode 2
 [27] Episode 4
 [28] Episode 5
 [30] Episode 6 + Yoshi
