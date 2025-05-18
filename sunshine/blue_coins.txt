@@ -48,9 +48,10 @@ Sirena Beach:
 [30] Episode 7
 
 Noki Bay:
-[25] Episode 1?
-[29] Episode 8
-[+1] Rocket Nozzle
+[20] Episode 1
+[24] Episode 2
+[26] Episode 6
+[30] Episode 8
 
 Pianta Village:
 [14] Episode 1
