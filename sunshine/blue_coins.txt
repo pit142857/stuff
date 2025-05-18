@@ -36,7 +36,8 @@ Gelato Beach:
 Pinna Park:
 [21] Episode 1
 [27] Episode 2
-[30] Episode 6 + Yoshi
+[29] Episode 5
+[30] Episode 6
 
 Sirena Beach:
 [03] Episode 1
