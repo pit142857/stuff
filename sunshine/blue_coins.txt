@@ -4,7 +4,7 @@ Delfino Plaza:
 [09] 1 Shine
 [11] Bianco Hills Statue raised
 [15] Bianco Hills unlocked
-[16] Gelato Beach unlocked
+[16] Gelato Beach unlocked (can also be obtained early, but only before Bianco Hills Statue is raised, using goop)
 [18] Yoshi unlocked
 [19] Turbo Nozzle unlocked
 [20] After Corona Moutain
@@ -19,9 +19,9 @@ Bianco Hills:
 [30] Episode 8 + Yoshi
 
 Ricco Harbor:
-[21] Episode 1 (two coins visible but not obtainable)
-[23] Episode 2 (Blooper, includes one visible)
-[26] Episode 3 (Rocket Nozzle, include one visible)
+[21] Episode 1 (two coins visible but precise or very hard to obtain)
+[23] Episode 2 (intended with Blooper, can be obtained in Episode 1 but it's precise)
+[26] Episode 3 (intended with Rocket Nozzle, can be obtained in Episode 1 but it's very hard)
 [27] Episode 4
 [28] Episode 6
 [30] Episode 8 + Yoshi
