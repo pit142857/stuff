@@ -1,12 +1,21 @@
 From 2003:
 https://gamefaqs.gamespot.com/gamecube/533287-super-mario-sunshine/faqs/23467
 
+Ep. 1   2   3   4   5   6   7   8
+BH 109 114 170 158 115 177 143 212
+RH 144 123 132 129 131 132 121 130
+GB 123 125 122 126 126 127 124 155
+PP  92 999  83  74 214 218 214 228
+SB 101  86 117 999 999  14 123 112
+NB 163 177  50 193 123 210 127 227
+PV 110  26 126  15 175 999  77  35
+
 Leaderboard and videos:
 https://www.imore.com/super-mario-3d-all-stars-blue-coin-hunting-guide-super-mario-sunshine
 
 [999]: Delfino Plaza
 [212]: Bianco Hills (Episode 8)
-[149]: Ricco Harbor (Episode 1 + all coins of Difficulty***)
+[149]: Ricco Harbor (Episode 1 + all coins of Difficulty**)
 [161]: Gelato Beach (Episode 8 + 6 coins under the jelly using glitches)
 [999]: Pinna Park (Episode 2)
 [999]: Sirena Beach (Episode 4 or 5)
