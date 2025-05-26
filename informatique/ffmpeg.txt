@@ -12,3 +12,6 @@ ffmpeg -i in.avi -c:a copy -c:v libx264 -pix_fmt yuv420p -vf pad="640:360:(ow-iw
 
 # Combine video and audio
 ffmpeg -i "old.mp4" -i "old.mp3" -c:v copy -map 0:v:0 -map 1:a:0 "out.mp4"
+
+# Convert multiple images into a video
+ffmpeg -framerate 2 -s 1024x1024 -i src/%02d.png -c:v libx264 -r 25 -pix_fmt yuv420p -shortest output.mp4
