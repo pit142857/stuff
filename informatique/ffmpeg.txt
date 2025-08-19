@@ -2,7 +2,10 @@
 ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
 
 # Convert a mkv video downloaded with youtube-dl default options into a mp4 "universal" video, by re-encoding the audio into mp3
-ffmpeg -i input.mkv -c:v copy -c:a mp3 output.mp4
+ffmpeg -i input.mkv -c:v copy -c:a mp3 /home/pitois/Vidéos/Films/output.mp4
+
+# Convert a 4K mkv video into a mp4 HD video
+ffmpeg -i input.mkv -vf scale=1920:1080 -crf 20 -c:a mp3 -preset ultrafast output.mp4
 
 # Combine 1 image with an audio
 ffmpeg -loop 1 -i image.jpg -i audio.wav -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest out.mp4
