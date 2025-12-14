@@ -1,0 +1,29 @@
+Dans GRUB :
+* Appuyez sur la touche e affiche les paramètres de boot de l'option sélectionnée.
+* Appuyez sur la touche c donne accès à la console de GRUB.
+
+Console de GRUB :
+* Elle fonctionne en lecture seule.
+* Elle peut lire toutes les partitions, même celles qui ne pourraient pas être lues pas un OS.
+* Certaines commendes utiles :
+  `ls` affiche les partitions.
+  `ls <partition>/<path>` permet d'afficher la contenu de /<path> de <partition>.
+  `set root=<partition>` fait en sorte que / vaut la partition choisie.
+  `chainloader <path>` charge la chaîne à utiliser pour boot.
+  `boot` permet de boot avec les paramètres choisis.
+* Ainsi, pour booter depuis une clé USB avec Ubuntu :
+  set root=(hd0,gpt1)
+  chainloader /efi/boot/grubx64.efi
+  boot
+
+Console initramfs :
+* S'ouvre quand Ubuntu n'arrive pas à boot.
+* Certaines commendes utiles :
+  `exit` pour réessayer de boot
+  `poweroff` pour éteindre l'ordinateur
+
+Quelques paramètres de l'UEFI :
+* Contrôleur SATA :
+  + RAID / Intel RST : mieux pour Windows
+  + AHCI : nécessaire pour Ubuntu
+* TPM : permet le chiffrement des données lors du boot

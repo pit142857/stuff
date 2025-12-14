@@ -22,5 +22,21 @@ ffmpeg -framerate 2 -s 1024x1024 -i src/%02d.png -c:v libx264 -r 25 -pix_fmt yuv
 # Make a test on a short sample
 ffmpeg -ss 0:30:00 -t 0:01:00 -i input.mkv ...
 
+# Create black video
+ffmpeg -f lavfi -i color=c=black:s=848x480:r=25 -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -t 10 black.mp4
+
+# Concat video
+ffmpeg -f concat -i list.txt -c copy output.mp4
+> with
+cat list.txt
+file 'file1.mp4'
+file 'file2.mp4'
+
+# Add 10s blankspace at end of video (remove sound...)
+ffmpeg -i input.mp4 -filter_complex "color=c=black:s=848x480:r=25:d=10[black];[0:v][black]concat=n=2:v=1:a=0[v]" -map "[v]" output.mp4
+
+# Add 1 black frame at the beginning and 10s blankspace at end of video (remove sound...)
+ffmpeg -i input.mp4 -filter_complex "color=c=black:s=848x480:r=25:d=0.04[f];color=c=black:s=848x480:r=25:d=10[black];[f][0:v][black]concat=n=3:v=1:a=0[v]" -map "[v]" output.mp4
+
 # Information about time format
 man ffmpeg-utils
