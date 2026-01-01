@@ -18,15 +18,16 @@
 
 # Other LOTADs:
 
+2026: OOT low% MST (21 items)        > https://youtu.be/baxru6goFiU
 2025: OOT max% - 0 pauses            > https://youtu.be/uTcYkrWsxbk
 2024: OOT      - max keys (140)      > https://youtu.be/n8paGkGAj1c
 2023: TWW      - 16 keys             > https://youtu.be/D585ORqqjxU
-2022: OOT low% - 2 items             > https://youtu.be/EXLGmKRbDrs
+2022: OOT low% (2 items)             > https://youtu.be/EXLGmKRbDrs
 2022: OOT 100% - 2 pauses            > https://youtu.be/L_s1FTe7NGM
 2021: OOT.9 GSR                      > https://youtu.be/KhLg53Z5Lxg
-2021: MQ    AD - 2 pauses            > https://youtu.be/wVi4mPIgI3M
-2019: OOT   AD - 1 pause             > https://youtu.be/asQsOb6RIbk
-2017: OOT   AD - 2 pauses (outdated) > https://youtu.be/Z8RB19_vCWU
+2021: MQ  AD   - 2 pauses            > https://youtu.be/wVi4mPIgI3M
+2019: OOT AD   - 1 pause             > https://youtu.be/asQsOb6RIbk
+2017: OOT AD   - 2 pauses (outdated) > https://youtu.be/Z8RB19_vCWU
 
 # No Doors TASes:
 
