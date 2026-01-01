@@ -16,7 +16,7 @@ There are 12 small keys in the game:
 
 The 14 picked keys are:
 - 3/4 in Dragon Roost Cavern (we have to use 1 key to unlock the first door)
-- 7/8 transferred keys (the freestanding key in Earth Temple is toot hard tu store)
+- 7/8 transferred keys (the freestanding key in Earth Temple is too hard tu store)
 - 4 from another Dragon Roost Cavern via Back in Time
 
 It it possible to get the 2 remaining keys, for a total of 16 keys, using Actor Unloading
