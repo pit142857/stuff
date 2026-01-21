@@ -38,30 +38,30 @@ Hardcore :
     - (x) Sautoir
 
 - Positions (= mot en -é) :
-- Affronté (face à face) [219]
-- Accosté (à dextre et senestre) [219]
-- Chargé (meuble posé sur une pièce)
-- Brochant (pièce posé sur une pièce, un meuble ou sur le champ) [533] [7] [53]
-- Contourné (symétrie d'axe verticale)
-- Accompagné (autour d'un fasce, d'un chevron, d'un pairle, etc.)
-- Accosté (pièce autour du pal, de la bande ou de la barre, disposé dans le même sens)
-- Cantonné (autour d'une croix ou d'un sautoir)
-- Passé en sautoir (deux pièces disposé en X)
-- Semé (quand un meuble rempli une région) [1452]
-- Cousu (une pièce de métal sur métal, ou de couleur sur couleur) [11000]
-- Surmonté (une pièce au dessus d'une autre) [3718]
+    - Affronté (face à face) [219]
+    - Accosté (à dextre et senestre) [219]
+    - Chargé (meuble posé sur une pièce)
+    - Brochant (pièce posé sur une pièce, un meuble ou sur le champ) [533] [7] [53]
+    - Contourné (symétrie d'axe verticale)
+    - Accompagné (autour d'un fasce, d'un chevron, d'un pairle, etc.)
+    - Accosté (pièce autour du pal, de la bande ou de la barre, disposé dans le même sens)
+    - Cantonné (autour d'une croix ou d'un sautoir)
+    - Passé en sautoir (deux pièces disposé en X)
+    - Semé (quand un meuble rempli une région) [1452]
+    - Cousu (une pièce de métal sur métal, ou de couleur sur couleur) [11000]
+    - Surmonté (une pièce au dessus d'une autre) [3718]
 
 - Meubles (= figures figuratives) :
-- Batiment :
-- Avant-Mur
-- Maçonné (briques)
-- Ouvert (porte)
-- Ajouré (fenêtre)
-- Tour
-- Animaux : [5425]
-- Armé (griffes)
-- Lampassé (langue)
-- Couronné (couronne)
-- Vilainé (pénis)
-- Arbre :
-- Fruité
+    - Batiment :
+        - Avant-Mur
+        - Maçonné (briques)
+        - Ouvert (porte)
+        - Ajouré (fenêtre)
+        - Tour
+    - Animaux : [5425]
+        - Armé (griffes)
+        - Lampassé (langue)
+        - Couronné (couronne)
+        - Vilainé (pénis)
+    - Arbre :
+        - Fruité
