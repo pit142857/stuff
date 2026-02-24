@@ -2,25 +2,28 @@
 
 > https://www.youtube.com/playlist?list=PLhidzeZ496C_IEY_YdzxTSOtvd_mfZPPp
 
-2026: OOT AD   - low A press (16xA)
-2025: TWW NBS  - 2 pauses
-2024: MM  any% - low A press (29xA)
-      MM  any% - one cycle
-2023: OOT AD   - low C press (6xC)
-2022: MM  any% - 1 cycle, NMG except for deku mask (+ AFR + 18 masks + playaround)
-2021: MM  any% - 2 pauses (remastered)
-2020: OOT AD   - child only
-2019: OOT any% - pacifist run
-      OOT any% - 0 pause
-2018: MM  AFR  - no human in dungeon
-2017: OOT RDO
-2016: OOT 100% - 3 pauses
-2015: MM  any% - 2 pauses (outdated)
+2026: OOT AD   - low A press (16xA)  > https://youtu.be/Gbe8JrZGYxs
+      TWW      - 0 pause             > https://youtu.be/KCqH0Swtnhk
+      TWW      - low A press (7xA)   > https://youtu.be/o_narGNaKAA
+2025: TWW NBS  - 2 pauses            > https://youtu.be/FnHln1AmCjU
+2024: MM  any% - low A press (29xA)  > https://youtu.be/R6p2ukRLoSA
+      MM  any% - one cycle           > https://youtu.be/HeG-oEtwS1I
+2023: OOT AD   - low C press (6xC)   > https://youtu.be/S50Njp65IjI
+2022: MM  any% - 1 cycle, ~NMG*      > https://youtu.be/HYJCfBEocOA
+        *except for deku mask (+ AFR + 18 masks + playaround)
+2021: MM  any% - 2 pauses (remaster) > https://youtu.be/ksjoYD2IUNQ
+2020: OOT AD   - child only          > https://youtu.be/i8wutY2Hpq0
+2019: OOT any% - pacifist run        > https://youtu.be/ozuZJNSnv-o
+      OOT any% - 0 pause             > https://youtu.be/ADHMnCfDz8g
+2018: MM  AFR  - no human in dungeon > https://youtu.be/KkMe1VUJUEc
+2017: OOT RDO                        > https://youtu.be/KtDpKjv93DQ
+2016: OOT 100% - 3 pauses            > https://youtu.be/01J-0suWISk
+2015: MM  any% - 2 pauses (outdated) > https://youtu.be/KaDflIPG3f4
 
 # Other LOTADs:
 
 2026: OOT3D AD - 1 pause             > https://youtu.be/jae9_1wOJtM
-2026: OOT low% MST (21 items)        > https://youtu.be/baxru6goFiU
+2025: OOT low% MST (21 items)        > https://youtu.be/baxru6goFiU
 2025: OOT max% - 0 pauses            > https://youtu.be/uTcYkrWsxbk
 2024: OOT      - max keys (140)      > https://youtu.be/n8paGkGAj1c
 2023: TWW      - 16 keys             > https://youtu.be/D585ORqqjxU
