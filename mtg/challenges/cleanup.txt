@@ -1,0 +1,3 @@
+The Last Agni Kai + Yurlok of Scorch Thrash permet de perdre 1 PV en tant que dernière action du tour, à la fin de la cleanup step. Il suffit alors de transformer cette perte de PV en une pioche de carte, avec le classique Enduring Angel + Nefarious Lich alors que l'on est précisément à 1 PV (on pioche même 2 cartes).
+
+Théoriquement, on peut remplacer une pioche de carte par le fait de lancer Panglacial Wurm via Archmage Ascension, ce qui devient n'importe quoi 
