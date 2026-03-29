@@ -1,0 +1,39 @@
+704.5a (Lose to life)
+704.5b (Lose to drawing)
+704.5c (Lose to poison)
+704.5d (Vanishing token)
+704.5e (Vanishing copy)
+704.5f (Die to toughness)
+704.5g (Die to damage)
+704.5h (Die to deathtouch)
+704.5i (Die to loyalty)
+704.5j (Unique legend)
+704.5k (Unique world)
+704.5m (Illegal aura)
+704.5n (Illegal equipment)
+704.5p (Illegal attach type)
+704.5q (Counter canceling)
+704.5r (Counter threshold)
+704.5s (End of saga)
+704.5t (End of dungeon)
+704.5u (Ability Space sculptor)
+704.5v (Die to defense)
+704.5w (Illegal protector)
+704.5x (Illegal siege)
+704.5y (Unique role)
+704.5z (Ability Start your engine!)
+
+704.6c (Die to commander)
+704.6d (Commander return)
+704.6e (End of scheme)
+704.6f (End of phenomenon)
+
+Cast Whirlwind Denial with on the stack
+- a copy of a card that will be countered, so that 704.5e applies.
+- an ability of a finished saga, so that 704.5s applies.
+- an ability of a finished dungeon, so that 704.5t applies.
+Make all other SBA applied using mana abilities.
+
+=== Old ===
+
+Brokers Confluence + Everdream -> cast Panglacial Wurm

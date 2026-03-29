@@ -7,3 +7,4 @@
 - (4/5) Lancer une Guivre panglaciaire depuis la bibliothèque, alors qu'on n'en possède aucune
 - (5/5) Gagner pendant une étape de dégagement
 - (5/5) Avoir plus de cartes dans sa main que sa taille maximale quand son tour se termine
+- (???) Appliquer toutes les actions basées sur un état en tant qu'unique évènement
