@@ -1,0 +1,9 @@
+- (1/5) Avoir un permanent sans type
+- (1/5) Avoir un cycle d'aura
+- (2/5) Avoir une carte qui a simultanément des marqueurs -1/-1 et +1/+1 de façon pérenne
+- (2/5) Avoir une aura avec l'équipement
+- (3/5) Faire défausser deux cartes via Stupeur à un joueur n'ayant qu'une carte en main
+- (4/5) Avoir en jeu Marche des machines et un artefact non-créature
+- (4/5) Lancer une Guivre panglaciaire depuis la bibliothèque, alors qu'on n'en possède aucune
+- (5/5) Gagner pendant une étape de dégagement
+- (5/5) Avoir plus de cartes dans sa main que sa taille maximale quand son tour se termine

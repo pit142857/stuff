@@ -1,3 +1,5 @@
+# FAUX : ÇA NE FONCTIONNE PAS #
+
 Le but est de faire arriver sur le champ de bataille une aura sans capacité "Enchanter : ...". On sait déjà faire en sorte qu'une aura déjà sur le champ de bataille perde sa capacité "Enchanter : ..." (et ça ne pose aucun problème de règle), mais je ne crois pas que l'on sache faire arriver une aura sans cette capacité.
 
 Voici les trois cartes dont j'ai besoin, je ne rappelle que les capacités qui m'intéresse.

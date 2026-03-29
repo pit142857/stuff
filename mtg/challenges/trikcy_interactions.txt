@@ -4,8 +4,7 @@ Deux [[Steal Enchantment]] et une [[Aura Graft]]
 
 ========== Aura sans enchanter ==========
 
-L'adversaire a une aura en jeu. La cibler avec [[Liquimetal Coating]] puis [[Opportunistic Dragon]]
-L'aura sera alors détachée puis mise au cimetière.
+[[?Immovable Rod]] L'aura sera alors détachée puis mise au cimetière.
 
 ========== Aura avec l'équipement ==========
 
