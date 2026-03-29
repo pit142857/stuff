@@ -1,5 +1,14 @@
 **Gagner la partie pendant une étape de dégagement**
 
+Voici le setup : Tu as en jeu [[Fasting]], [[Nefarious Lich]] et deux [[Sphinx of the Second Sun]]. Après ta 2nd main phase, tu as 2 phases de début supplémetaire, ce qui représente en terme d'étapes : Untap > Upkeep > Draw > Untap > Upkeep > Draw. Tu utilises Fasting pour sauter la première Draw Step, ce qui te fera gagner 2 PV en Untap, donc piocher 2, et donc gagner, pour peu que tu aies un Maniaque de Laboratoire et une bibliothèque vide !
+
+Et voici la CR dont on a besoin :
+> 614.10b Some effects cause a player to skip a step, phase, or turn, then take another action. That action is considered to be the first thing that happens during the next step, phase, or turn to actually occur.
+
+=== ARCHIVE ===
+
+**Gagner la partie pendant une étape de dégagement**
+
 Une question amusante de Magic (qui m'a été proposée à l'origine par le juge et ami Mikaël Rabie) consiste à savoir si oui ou non il est possible de gagner pendant une étape de dégagement (en excluant la possibilité où notre adversaire concède pendant cette étape, ce qui aurait très peu d'intérêt). L'intérêt de la question vient du fait qu'aucun joueur ne reçoit la priorité pendant cette étape, qu'aucun objet ne peut aller sur la pile, et que les actions basées sur un état ne sont pas vérifiées. Il reste cependant les effets de remplacement. Malgré tous nos efforts et sans grande surprise, nous n'avions trouvé aucune façon de gagner ou perdre. Cependant, avec une nouvelle carte de Innistrad: Midnight Hunt, c'est maintenant possible ! Voici comment.
 
 Le principe général se divise en plusieurs étapes :
