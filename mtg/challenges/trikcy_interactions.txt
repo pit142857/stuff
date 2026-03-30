@@ -10,6 +10,10 @@ Deux [[Steal Enchantment]] et une [[Aura Graft]]
 
 Avoir [[Experiment Kraj]], un Licid et un [[Ensouled Scimitar]] animé en jeu, utiliser la capacité du Kraj sur ces deux créatures, puis activer la capacité que le Kraj a gagné du Licid.
 
+========== Phase de combat avant phase principale pré-combat ==========
+
+Ertai's Meddling + Savage Beating
+
 ========== Piocher pendant le lancement d'un sort ==========
 
 [[Chromatic Sphere]]
