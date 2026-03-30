@@ -1,5 +1,7 @@
 - (1/5) Avoir un permanent sans type
 - (1/5) Avoir un cycle d'aura
+- (1/5) Mettre Progenitus au cimetière
+- (1/5) Mettre Progenitus au cimetière depuis la bibliothèque
 - (2/5) Avoir une carte qui a simultanément des marqueurs -1/-1 et +1/+1 de façon pérenne
 - (2/5) Avoir une aura avec l'équipement
 - (3/5) Faire défausser deux cartes via Stupeur à un joueur n'ayant qu'une carte en main
