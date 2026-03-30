@@ -4,6 +4,7 @@
 - (1/5) Faire une boucle infinie
 - (2/5) Mettre Progenitus au cimetière depuis la bibliothèque
 - (2/5) Faire une boucle infinie qui implique d'avoir un tour constitué d'une infinité de phases
+- (2/5) Faire une boucle infinie qui dure une infinité de tours
 - (3/5) Avoir une carte qui a simultanément des marqueurs -1/-1 et +1/+1 de façon pérenne
 - (3/5) Avoir une aura avec l'équipement
 - (3/5) Faire défausser deux cartes via Stupeur à un joueur n'ayant qu'une carte en main
@@ -12,5 +13,4 @@
 - (4/5) Lancer une Guivre panglaciaire depuis la bibliothèque, alors qu'on n'en possède aucune
 - (5/5) Gagner pendant une étape de dégagement
 - (5/5) Avoir plus de cartes dans sa main que sa taille maximale quand son tour se termine
-- (???) Faire une boucle infinie qui dure une infinité de tours
 - (???) Appliquer toutes les actions basées sur un état en tant qu'unique évènement
