@@ -5,4 +5,5 @@ L'adversaire a Darksteel Myr
 
 # Une partie sans fin
 
-Light of Day + chaque joueur a Abyssal Persecutor
+- soit Light of Day + chaque joueur a Abyssal Persecutor
+- soit chaque joueur a Dragon Appeasement (et rien d'autre dans la partie) 
