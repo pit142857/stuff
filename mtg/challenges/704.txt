@@ -28,11 +28,30 @@
 704.6e (End of scheme)
 704.6f (End of phenomenon)
 
-Cast Whirlwind Denial with on the stack
-- a copy of a card that will be countered, so that 704.5e applies.
-- an ability of a finished saga, so that 704.5s applies.
-- an ability of a finished dungeon, so that 704.5t applies.
-Make all other SBA applied using mana abilities.
+L'adversaire lance Whirlwind Denial alors que l'on a sur la pile :
+- une copie d'une carte, pour 704.5e
+- une capacité d'une saga terminée, pour 704.5s
+- une capacité d'un donjon terminé, pour 704.5t
+Pour les autres SBA, on utilise le fait que l'on peut activer des capacités de mana.
+Notamment, on met en place Constable of the Realm qui aura exilé plein de permanents.
+En le sacrifiant avec Ashnod's Altar, tous ces permanents reviendront.
+On écrit « Coffre <permanents> » pour signifier que ces permanents reviendront ainsi.
+(a) Mana Confluence alors que l'on a 1 PV
+(b) Chromatic Sphere alors que notre bibliothèque est vide
+(c) Elves of Deep Shadow + Phyresis alors que l'on a 9 marqueurs poison
+(d) Ashnod's Altar en sacrifiant un token
+(e) ^
+(f) Wall of Roots alors qu'elle a déjà 4 marqueurs -0/-1
+(g) Wall of Roots alors qu'elle a déjà 3 marqueurs -0/-1 et 1 blessure
+(h) ...
+(i) Coffre Nissa, Steward of Elements
+(j) Coffre deux fois la même créature légendaire
+(k) Coffre deux enchantements du monde
+(m) Ashnod's Altar en sacrifiant une créature enchantée
+(n) Arvinox, the Mind Flail équipé d'un équipement, on a 3 permanents que l'on contrôle mais qu'on ne possède pas ; on en sacrifie un avec Ashnod's Altar
+(p) Coffre Ensoul Artifact que l'on fait revenir enchantant un équipement
+(q) Metallic Mimic en ayant nommé Scarecrow + coffre Chainbreaker
+(r) Dinosaur Headdress équipé sur Rasputin Dreamweaver pour en faire une copie d'une autre créature, avec 8 marqueurs dream (on a proliféré le 8e après qu'il est devenu une copie) ; on sacrifie cet artefact sur Krark-Clan Ironworks
 
 === Old ===
 
