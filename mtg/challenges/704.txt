@@ -32,6 +32,8 @@ L'adversaire lance Whirlwind Denial alors que l'on a sur la pile :
 - une copie d'une carte, pour 704.5e
 - une capacité d'une saga terminée, pour 704.5s
 - une capacité d'un donjon terminé, pour 704.5t
+- une capacité d'une bataille vaincue, pour 704.5v
+Afin d'avoir tout ça sur la pile, on termine un donjon, et en réponse, on Shock un siège, on prolifère une saga et on lance une copie d'une carte (Isochron Scepter)
 Pour les autres SBA, on utilise le fait que l'on peut activer des capacités de mana.
 Notamment, on met en place Constable of the Realm qui aura exilé plein de permanents.
 En le sacrifiant avec Ashnod's Altar, tous ces permanents reviendront.
@@ -43,7 +45,7 @@ On écrit « Coffre <permanents> » pour signifier que ces permanents reviendron
 (e) ^
 (f) Wall of Roots alors qu'elle a déjà 4 marqueurs -0/-1
 (g) Wall of Roots alors qu'elle a déjà 3 marqueurs -0/-1 et 1 blessure
-(h) ...
+(h) Pariah's Shield sur une créature + Elves of Deep Shadow enchanté par Aspect of Gorgon ; fait cette SBA en premier puis on sacrifie Pariah's Shield avec Krark-Clan Ironworks pour ne pas interférer avec la SBA (c)
 (i) Coffre Nissa, Steward of Elements
 (j) Coffre deux fois la même créature légendaire
 (k) Coffre deux enchantements du monde
@@ -52,6 +54,14 @@ On écrit « Coffre <permanents> » pour signifier que ces permanents reviendron
 (p) Coffre Ensoul Artifact que l'on fait revenir enchantant un équipement
 (q) Metallic Mimic en ayant nommé Scarecrow + coffre Chainbreaker
 (r) Dinosaur Headdress équipé sur Rasputin Dreamweaver pour en faire une copie d'une autre créature, avec 8 marqueurs dream (on a proliféré le 8e après qu'il est devenu une copie) ; on sacrifie cet artefact sur Krark-Clan Ironworks
+(s) ^
+(t) ^
+(u) Space Beleren en jeu et coffre une créature
+(v) ^
+(w) Coffre une bataille transformée en créature
+(x) On a Confiscate un siège adverse, on sacrifie Confiscate via Krark-Clan Ironworks + Liquimetal Coating
+(y) Un Unassuming Sage adverse avec deux rôles Cursed et Sorcerer possédés par l'adversaire, Sorcerer est contrôlé par lui et Curse est actuellement contrôlé par nous grâce à Confiscate (on a réussi ainsi : l'adversaire a joué Cursed Courtier, qui entre enchanté par Cursed, on a pris le contrôle de Cursed via Confiscate, puis l'adversaire a attaché Cursed à Unassuming Sage via Simic Guildmage) ; on sacrifie Confiscate via Krark-Clan Ironworks + Liquimetal Coating
+(z) Coffre une créature avec Start your Engine (il aura fallu lui faire perdre ses capacités pour ne pas déjà avoir de vitesse)
 
 === Old ===
 
