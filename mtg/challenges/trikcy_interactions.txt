@@ -24,6 +24,10 @@ Attacher [[Frogify]] à un permanent qui est temporairement une créature lui pe
 
 [*] https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=473009
 
+========== Grandeur sur soi-même ==========
+
+Avoir [[Suppression Field]] et activer [[Words of Wind]]. Activer la Gradeur d'une créature, et utiliser [[Chromatic Sphere]] pour payer le coût supplémentaire et ainsi remonter la Grandeur en main, pour la défausser
+
 ========== Permanent sans type ==========
 
 Ne pas avoir de dévotion au bleu. Lancer [[Soul Summons]] pour manifester [[Thassa, God of the Sea]], lui attacher [[Frogify]], puis retourner Thassa.

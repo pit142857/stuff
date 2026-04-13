@@ -7,6 +7,7 @@
 - (2/5) Faire une boucle infinie qui dure une infinité de tours
 - (3/5) Avoir une carte qui a simultanément des marqueurs -1/-1 et +1/+1 de façon pérenne
 - (3/5) Avoir une aura avec l'équipement
+- (3/5) Activer une capacité de Grandeur en défaussant la créature qui a Grandeur
 - (3/5) Faire défausser deux cartes via Stupeur à un joueur n'ayant qu'une carte en main
 - (3/5) Avoir une phase de combat avant sa phase principale pré-combat
 - (4/5) Avoir en jeu Marche des machines et un artefact non-créature
