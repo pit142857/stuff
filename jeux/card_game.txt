@@ -1,0 +1,39 @@
+# German games
+
+- Skat: 3 players, 32 cards, Ace-Ten trick taking game
+- Dopplekopf: 2v2, 48 cards, Ace-Ten trick taking game
+- Schafkopf:  2v2, 32 cards, Ace-Ten trick taking game
+
+# Hungarian games
+
+- Zsíros (Czech Sedma): 2 players, 32 cards
+
+# Italian games
+
+- Scopa: 2 players, 40 cards, fishing game
+- Scopone: 2v2, 40 cards, fishing game
+- Briscola: 2 players, 40 cards, Ace-Three trick taking game
+- Briscola Chiamata: 2v3, 40 cards, Ace-Three trick taking game
+
+# Spanish games
+
+- Ronda: 2 or 4 players, 40 cards, fishing game
+
+# Argentinean games
+
+- Truco (without Flor): 2v2 or 3v3, 40 cards
+
+# Russian games
+
+- Durak: 2v2 or 5 players, 36 cards, beating game
+
+# North Armerican games
+
+- Royal Casino: 2 players, 52 cards, fishing game
+- Canasta: 2 players, 2 x 52 cards + 4 jokers, rummy game
+- Golf: 2-8 players, 52 cards, draw and discard game
+- Five Up: 2 players, 28 dominos (0-0 to 6-6)
+
+# Chinese games
+
+- Tien Gow: 4 players, 32 dominos (1-1 to 6-6, some tiles doubled), trick taking game
