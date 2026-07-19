@@ -1,3 +1,4 @@
+- (1/5) Gagner au tour 1
 - (1/5) Avoir un permanent sans type
 - (1/5) Avoir un cycle d'aura
 - (1/5) Mettre Progenitus au cimetière
