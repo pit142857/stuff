@@ -1,9 +1,29 @@
 **Gagner la partie pendant une étape de dégagement**
 
+*Version 1*
+
 Voici le setup : Tu as en jeu [[Fasting]], [[Nefarious Lich]] et deux [[Sphinx of the Second Sun]]. Après ta 2nd main phase, tu as 2 phases de début supplémetaire, ce qui représente en terme d'étapes : Untap > Upkeep > Draw > Untap > Upkeep > Draw. Tu utilises Fasting pour sauter la première Draw Step, ce qui te fera gagner 2 PV en Untap, donc piocher 2, et donc gagner, pour peu que tu aies un Maniaque de Laboratoire et une bibliothèque vide !
 
 Et voici la CR dont on a besoin :
 > 614.10b Some effects cause a player to skip a step, phase, or turn, then take another action. That action is considered to be the first thing that happens during the next step, phase, or turn to actually occur.
+
+*Version 2*
+
+Le principe général se divise en plusieurs étapes :
+1. Faire arriver un choc land sur le champ de bataille pendant que l'on a 2 points de vie.
+2. Payer nos 2 points pour tomber à 0 et pour que l'effet d'Enduring Angel *("If your life total would be reduced to 0 or less, instead transform Enduring Angel and your life total becomes 3.")* puisse s'appliquer, on gagne donc 1 point de vie.
+5. Gagner la partie en piochant dans une bibliothèque vide grâce à Nefarious Lich qui remplace le gain d'un point de vie par une pioche + l'effet de Laboratory Maniac *("If you would draw a card while your library has no cards in it, you win the game instead.")*
+
+Il reste la partie un peu compliquée : il faut que l'on fasse arriver sur le champ de bataille un choc land (disons Watery Grave) pendant l'étape de dégagement, et que l'on décide ensuite de payer les 2 points de vie. Pour ce faire, mon idée est de contrôler un Banisher Priest *(C'est une créature avec "When Banisher Priest enters the battlefield, exile target creature an opponent controls until Banisher Priest leaves the battlefield.")* qui a exilé ce choc land (que l'on possède, afin qu'il retourne sur le champ de bataille sous notre contrôle). Ainsi, si le Banisher Priest quitte le champ de bataille pendant l'étape de dégagement, le choc land va revenir instantanément sur le champ de bataille. Pour réussir à faire quitter le Priest Banisher pendant notre étape de dégagement, il y a une carte toute désignée pour ça : Undiscovered Paradise *(C'est un terrain avec "{T}: Add one mana of any color. During your next untap step, as you untap your permanents, return Undiscovered Paradise to its owner’s hand.")* Il suffit donc de faire en sorte que notre Banisher Priest devienne une copie de ce terrain et que l'on active sa capacité de mana un tour avant notre étape de dégagement, et c'est gagné ! Cela est facilement faisable en animant Undiscovered Paradise avec un Animate Land *(C'est un éphémère avec "Until end of turn, target land becomes a 3/3 creature that’s still a land.")*, puis en lançant Cytoshape (C'est un éphémère avec "Choose a nonlegendary creature on the battlefield. Target creature becomes a copy of that creature until end of turn.") en ciblant ces deux permanents.
+
+*Version 3*
+
+On contrôle :
+- Yurlok of Scorch Thrash *(A player losing unspent mana causes that player to lose that much life.)*
+- Electro, Assaulting Battery *(You don’t lose unspent red mana as steps and phases end.)* enchanté par Teferi's Curse *(Enchanted permanent has phasing)*
+- Enduring Angel, Nefarious Lich et Laboratory Maniac, pour que gagner 1 point de vie soit remplacer par le fait de gagner la partie pour peu que notre bibliothèque soit vide.
+
+Il suffit alors d'ajouter un mana rouge à notre réserve pendant le tour de notre adversaire.  
 
 === ARCHIVE ===
 
