@@ -1,0 +1,3 @@
+sudo update-alternatives --config python3
+~/Documents/yt-dlp/yt-dlp -f 251 -x --audio-format mp3 https://www.youtube.com/watch?v=
+XTerm

@@ -23,7 +23,7 @@ On contrôle :
 - Electro, Assaulting Battery *(You don’t lose unspent red mana as steps and phases end.)* enchanté par Teferi's Curse *(Enchanted permanent has phasing)*
 - Enduring Angel, Nefarious Lich et Laboratory Maniac, pour que gagner 1 point de vie soit remplacer par le fait de gagner la partie pour peu que notre bibliothèque soit vide.
 
-Il suffit alors d'ajouter un mana rouge à notre réserve pendant le tour de notre adversaire.  
+Il suffit alors d'ajouter un mana rouge à notre réserve pendant le tour de notre adversaire.
 
 === ARCHIVE ===
 
