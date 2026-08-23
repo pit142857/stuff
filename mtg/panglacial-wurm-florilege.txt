@@ -1,0 +1,5 @@
+- On peut lancer Panglacial Wurm pendant l'étape de dégagement. Problème de règle : ce n'est pas clair si c'est légal ou non de lancer un sort pendant cette étape, et si oui, passe-t-on à l'étape suivante malgré la présence d'un sort sur la pile ?
+- On peut lancer Panglacial Wurm alors que le jeu passe d'une étape à une autre (au moment où on perd notre mana inutilisé). Problème de règle : passe-t-on à l'étape suivante malgré la présence d'un sort sur la pile ?
+- On peut lancer Panglacial Wurm pendant qu'on lance un autre sort. Problème de règle : lequel de ces deux sort est le premier lancé ? Si j'ai lancé mon sort via Avec Conduit of Worlds, ai-je le droit de lancer Panglacial Wurm pendant que je lance ce sort ?
+- On peut piocher une carte pendant qu'on lance Panglacial Wurm depuis la bibliothèque, c'est-à-dire pendant qu'on cherche dans notre bibliothèque. Problème : il faut s'assurer qu'on ne change pas l'ordre des cartes de notre bibliothèque pendant qu'on cherche.
+- On peut vouloir lancer un **jeton** Panglacial Wurm depuis la bibliothèque. Problème : on ne peut pas le faire, car un jeton qui a quitté le champ de bataille ne peut plus changer de zone.
