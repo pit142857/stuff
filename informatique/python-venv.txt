@@ -1,0 +1,22 @@
+In the ~/venv folder:
+
+> mkdir <venv_name>
+> python3 -m venv <venv_name>
+
+In the project folder, to activate the venv:
+
+> source ~/venv/<venv_name>/bin/activate
+
+Then to install venv modules:
+
+> python3 -m pip install <module1>
+> python3 -m pip install <module2>
+> ...
+
+To list packages and their version:
+
+> python3 -m pip list
+
+To deactivate the venv:
+
+> deactivate
