@@ -1,0 +1,1 @@
+https://azeria-labs.com/heap-exploitation-part-2-glibc-heap-free-bins/
