@@ -49,7 +49,10 @@ p {
 }
 
 .fact img {
-    width: 100%;
-    object-fit: cover;
+    display: block;
+    margin: auto;
+    /*width: 60%;*/
+    max-height: 120px;
+    max-width: 100%;
     border-radius: 5px;
 }
